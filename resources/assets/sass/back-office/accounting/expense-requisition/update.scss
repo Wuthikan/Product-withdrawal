@@ -1,0 +1,70 @@
+/**
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+@media (max-width: 1000px) {
+    .x_panel.content-center {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.x_content {
+  width: 100% !important;
+}
+
+.scroll-2 {
+    overflow-y: auto;
+}
+
+section {
+    & .w800 {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    hr {
+        border-color: #d3d5d6;
+    }
+}
+
+.content {
+    .header{
+        color: black;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    & label {
+        color: #000;
+        text-transform: uppercase;
+    }
+    & .itemList {
+        & td,
+        th {
+            text-transform: uppercase;
+        }
+        & th {
+            color: #000;
+        }
+        & tr {
+            & th,
+            td {
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 120px;
+                    & input {
+                        text-align: center;
+                    }
+                }
+            }
+            & td {
+                border-top: 0 !important;
+            }
+        }
+    }
+
+    .new_current{
+        font-size: 1.5rem;
+    }
+}

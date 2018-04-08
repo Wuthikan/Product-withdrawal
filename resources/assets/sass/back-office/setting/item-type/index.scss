@@ -1,0 +1,133 @@
+$color0: #000;
+$color1:#4D4D4D;
+$color2: #999;
+$color3: #FF0000;
+$color4: #B3B3B3;
+$color5: #808080;
+$color6: #7EC247;
+$color7: #808285;
+
+
+.form-header-index table tr .col-1 {
+  width: auto !important;
+  float: left;
+  min-width: 0 !important;
+
+  .select-all{
+    width: 80px;
+  }
+}
+.form-header-index table tr .col-2 {
+  float: none !important;
+  width: calc(100vw);
+  padding-left: 10px;
+}
+.form-header-index table tr .col-3 {
+  width: auto !important;
+  float: right;
+}
+
+
+// .form-header-index table tr {
+//   .col-1 {
+//     width: 15%;
+//     min-width: 250px;
+//   }
+//   .col-2 {
+//     width: 62%;
+//   }
+// }
+
+.title-page{
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  h1{
+    color: $color0;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 30px;
+    span{
+      color: $color5;
+    }
+  }
+}
+
+.item-type-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.name {
+        width: 15%;
+        text-align: left;
+      }
+      &.description {
+         width: 61%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.description {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+}
+table.ngin-table{
+  tbody {
+    > tr.tr-trash{
+      > td.name, td.description{
+        color: #CCC;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

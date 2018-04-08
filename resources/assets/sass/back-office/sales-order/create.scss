@@ -1,0 +1,190 @@
+/**
+ * @author:Phitchaporn Pipatpunlop
+ * @phone: 0909915818
+ * @email: phitchaporn.pipa@gmail.com
+ */
+
+label, {
+  color: black;
+  text-transform: uppercase;
+  min-height: 19px;
+  margin-bottom: 3px;
+
+  span {
+    button.btn {
+      line-height: 1;
+
+      span.btn-label {
+        font-size: 11px !important;
+      }
+    }
+  }
+}
+
+p, h3 {
+  margin: 0 !important;
+}
+
+span {
+  padding-left: 10px;
+
+  &.twitter-typeahead {
+    padding-left: 0 !important;
+  }
+
+  &.caret {
+    padding-left: 0;
+  }
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+.section-normal-info {
+  max-width: 920px;
+  width: 100%;
+  margin: auto;
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .order {
+    text-align: right;
+
+    .order-number {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      padding-right: 35px;
+    }
+
+    .customer-tier {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .credit-limit {
+    display: inline-block;
+    margin-top: 32px;
+  }
+}
+
+td.col-xs-1.text-right {
+  text-align: right !important;
+}
+
+.section-pre-order, .section-repeat-order {
+  width: 100%;
+  margin-top: 35px;
+
+  .title {
+    color: black;
+    text-transform: uppercase;
+
+    span {
+      text-decoration: underline;
+      padding-right: 10px;
+      padding-left: 0;
+    }
+  }
+}
+
+table.table.ngin-table {
+  width: 100%;
+
+  td, th {
+    &.price-after {
+      width: 10.333333%;
+    }
+
+    &.col-xs-3.name {
+      width: 23%;
+      text-align: left !important;
+    }
+
+    &.warehouse {
+      width: 5.333333%;
+    }
+
+    &.delivery-date {
+      width: 11.333333%;
+    }
+  }
+
+  thead {
+    tr th {
+      text-transform: uppercase;
+      color: black;
+    }
+  }
+
+  tbody {
+    tr > td {
+      border-left: none;
+      &.text-right {
+        text-align: right !important;
+      }
+
+      &.name {
+        div {
+          white-space: nowrap;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+.section-summary {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+
+  .col-xs-4 {
+    padding-left: 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.section-promotions {
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+
+  span {
+    text-transform: uppercase;
+    padding-right: 5px;
+    padding-left: 0;
+    color: #000;
+    -webkit-text-stroke: 0.3px #000;
+  }
+
+  ul {
+    padding: 0;
+    list-style-position: inside;
+  }
+}
+
+.btn-group.bootstrap-select.form-control {
+  width: 75%;
+}
+
+.section-actions {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #999;
+}
+
+.scroll-2 {
+  height: calc(100vh - 110px);
+  padding: 20px 15px;
+  padding-bottom: 0;
+}

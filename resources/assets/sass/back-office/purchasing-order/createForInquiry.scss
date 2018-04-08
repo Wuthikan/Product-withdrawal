@@ -1,0 +1,259 @@
+/** 
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.top_nav .nav_menu .nav.toggle {
+    min-width: 450px !important;
+}
+
+.x_panel.content-center {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.spaceContent {
+    // padding-left: 80px;
+    // padding-right: 80px;
+}
+
+.scroll-2 {
+    overflow-y: auto;
+}
+
+.top-content{
+    margin-bottom: 40px;
+    h4{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .right-col{
+        font-size: 18px;
+        
+        .iq{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .iq-no{
+            color: #AAA;
+        }
+    }
+}
+
+section {
+    & .w800 {
+        max-width: 800px;
+    }
+    & .w1120 {
+        max-width: 1180;
+    }
+    & div.w1120,
+    div.w800 {
+        margin: 0 auto;
+    }
+}
+
+table.list-table{
+    tbody{
+        > tr td:not(:last-child){
+            border-right: 1px solid #DDD;
+        }
+        > tr td.no-border-right{
+            border-right: 0 !important
+        }
+    }
+}
+
+
+table.table-headfix{
+    width: auto;
+    margin: 0 auto;
+    thead {
+      width: 97%;
+      
+      tr {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        th{
+          word-wrap: break-word;
+          border-bottom: 1px solid #AAA;
+          color: #000;
+          font-size: 10px;
+          // position: absolute;
+          // bottom: 0;
+        }
+      }
+    }
+    tbody {
+      // height: 300px;
+      // overflow-y: auto;
+      width: 100%;
+  
+      > tr{
+        display: table;
+        td{
+          border-right: 0;
+          border-top: 0;
+
+          &.td-productname{
+            > div[class*="col-"]{
+              padding: 0;
+            }
+          }
+          
+          &:last-child{
+            border-right: 0;
+          }
+        }
+      }
+    }
+    thead, tbody, tr, td, th {
+      display: block;
+    }
+    tr{
+    //   overflow: hidden; 
+    }
+    tbody td, thead > tr > th {
+      display: table-cell;
+    }
+  
+  
+    .w-50{
+      width: 50px;
+      min-width: 50px;
+      max-width: 50px;
+    }
+    .w-70{
+      width: 70px;
+      min-width: 70px;
+      max-width: 70px;
+    }
+    .w-80{
+      width: 80px;
+      min-width: 80px;
+      max-width: 80px;
+    }
+    .w-90{
+      width: 90px;
+      min-width: 90px;
+      max-width: 90px;
+    }
+    .w-100{
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+    }
+    .w-110{
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .w-120{
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .w-130{
+      width: 140px;
+      min-width: 140px;
+      max-width: 140px;
+    }
+    .w-200{
+      width: 265px;
+      min-width: 265px;
+      max-width: 265px;
+    }
+    .w-300{
+      width: 300px;
+      min-width: 300px;
+      max-width: 300px;
+    }
+  }
+
+.text-black {
+    color: #000;
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & label {
+        color: #000;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0;
+    }
+}
+
+#summary {
+    width: 300px;
+    tr {
+        & td:nth-child(2) {
+            padding-left: 20px;
+            width: 158px;
+        }
+        & .onlyText {
+            padding-right: 13px;
+        }
+        & td:last-child {
+            width: 40px;
+            text-align: right;
+        }
+    }
+    & #total {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+.label{
+    color: #000;
+    font-weight: bold;
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+  .sup-content{
+    margin-bottom: 30px;
+    .sup-image, .sup-detail{
+      display: inline-block;
+    }
+  
+    .sup-image{
+      width: 50px;
+    }
+    .sup-detail{
+      width: 90%;
+  
+      strong{
+        font-size: 15px;
+        color: #000;
+      }
+    }
+  }
+  
+  .shipping_date{
+    max-width: 350px!important;
+  }
+  .limit_amount{
+    font-size: 16px;
+    margin-top: 5px
+  }
+  .text-light{
+    font-weight: normal;
+  }
+  .f-18{
+      font-size: 18px;
+  }
+  .subtotal{
+      font-weight: bold;
+  }

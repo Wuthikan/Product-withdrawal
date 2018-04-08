@@ -1,0 +1,89 @@
+.accounting-create-content {
+    font-weight: 700;
+    color: #000;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    border-top: none;
+    padding: 0;
+    margin-top: 50px;
+    min-height: 565px;
+    label {
+        font-weight: 700;
+    }
+    .create-input {
+        input {
+            text-align: left;
+            color: #000;
+        }
+    }
+    input {
+        text-align: center;
+        color: #000;
+    }
+    hr {
+        margin: 10px 0;
+        border: 0;
+        border-top: 2px solid #ddd;
+    }
+    th {
+        font-size: 14px;
+        font-weight: 900;
+    }
+    td {
+        color: #636b6f
+    }
+    .create-bottom {
+        padding: 0 25px;
+        margin-top: 25px;
+        text-align: right;
+        span {
+            padding-left: 30px;
+            padding-right: 15px;
+            color: #636b6f
+        }
+    }
+    .create-bottom-2 {
+        padding: 0 25px;
+        text-align: right;
+        span {
+            padding-left: 30px;
+            padding-right: 15px;
+            color: #636b6f
+        }
+    }
+    .create-bottom-3 {
+        padding: 0 25px;
+        text-align: right;
+        span {
+            padding-left: 30px;
+            padding-right: 15px;
+        }
+    }
+    .btn-item {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .credit-remark {
+        padding: 0 25px;
+        padding-top: 20px;
+    }
+    .ngin-table {
+        tbody {
+            border-left: unset;
+        }
+        td {
+            border-left: unset;
+        }
+        tr {
+            border-left: unset;
+        }
+        td {
+            border-left: unset;
+        }
+    }
+}

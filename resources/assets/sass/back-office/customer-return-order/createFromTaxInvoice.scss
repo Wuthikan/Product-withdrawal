@@ -1,0 +1,88 @@
+/**
+ * @author: Phitchaporn Pipatpunlop
+ * @phone: 0909915818
+ * @email: phitchaporn.pipa@gmail.com
+**/
+
+.top_nav .nav_menu .nav.toggle {
+  width: 100% !important;
+}
+
+.x_content {
+  padding: 20px 15px 0;
+}
+
+label {
+  text-transform: uppercase;
+  color: black;
+}
+
+.section-table {
+  table.table.ngin-table {
+    thead {
+      tr th {
+        text-transform: uppercase;
+        color: black;
+      }
+    }
+
+    tbody {
+      &::after {
+        content: '';
+        display: block;
+        height: 12px;
+      }
+      tr td {
+        padding: 10px;
+        .form-group {
+          margin-bottom: 0;
+        }
+        &.id {
+          color: #000;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    th, td {
+      &.id {
+        width: 30%;
+        text-align: left;
+      }
+      &.warehouse {
+        width: 15%;
+      }
+      &.qty {
+        width: 5%;
+        border-left: none;
+      }
+      &.remark {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.section-summary {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .total {
+    text-transform: uppercase;
+    color: black;
+    padding-right: 20px;
+  }
+}
+
+.section-actions {
+  padding: 20px 0;
+  border-top: 1px solid #999;
+  text-align: center;
+}
+
+.scroll-2 {
+  height: calc(100vh - 497px);
+  margin-right: -20px;
+  padding-right: 20px;
+}

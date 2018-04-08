@@ -1,0 +1,182 @@
+
+.text-left {
+    text-align: left!important;
+}
+.text-light {
+  color: #636b6f;
+  font-weight: 300;
+}
+textarea {
+  height: 180px!important;
+}
+.title {
+    margin-top: 30px;
+    padding-bottom: 100px;
+    .spn-first {
+        font-size: 18px;
+        vertical-align: middle;
+    
+    }
+    .number{
+        font-size: 25px;
+        vertical-align: middle;
+    }
+    label {
+      padding-top: 40px;
+      color: black;
+    }
+    .name-supplier {
+        font-size: 25px;
+    }
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  border-top: none;
+}
+
+.ngin-table {
+    tbody tr th {
+        font-weight: 400px;
+        color: black;
+      }
+    tbody tr td{
+        border-top: none !important;
+        border-left: none;
+        vertical-align: middle;
+    }
+  
+}
+.uploadPhotoHeaderSection .form-group {
+    margin-bottom: 0 !important;
+  }
+  
+  .uploadPhotoSection .form-group {
+    margin-bottom: 10px !important;
+  }
+  
+  .uploadAddMore {
+    font-size: 24px;
+    width: 95px;
+    height: 95px;
+    border-radius: 5px;
+    border: 3px solid #dedede;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background: #ccc no-repeat center;
+    cursor: pointer;
+    i {
+      position: relative;
+      top: calc(50% - 16px);
+      left: calc(88% - 45px);
+    }
+    span {
+      display: block;
+      padding: 0;
+      line-height: 95px;
+      text-align: center;
+    }
+    input {
+      position: absolute;
+      font-size: 2000px;
+      z-index: 200;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      -ms-filter: "alpha(opacity=0)";
+      cursor: pointer;
+    }
+    .up_again {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 95px;
+      height: 95px;
+      opacity: 0;
+      color: #fff;
+      transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      line-height: 1.6;
+    }
+    &:hover .up_again {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .bk-group-upload {
+    display: block;
+    .uploadPhotoSection {
+      float: left;
+      padding: 3px 0px 3px 20px;
+    }
+  }
+.items-supplier {
+    .table {
+        tr th {
+            vertical-align: bottom;
+        }
+        .input-qty{
+          display: inline-block;
+          width: 100px;
+          text-align: center;
+        }
+        .input-vat{
+          width: 150px;
+          float: right;
+          
+        }
+    }
+    
+    
+
+    padding-bottom: 100px;
+}
+.remark {
+    padding-bottom: 50px; 
+}
+.summary {
+  border-top: 1px solid #ddd;
+  padding: 20px 0 60px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+    table tr td{
+        padding: 4px 5px;
+        padding-left: 30px;
+
+        .total {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .net-text {
+          font-size: 16px;
+          font-weight: 700;
+        }
+    }
+    
+    
+    .inputDiscount{
+      width: 110px;
+      height: 25px;
+      text-align: right;
+      color: black;
+    }
+    
+    
+}
+
+.btn-submit {
+    padding-bottom: 50px;
+}
+
+
+
+.text-black {
+  color: black;
+}

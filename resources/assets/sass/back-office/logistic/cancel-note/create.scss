@@ -1,0 +1,159 @@
+$header: #000000;
+$text: #4d4d4d;
+$solid-line: #999999;
+$dashed-line: #cccccc;
+
+.create-cancel-note {
+  padding: 70px 0;
+  color: $text;
+
+  .header {
+    color: $header;
+    text-transform: uppercase;
+  }
+
+  .create-date {
+    label {
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .form-group {
+      padding-left: 50%;
+    }
+  }
+
+  .create-details {
+    padding: 0 70px;
+    margin-top: 50px;
+    border-right: 1px dashed $dashed-line;
+    text-align:center;
+
+    .or {
+      padding-top: 15px;
+      color: $dashed-line;
+      display: inline-block;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .filter-option.pull-left, .bootstrap-select.btn-group .dropdown-menu li a {
+      text-align: center;
+    }
+
+    input[type=text] {
+      text-align: center;
+    }
+  }
+
+  .create-images {
+    padding: 0 70px;
+    margin-top: 50px;
+    text-align: center;
+
+    input {
+      display: none;
+    }
+
+    label {
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .select-image {
+      text-align: left;
+      max-width: 269px;
+      width: 100%;
+      min-height: 269px;
+      height: 100%;
+      background-color: white;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid $dashed-line;
+      margin: auto;
+
+      i {
+        position: absolute;
+        text-align: center;
+        top: calc(50% - 40px);
+        font-size: 50px;
+        width: 100%;
+      }
+    }
+  }
+
+  .create-barcode {
+    padding: 0 70px;
+    margin-top: 50px;
+
+    table tr th {
+      border-bottom: 1px solid $solid-line;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    table tr td {
+      border-left-color: $dashed-line;
+      border-left-style: dashed;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+
+    .quantity {
+      max-width: 100px;
+
+      input {
+        width: 60%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    .create-barcode-total {
+      border-top: 1px solid $solid-line;
+      text-align: right;
+      margin-top: 30px;
+      padding: 8px 10px 0;
+      color: $header;
+
+      div.header {
+        display: inline-block;
+        padding-right: 10px;
+        text-transform: none;
+      }
+    }
+  }
+
+  .create-actions {
+    text-align: center;
+    padding-top: 70px;
+
+    .inline {
+      display: inline-block;
+      padding: 0 5px;
+
+      button {
+        min-width: 115px;
+
+        .btn-label {
+          padding-right: 3px;
+
+          i {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .save.inline button .btn-label {
+      left: -23px;
+    }
+  }
+}

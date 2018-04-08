@@ -1,0 +1,252 @@
+/**
+ * @author: Yongyot Khamma
+ * @phone: 095-795-6536
+ * @email: yongyot.kamma@gmail.com
+ */
+
+.form-header-index table tr .col-1 {
+    width: auto !important;
+    float: left;
+}
+.form-header-index table tr .col-2 {
+    float: none !important;
+    width: calc(100vw);
+}
+.form-header-index table tr .col-3 {
+    width: auto !important;
+    float: right;
+}
+
+
+// @media only screen and ( min-width: 1280px ){
+//     .form-header-index table tr .col-2 {
+//         width: 29%;
+//     }
+//  }
+
+//  @media only screen and ( min-width: 1440px ){
+//     .form-header-index table tr .col-2 {
+//         width: 40%;
+//     }
+//  }
+
+//  @media only screen and ( min-width: 1920px ){
+//     .form-header-index table tr .col-2 {
+//         width: 59%;
+//     }
+//  }
+
+
+.tr-checkbox{
+  width:30px;
+}
+.td-chart{
+    padding-top: 2em !important;
+    border: 0 !important;
+}
+
+.tr-data-small{
+    line-height: 1em;
+    font-size: 10px;
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+
+    p{
+        font-size: 21px;
+        font-weight: normal;
+    }
+}
+
+@mixin chart-lable-template($marginLeft : 40){
+  color: black;
+  margin-top: 40px;
+  margin-left: $marginLeft + px;
+  font-size: 16px;
+}
+
+.chart-label{
+  color: black;
+font-size: 16px;
+
+  .po-number{
+      display: block;
+      margin-bottom: 5px;
+      font-weight: normal;
+  }
+}
+
+.char-total{
+    width: 150px;
+    height: 150px;
+    .chart-total-display{
+        padding-left: 0 !important;
+    }
+}
+
+.col-label-time{
+  margin-left: -20px;
+  margin-top: -32px;
+}
+
+.chart{
+  .chart-total-display{
+      font-size: 20px;
+      color: #4c5b6b;
+  }
+
+  .chart-time-display{
+      color: #4c5b6b;
+  }
+}
+
+.chart-time {
+  margin-top: 30px;
+}
+
+.chart-total-display{
+  display: inline-block;
+  z-index: 2;
+  line-height:150px;
+  padding-left: 30px;
+}
+
+.chart-time-display{
+  display: inline-block;
+  z-index: 2;
+  line-height:110px;
+}
+
+.panel{
+  &.panel-default{
+      background-color: transparent;
+      border-top: 0;
+      border-left: 1px solid #d3e0e9;
+      border-right: 1px solid #d3e0e9;
+      border-bottom: 1px solid #d3e0e9;
+      // border-color: #999999;
+  }
+}
+
+.table{
+     tbody > tr > td{
+         border-top: 0!important;
+         line-height: 20px !important;
+         padding: 0;
+         font-size: 14px;
+
+         &.tr-checkbox{
+            padding: 0 10px;
+         }
+         &.iq-colhead{
+             max-width: 230px;
+             min-width: 230px;
+                width: 230px;
+
+                b{
+                    font-size: 18px;
+                    overflow: hidden;
+                    > div{
+                        float: left;
+                    }
+                }
+         }
+         &.iq-colsup{
+            max-width: 300px;
+            min-width: 300px;
+               width: 300px;
+        }
+         &.td-pr{
+             color: #3097d1;
+         }
+     }
+}
+
+.iq-number{
+    color: #3097d1;
+    margin-right: 10px;
+}
+.iq-headdate{
+    font-size: 20px;
+    font-weight: normal;
+}
+.iq-status{
+  font-weight: normal!important;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  .iq-status-icon{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    .iq-status-icon{
+        position: relative;
+        margin: 0 10px;
+        padding: 0;
+    }
+    .iq-status-icon:before{
+        top: 0;
+        margin-top: 0!important;
+    }
+    &.fa-approve-all{
+        &:before{
+            top: -19px;
+        }
+    }
+    .fa-exclamation-triangle{
+        color: #f7931c;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .fa-times-circle-o{
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .waiting-approve{
+        position: absolute;
+        width: 100px;
+        top: -2px;
+        line-height: 12px;
+    }
+  }
+  &.waiting{
+    display: table;
+    i{
+    display: table-cell;
+    width: 25px;
+    vertical-align: middle;
+    }
+    span{
+        display: table-cell;
+        width: 90px;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .fa-exclamation:before{
+        position: unset !important;
+    }
+  }
+}
+
+
+.text-blue{
+    color: #3097d1;
+  }
+
+td.tr-data-small{
+    b{
+        font-size: 11px;
+        font-weight: normal;
+    }
+    P{
+        font-size: 16px;
+    }
+}
+
+.w-300{
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+}

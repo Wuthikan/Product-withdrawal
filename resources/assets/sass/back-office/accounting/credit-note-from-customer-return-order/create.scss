@@ -1,0 +1,131 @@
+/** 
+ * @author: กีรติพร ลีลาวันทนพันธุ์
+ * @phone: 089-185-9078
+ * @email: bookhunter99@gmail.com
+ */
+.bk-group-1 {
+  padding-bottom: 35px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  .bk-head-document .form-group > div {
+    &:first-child {
+      font-size: 16px;
+    }
+    &:last-child {
+      font-size: 20px;
+    }
+  }
+  .bk-table {
+    width: 100%;
+    table-layout: fixed;
+    thead tr th {
+      text-align: -webkit-center;
+      font-size: 14px;
+      color: black;
+      padding: 0px 3px 0px 3px;
+      &:first-child {
+        text-align: left;
+      }
+    }
+    tbody tr {
+      td {
+        text-align: -webkit-center;
+        font-size: 14px;
+        color: gray;
+        padding: 5px 3px 5px 3px;
+        &:first-child {
+          text-align: left;
+        }
+      }
+      &:first-child td {
+        padding-top: 25px;
+        border-top: 1px #ccc solid;
+      }
+      td input {
+        text-align: center;
+        width: 90px;
+      }
+    }
+    thead tr th:nth-child(6), tbody tr td:nth-child(6) {
+      width: 106px;
+    }
+  }
+}
+
+.bk-group-2 {
+  text-align: -webkit-right;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  margin-left: -40px;
+  margin-right: -40px;
+  .bk-table {
+    width: 100%;
+    table-layout: fixed;
+    thead tr th {
+      text-align: -webkit-right;
+      font-size: 14px;
+      color: black;
+      padding: 0px 3px 15px 3px;
+      font-weight: 100;
+    }
+    tbody tr {
+      td {
+        text-align: -webkit-right;
+        font-size: 14px;
+        color: black;
+        padding: 5px 5px 5px 5px;
+      }
+      &:first-child td {
+        padding: 15px 5px 5px 5px;
+      }
+    }
+    thead tr th:first-child, tbody tr td:first-child {
+      width: 200px;
+    }
+    thead tr th:nth-child(2), tbody tr td:nth-child(2) {
+      color: gray;
+      width: 100px;
+      padding-right: 25px;
+    }
+    thead tr th:nth-child(3), tbody tr td:nth-child(3) {
+      width: 50px;
+    }
+    thead tr th:last-child {
+      text-align: -webkit-center;
+    }
+    tbody tr {
+      td:last-child {
+        text-align: -webkit-center;
+      }
+      &:last-child td {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+  .bk-table-total-head {
+    border-bottom: 1px #ccc solid;
+    div {
+      width: 500px;
+    }
+  }
+  .bk-table-total-body {
+    width: 500px;
+    margin-bottom: 40px;
+  }
+  .bk-textarea {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px #ccc solid;
+  }
+}
+
+.panel-content.scroll-2 {
+  height: calc(100vh - 95px);
+}

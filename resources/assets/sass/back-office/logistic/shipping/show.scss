@@ -1,0 +1,235 @@
+.shipping.show {
+  padding: 2rem;
+
+  .align-left {
+    text-align: left !important;
+
+    &.description {
+      padding-left: 35px !important;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    color: #111;
+
+    .title {
+      flex: 1
+    }
+
+    .consignee span {
+      color: #999;
+    }
+  }
+
+  table {
+    thead tr th {
+      border-top: 2px solid #ddd !important;
+      padding-top: 5px !important;
+      padding-bottom: 3px !important;
+    }
+
+    tbody tr td {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+
+      &.serial-number .col-md-1 {
+        width: 11.1111111111%;
+      }
+
+      &.total {
+        color: #000;
+        padding-top: 35px !important;
+        text-transform: uppercase;
+      }
+    }
+
+    &.serial-number-table {
+      tbody tr td {
+        border: none !important;
+      }
+    }
+  }
+
+  .x_content {
+    .brand-logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .table-heading {
+    font-weight: bold;
+    margin-top: 48px;
+    color: #000;
+  }
+
+  .serial-desc {
+    .remark {
+      padding: 8px;
+      margin-left: 12px;
+      background: #EFEFEF;
+
+      span {
+        content: 'Remark : ';
+        position: relative;
+        top: -20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+.right-column {
+  flex-grow: 0 !important;
+
+  .showCtrl {
+      padding: 20px;
+      min-width: 100%;
+      table {
+        margin-bottom: 20px;
+      }
+      & button {
+          text-align: center;
+          width: 150px;
+
+          &.log span {
+            left: -45px !important;
+          }
+          &.send span {
+            left: -20px !important;
+          }
+          &.print span {
+            left: -40px !important;
+          }
+      }
+      .actionBtn {
+          width: 100%;
+          padding: 6px 12px;
+          text-align: center;
+      }
+      font-size: 12px;
+  }
+}
+
+/* =========================================
+ * BELOW IS REUSE FROM /inquiry/show.scss
+ * ========================================= */
+.content-center-right{
+      .log-margin-buttom{
+            margin-bottom: 100px;
+            button{
+               padding: 1px 35px !important;
+                 .btn-label{
+                   left: -36px!important;
+               }
+            }
+      }
+      .email-margin-buttom{
+            margin-bottom: 20px;
+      }
+      .print-margin-buttom{
+             margin-bottom: 60px;
+              button{
+               padding: 1px 35px !important;
+               .btn-label{
+                   left: -36px!important;
+               }
+            }
+      }
+
+      .unapprve{
+          margin-top: 20px;
+          margin-bottom: 15px;
+                button{
+                    width:100%;
+                }
+
+         }
+         .cencel{
+                button{
+                    width:100%;
+                }
+         }
+}
+
+
+.content-center-right{
+    $padding-left: 33px;
+    $paragraph: 33px;
+
+    .mt-05{
+        margin-top: 10px !important;
+    }
+
+    .mt-1{
+        margin-top: 25px !important;
+    }
+
+    .mt-2{
+        margin-top: 50px !important;
+    }
+
+    .letter-to{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .letter-address{
+        padding-left: $padding-left;
+        word-wrap: break-word;
+        width: 250px;
+    }
+
+    .letter-company{
+        padding-left: $padding-left;
+    }
+
+    p.letter-content{
+        text-indent: $paragraph;
+        word-wrap: break-word;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .text-left{
+        text-align: left !important;
+    }
+
+    .text-underline{
+        text-decoration: underline;
+    }
+
+    .font-black{
+        color: black;
+    }
+
+    .panel{
+        .panel-body{
+            p.panel-title-remark {
+                position: absolute;
+                top: -10px;
+            }
+        }
+    }
+
+    .title_iq{
+      color:#000000;
+      font-weight: bold;
+    }
+    .panel-remark{
+          background-color: rgba(255, 255, 255, 0.43) !important;
+    }
+
+   .font-weight{
+       font-weight: 100;
+   }
+}
+.nav-sm #sidebar-menu .menu_section .side-menu span.fa-chevron-down {
+    margin-left: 0px;
+}

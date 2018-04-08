@@ -1,0 +1,146 @@
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left !important;
+}
+.text-right{
+	text-align: right !important;
+}
+.img-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.font-black{
+	color: #000;
+}
+
+.product-borrow-show{
+	margin: 20px;
+	font-family: "MoonLight","sans-serif";
+    // max-height: 625px;
+    max-height: calc(100vh - 120px);
+
+    .show-date{
+    	text-align: center;
+    	text-transform: uppercase;
+    	margin: 2em 0;
+    }
+
+    .activity{
+    	.header{
+    		text-transform: uppercase;
+    		margin-top: 4em;
+    		margin-bottom: 2em;
+    	}
+    	p.indent{
+    		text-indent: 30px;
+    	}
+    }
+
+    .description{
+    	.panel-title-remark{
+    		position: absolute;
+    		top: -10px;
+    	}
+
+    	.remark-wrapper{
+    		margin-top: 1em;
+
+    		.panel-body{
+    			background-color: #f2f2f2;
+    		}
+
+    		.remark-content{
+    			line-height: 1em;
+    			text-transform: uppercase;
+    			margin: 0;
+    		}
+    	}
+
+    	.table{
+		    border-top: 1px solid #ccc;
+			margin-top: 2em;
+		}
+		.table-footer{
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 3px solid #CCC;
+			.remark{
+				position: relative;
+				background: #dbdbdb;
+				border-radius: 8px;
+				padding: 15px 20px;
+				color: #000;
+				line-height: 15px;
+				font-size: 11px;
+
+				h6{
+					position: absolute;
+					font-weight: bold;
+					color: #000;
+					top: -5px;
+					margin: 0;
+				}
+			}
+			p > strong {
+				font-weight: bold;
+				color: #000;
+			}
+			.total-label{
+				font-weight: bold;
+				color: #000;
+				font-size: 18px;
+			}
+			.total-price{
+				font-weight: bold;
+				color: #000;
+				font-size: 18px;
+			}
+		}
+    }
+
+
+    .show-sign{
+    	margin: 2em 0;
+
+    	.sign-word{
+    		float: left;
+    	}
+    	.sign-underline{
+    		height: 23px;
+    		border-bottom: 1px solid black;
+    	}
+    }   
+
+}
+.log-margin-buttom{
+	margin-top: 22px;
+	margin-bottom: 100px;
+}
+.pb-show-right-bar{
+	.log-margin{
+		margin-top: 22px;
+		margin-bottom: 100px;
+		.btn-ngin{
+			width: 150px;
+			text-align: left;
+		}
+	}
+	.btn-margin{
+		margin-bottom: 20px;
+
+		.btn-ngin{
+			width: 150px;
+			text-align: left;
+		}
+	}
+}

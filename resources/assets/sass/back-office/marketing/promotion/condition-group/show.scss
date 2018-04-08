@@ -1,0 +1,139 @@
+/** 
+ * @author: วราทัศน์ พานทองถาวร
+ * @phone: 087-806-5868
+ * @email: boss119@hotmail.com
+ */
+ 
+ @import "../../../../variables";
+ 
+ @mixin background-gradient() {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fbfbfc+49,f7f7f7+100 */
+     background: rgb(255, 255, 255);
+     /* Old browsers */
+     background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+     /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+     /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     /* IE6-9 */
+ }
+ 
+ .container-fluid {
+    .header-content {
+        margin-top: 100px;
+        .title {
+            border-bottom: 1px solid $ngin-boder;
+            text-align: center;
+            span {
+                font-size: 16px;
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $ngin-font-black;
+                }
+            }
+        }
+    }
+    .panel-body {
+        padding: 30px;
+        .records {
+            width: 100%;
+            border: 1px solid $ngin-boder;
+            padding: 0;
+            margin: 0;
+            &__item {
+                width: 100%;
+                display: table;
+                border-radius: 3px 0 0 3px;
+                border: 1px solid #d0d0d0;
+                border-top: 0;
+                height: 95px;
+                @include background-gradient();
+                &:first-child {
+                    border-top: 1px solid #d0d0d0;
+                }
+            }
+            &__detail {
+                text-align: left;
+                padding-top: 22px;
+                padding-right: 0px;
+                padding-left: 20px;
+                h4 {
+                    font-weight: 600;
+                    color: $ngin-font-black;
+                }
+            }
+            &__action {
+                text-align: right;
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+.text-center {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    button {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+    .btn-save i {
+        color: $ngin-green;
+    }
+    .btn-cancel i {
+        color: $ngin-ren;
+    }
+}
+
+.bx {
+    &-padding {
+        padding: 0 30px;
+    }
+    &-border {
+        border-top: 1px solid $ngin-boder;
+        margin-top: 30px;
+    }
+}
+
+span {
+    &#lbHeaderPage {
+        h3 {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-fluid {
+        padding: 0px;
+        .header-content {
+            padding: 0 5px;
+            // overflow-x: auto;
+            // min-width: 740px;
+            .row {
+                overflow-x: auto;
+                .title {
+                    text-align: left;
+                    min-width: 513px;
+                }
+            }
+        }
+        .panel-body {
+            .records {
+                &__item {
+                    min-width: 740px;
+                    overflow-x: auto;
+                }
+                &__action {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

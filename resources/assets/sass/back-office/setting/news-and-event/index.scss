@@ -1,0 +1,138 @@
+/**
+ * @author: Jirawat I. <@nodtem66>
+ * @phone: 098-318-7208
+ * @email: nodtem66@gmail.com
+ */
+
+ .form-header-index table tr {
+   .col-1 {
+     width: 15%;
+     min-width: 250px;
+   }
+   .col-2 {
+     width: 62%;
+   }
+ }
+
+ .panel-content {
+    padding: 0 8px;
+ }
+
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img { width: 100px; height: 100px; background-color: #fff; }
+  span {font-size: 0.9em; margin-top:0.5em;}
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-dark {
+  color: #7d7d7d;
+}
+
+.is-bold {
+  font-weight: 700;
+}
+.is-upper {
+  text-transform: uppercase;
+}
+
+// fixed CSS template
+.x_content section.section-margin {
+  margin-bottom: 0
+}
+.page-showing-pagination {
+  height: 50px
+}
+.icheckbox_minimal-grey {
+  top: -2px;
+}
+.select-all {
+  padding-top: 5px;
+  color: #000;
+}
+
+.news-and-event-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.image {
+        width: 15%;
+      }
+      &.details {
+         width: 45%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.date {
+         width: 21%;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.details {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+
+  p {
+    margin-bottom: 0;
+  }
+}

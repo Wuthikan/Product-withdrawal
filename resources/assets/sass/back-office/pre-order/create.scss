@@ -1,0 +1,179 @@
+/**
+ * @author:Phitchaporn Pipatpunlop
+ * @phone: 0909915818
+ * @email: phitchaporn.pipa@gmail.com
+ */
+
+.x_content {
+  padding: 0 15px !important;
+}
+
+table, table.pre-order-create-table {
+  width: 100% !important;
+
+  th {
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+h2, .title {
+  color: black;
+}
+
+.section-details {
+  margin-bottom: 30px;
+
+  .col-xs-2 {
+    padding: 15px;
+  }
+
+  .media-object {
+    width: 100%;
+    height: auto;
+  }
+
+  .details {
+    margin-bottom: 20px;
+  }
+}
+
+.pre-order-target {
+  background-color: #A3A7AB;
+  border-radius: 10px;
+  padding: 10px;
+
+  .title {
+    text-transform: uppercase;
+    margin-top: 11px;
+    color: white;
+  }
+
+  .status {
+    .progress-now {
+      position: absolute;
+      left: calc(36% - 1%);
+    }
+  }
+
+  .progress {
+    margin-bottom: 5px;
+    height: 8px;
+
+    .progress-bar-danger {
+      background-color: red;
+    }
+  }
+}
+
+.panel-state {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 10px;
+  max-width: 66.66666668%;
+  width: 100%;
+  margin-left: auto;
+
+  .row {
+    margin: 0;
+  }
+
+  .col-xs-2 {
+    padding: 0;
+  }
+
+  [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .title {
+    font-size: 11px;
+  }
+
+  .value {
+    font-size: 18px;
+  }
+
+  .name {
+    margin-top: -7px;
+    font-size: 11px;
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid #999;
+    height: 22px;
+  }
+
+  [class*='col-xs'] {
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.section-table {
+  margin-bottom: 20px;
+
+  tr > th {
+    font-size: 11px;
+  }
+
+  .col-xs-1 {
+    width: 9.875%;
+  }
+
+  .state {
+    border-radius: 30px;
+    color: white;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .pre-order-create-table td {
+    padding: 10px !important;
+
+    &.col-xs-2 {
+      text-align: left !important;
+    }
+
+    img, .img {
+      max-width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 100%;
+      background-color: white;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  .group {
+    background-color: rgba(163, 167, 171, 0.13);
+
+    &.qty {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+}
+
+.section-actions {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #999;
+}

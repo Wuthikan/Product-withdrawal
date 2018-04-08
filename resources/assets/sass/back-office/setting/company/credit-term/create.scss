@@ -1,0 +1,98 @@
+/**
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.top_nav .nav_menu .nav.toggle {
+    min-width: 450px !important;
+}
+
+@media (max-width: 1000px) {
+    .x_panel.content-center {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.x_content {
+  width: 100% !important;
+}
+
+.scroll-2 {
+  height: calc(100vh - 208px);
+  padding: 20px 0;
+  margin: 2px 0;
+
+  form {
+    padding: 0 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+.action {
+  max-width: 800px;
+  margin: auto !important;
+  padding: 20px 0px;
+  border-top: 1px solid #999;
+}
+
+.companyName {
+  max-width: 800px;
+  margin: 20px auto 0 !important;
+  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 1;
+  border-bottom: 1px solid #ccc;
+  color: #4d4d4d;
+  font-weight: 700;
+}
+
+section {
+    & h3 {
+        color: #000;
+    }
+    .creditDateBox {
+        display: table;
+        width: 100%;
+        &>div {
+            display: table-cell;
+        }
+        & .creditTerm {
+            width: 30%;
+        }
+        & .spaceText {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+            vertical-align: middle;
+            padding-top: 2px;
+            width: 40px;
+        }
+        & .creditDate {
+            width: calc(35% - 40px);
+            & .form-group, .input-group {
+                width: 100%;
+            }
+            @media (max-width:768px)
+            {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// .content {
+//     & .input-group, .form-group > input {
+//         margin-top: -4px;
+//     }
+//     & label {
+//         color: #000;
+//         text-transform: uppercase;
+//         line-height: 1;
+//     }
+// }

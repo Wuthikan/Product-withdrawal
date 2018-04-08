@@ -1,0 +1,225 @@
+/**
+ * @author: สถาพร สำราญ
+ * @phone: 0805799619
+ * @email: bbird_ss@outlook.com
+ */
+
+ .form-header-index{
+    table{
+        tbody tr td{
+            float: left !important;
+  
+  
+            &.col-3{
+               min-width: auto;
+               width: auto;
+            }
+  
+        }
+    }
+  }
+  
+  @media only screen and ( min-width: 1280px ){
+   .form-header-index table tr .col-1 {
+       width: 81%;
+   }
+  }
+  
+  @media only screen and ( min-width: 1440px ){
+   .form-header-index table tr .col-1 {
+       width: 84%;
+   }
+  }
+
+label {
+    font-size: 11px;
+    color: black;
+}
+
+p {
+    margin: 10px 0;
+    color: black;
+}
+
+.panel {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 1px solid #d3e0e9;
+    border-right: 1px solid #d3e0e9;
+    border-bottom: 1px solid #d3e0e9;
+
+    .panel-body {
+        text-align: center;
+    }
+}
+
+ .quota-collape{
+     tr > td{
+         vertical-align: middle !important;
+     }
+     tbody{
+         > tr > td{
+            border-top: 0 !important;
+            padding-top: 0;
+            padding-bottom: 0;
+            //
+            // &.product-name{
+            //     width: 400px;
+            //     max-width: 400px;
+            //     min-width: 400px;
+            // }
+            // &.status{
+            //     width: 150px;
+            //     max-width: 150px;
+            //     min-width: 150px;
+            // }
+            // &.quota-point{
+            //     width: 200px;
+            //     max-width: 200px;
+            //     min-width: 200px;
+            //     line-height: 17px;
+            // }
+         }
+     }
+     .product-name{
+        div{
+            font-weight: bold;
+            font-size: 13px;
+        }
+     }
+     .status{
+         position: relative;
+
+         .iq-status-icon {
+             margin-right: 10px;
+         }
+     }
+     .quota-point{
+         span.current{
+             font-size: 20px;
+             color: #7ec247;
+             line-height: 1px;
+         }
+     }
+ }
+
+ .quota-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .content.left{
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        padding-top: 0;
+        color: black
+    }
+    .content.right{
+        flex: 1;
+    }
+ }
+
+
+ .scroll-content{
+     width: 100%;
+    overflow-y: auto;
+    .graph-item{
+        text-align: center;
+        width: 15%;
+        display: inline-block;
+        .chart-box{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+
+ }
+
+ .graph-info{
+     text-align: center;
+     margin-top: 20px;
+     ul{
+         li{
+            border-top: 0 !important;
+         }
+     }
+    .chart-col{
+        display: inline-block;
+        width: 35px;
+        height: 15px;
+        position: relative;
+        top: 3px;
+
+        &.tha{
+            background-color: rgb(255, 99, 132);
+        }
+        &.hk{
+            background-color: rgb(54, 162, 235);
+        }
+        &.sin{
+            background-color: rgb(255, 206, 86);
+        }
+        &.cn{
+            background-color: rgb(75, 192, 192);
+        }
+        &.my{
+            background-color: rgb(153, 102, 255);
+        }
+    }
+}
+
+.iq-status{
+    font-size: 14px;
+    &.waiting{
+        display: table;
+        line-height: 14px;
+        i{
+          display: table-cell;
+          width: 10px;
+          vertical-align: middle;
+        }
+        span{
+          display: table-cell;
+          width: 100px;
+          vertical-align: middle;
+        }
+      }
+}
+
+.fa-exclamation-triangle{
+    color: #f7931c;
+    margin-right: 10px;
+    margin-left: 0;
+}
+.fa-times-circle-o{
+    margin-right: 10px;
+    margin-left: 0;
+}
+.fa-approve-all{
+    margin-right: 5px;
+}
+
+.fa-exclamation{
+    padding: 0;
+    margin-right: 0 !important;
+    &:before{
+        position: relative;
+        top: 5px !important;
+        margin-left: 0;
+    }
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+.text-normal{
+    font-weight: normal !important;
+}

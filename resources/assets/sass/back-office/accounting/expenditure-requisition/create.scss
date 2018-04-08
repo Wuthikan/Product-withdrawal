@@ -1,0 +1,228 @@
+#payment{
+    // font-weight: bold;
+    max-width: 980px;
+    margin: auto;
+    margin-top : 30px;
+    // color: black;
+    font-size: 15px;
+    .f-w-n{
+      font-weight: normal;
+    }
+  .font-black-bold{
+    color: black;
+    font-weight: bold;
+  }
+  .header{
+    border-bottom: 1px solid #ddd;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .text-left{
+    text-align: left;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .align-items-center{
+    align-items: center;
+  }
+  .no-padding{
+    padding: 0;
+  }
+  .no-margin{
+    margin: 0;
+  }
+  .font-size-middle{
+    font-size: 17px;
+  }
+  .font-size-big{
+    font-size: 20px;
+  }
+  .font-size-xs{
+    font-size: 14px;
+  }
+
+  .one{
+    min-width: 800px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+
+  .table{
+    &.bank{
+      font-size: 14px;
+      line-height: 1;
+      
+      thead tr td{
+        vertical-align: middle;
+        padding: 6px 4px;
+        // border-bottom: 1px solid #ddd;
+      }
+      tbody tr td{
+        border: none;
+        padding: 6px 4px;
+        vertical-align: middle;
+        
+        
+        
+      }
+      tbody tr{
+        &:first-child{
+          border-top: 1px solid #ddd;
+          // border-bottom: 1px solid #ddd;
+          // padding: 8px
+        }
+        &:last-child{
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          // padding: 8px
+        }
+      }
+      thead tr{
+        &:first-child{
+          // border-bottom: 1px solid #ddd;
+          // padding: 8px
+        }
+      }
+    }
+  }
+
+  .table{
+    &.account-ledger{
+      font-size: 14px;
+      line-height: 1;
+      
+      thead tr td{
+        vertical-align: middle;
+        padding: 6px 4px;
+        font-weight: bold;
+      }
+      tbody tr td{
+        border: none;
+        padding: 6px 4px;
+        vertical-align: middle;
+        
+        
+        
+      }
+      tbody tr{
+        &:last-child{
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          // padding: 8px
+        }
+      }
+      thead tr{
+          border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+  .color-danger{
+    color: #CC0520;
+  }
+  .color-waring{
+    color :#f7931c
+  }
+  
+  .color-gray{
+    color :#636b6f
+  }
+
+  .total{
+    line-height: 1.6
+  }
+
+  .name-company{
+    margin: 10px 0px;
+  }
+
+  .images {
+    width: 100%;
+    // text-align: center;
+    display: flex;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+    .image {
+      cursor: pointer;
+      padding: 0px 5px;
+      width: 17%;
+      text-align: center;
+      flex-direction: column;
+      /* height: 100px; */
+      position: relative;
+      background-color: white;
+      border: 1px solid;
+      border-radius: 5px;
+      padding: 35px;
+      border-color: #ccc;
+      margin: 5px 8px;
+      input[type='file']{
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 93%;
+        z-index: 1000;
+        top:0;
+        left: 0;
+        // display: none;
+        
+      }
+
+      .show-image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .cancel{
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 30px;
+        &:hover{
+          color: red;
+        }
+      }
+
+      button {
+        width: 100%;
+      }
+      .btn{
+        padding: 40px 12px;
+      }
+
+      .glyphicon{
+        color: #afafaf;
+        font-size: 30px !important;
+      }
+
+      &.more
+      {
+        background-color: #ccc;
+        border-color: #ddd;
+          .glyphicon {
+              color: #ccc;
+              width: 34px;
+              height: 35px;
+              background-color: rgba(255, 255, 255, 0.8);
+              border-radius: 100%;
+          }
+          .glyphicon-plus:before {
+            content: "+";
+            font-size: 25px;
+          }
+      } 
+      
+    }
+  }
+
+
+
+}

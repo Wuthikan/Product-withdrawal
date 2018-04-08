@@ -1,0 +1,315 @@
+$line-color: rgb(221,221,221);
+
+.form-header-index table tr .col-1 {
+  width: auto !important;
+  float: left;
+  min-width: 0 !important;
+
+  .select-all{
+    width: 80px;
+  }
+}
+.form-header-index table tr .col-2 {
+  float: none !important;
+  width: calc(100vw);
+  padding-left: 10px;
+}
+.form-header-index table tr .col-3 {
+  width: auto !important;
+  float: right;
+}
+
+.publisher-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.name {
+        width: 15%;
+        text-align: left;
+      }
+      &.description {
+         width: 61%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.description {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+table.ngin-table{
+  tbody {
+    > tr.tr-trash{
+      > td.name, td.description{
+        color: #CCC;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+//  .buttons {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     &.menu {
+//       width: 132px;
+//       margin: 0 auto;
+//     }
+//     button.btn.btn-ngin.btn-default {
+//         display: flex;
+//         flex: 1;
+//         align-items: center;
+//         padding: 0;
+//         max-width:150px;
+//         min-width:120px;
+//         .btn-label {
+//             left: 0;
+//             top: 0;
+//             width: 37px;
+//         }
+//         .btn-text {
+//             flex: 1;
+//         }
+// margin-bottom: 0.7em;
+//     }
+//   }
+//
+//  .double {
+//     margin:0px;
+//     margin-left: -15px;
+//     text-align:left;
+//     padding-left:4.5px;
+//   }
+//
+//
+//   #resultTable {
+//       td {
+//           border:0;
+//       }
+//       td:not(:first-child):not(:last-child) {
+//         border-bottom:1px solid $line-color;
+//       }
+//       tr {
+//         min-height: 174px;
+//         td {
+//           font-size: 14px;
+//             padding-top:10px !important;
+//         }
+//         td:nth-child(2) {
+//             position:relative;
+//             padding:0px !important;
+//                 div {
+//                     border-right:1px dotted $line-color;
+//                     position:absolute;
+//                     width:100%;
+//                     height:calc(100% - 10px);
+//                     padding-left:10px;
+//                     padding-top:5px;
+//                     top:5px;
+//                     padding-right:10px;
+//                 }
+//         }
+//         td:nth-child(3) {
+//             padding-left:20px !important;
+//         }
+//         td:last-child{
+//             position:relative;
+//             padding:0px !important;
+//             div.underline-table {
+//                 position:absolute;
+//                 width:calc(100% - 10px);
+//                 height:169px;
+//                 padding-left:10px;
+//                 padding-top:5px;
+//                 top:5px;
+//                 padding-right:10px;
+//                 border-bottom:1px solid $line-color;
+//             }
+//         }
+//       }
+//   }
+//
+// .ngin-table tbody {
+//     display:block;
+//     max-height:calc(100vh - 204.5px);
+//     overflow:auto;
+// }
+//
+// .ngin-table thead, tbody tr {
+//     display:table;
+//     width:100%;
+//     table-layout:fixed;
+// }
+//
+// .ngin-table thead {
+//     width: calc( 100% - 1em )
+// }
+//
+// @media screen and (max-width: 1200px) {
+//
+//     .ngin-table tbody {
+//         max-height:calc(100vh - 224px);
+//     }
+//
+//     .detail {
+//         max-height:calc(100vh - 234px);
+//     }
+// }
+//
+// .detail{
+//     max-height:calc(100vh - 214.5px);
+//     overflow-y:auto;
+//     overflow-x:hidden;
+//     width:100%;
+// }
+//
+// .underline {
+//     border-bottom:2px solid rgb(192,192,192);
+// }
+//
+// .center-block {
+//   margin: auto;
+//   display: block;
+// }
+//
+// #container {
+//     display: table;
+//     width: 100%;
+// }
+//
+// #left1 {
+//     width: 88px;
+// }
+//
+// #left2{
+//     width: 70px;
+// }
+//
+// #left1, #left2, #middle, #right {
+//     display: table-cell;
+// }
+//
+// #right {
+//     text-align:right;
+//     width: 16%;
+//     vertical-align: top;
+// }
+//
+//
+// .tr-checkbox{
+//     width:30px;
+// }
+//
+// .tr-data-small{
+//     line-height: 1em;
+//     font-size: 10px;
+//     p{
+//         font-size: 18px;
+//         margin-top: 10px;
+//     }
+// }
+//
+// .scroll-2::before {
+//     height:0px !important;
+// }
+//
+// @mixin chart-lable-template($marginLeft : 40){
+//     color: black;
+//     margin-top: 40px;
+//     margin-left: $marginLeft + px;
+//     font-size: 16px;
+// }
+//
+// .chart-label{
+//     @include chart-lable-template;
+// }
+//
+// .col-label-time{
+//     margin-left: -20px;
+//     margin-top: -32px;
+// }
+//
+// .chart{
+//
+//     .chart-total-display{
+//         font-size: 20px;
+//         color: #4c5b6b;
+//     }
+//
+//     .chart-time-display{
+//         color: #4c5b6b;
+//     }
+// }
+//
+// .chart-time{
+//     margin-top: 30px;
+// }
+//
+// .chart-total-display{
+//     display: inline-block;
+//     z-index: 2;
+//     line-height:150px;
+//     padding-left: 30px;
+// }
+//
+// .chart-time-display{
+//     display: inline-block;
+//     z-index: 2;
+//     line-height:110px;
+// }
+//
+// @media screen and (max-width:767px) and (min-width:750px) {
+//     .ngin-table tbody {
+//         max-height:calc(100vh - 239px);
+//     }
+// }

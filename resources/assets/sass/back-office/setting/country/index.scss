@@ -1,0 +1,84 @@
+/**
+ * @author: กีรติพร ลีลาวันทนพันธุ์
+ * @phone: 089-185-9078
+ * @email: bookhunter99@gmail.com
+ */
+.form-inline-row {
+  display: flex;
+  align-items: center;
+  .col-1 {margin-right:1em}
+  .col-2 {flex: 1}
+  label.iCheck-label {margin-bottom: 0}
+  .col-3 .btn-group.ngin-dropdown-sort {margin-top: -8px}
+}
+
+.country-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.name {
+        width: 15%;
+        text-align: left;
+      }
+      &.description {
+         width: 39%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.code {
+        width: 22%;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &.is-trashed td {color: #ccc;text-decoration: line-through;}
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.description {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+}

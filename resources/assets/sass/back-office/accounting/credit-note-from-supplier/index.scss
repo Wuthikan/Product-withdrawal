@@ -1,0 +1,65 @@
+/** 
+ * @author: กีรติพร ลีลาวันทนพันธุ์
+ * @phone: 089-185-9078
+ * @email: bookhunter99@gmail.com
+ */
+ 
+.bk-table{
+    width: 100%;
+    table-layout: fixed;
+}
+.bk-table tr td{
+	padding-left: 5px;
+    padding-right: 5px;
+}
+.bk-table tr td.bk-checkbox{
+	width: 40px;
+	text-align: center;
+}
+.bk-table tr td:nth-child(2){
+	width: 120px;
+}
+.bk-font-s0{font-size:20px;}
+.bk-font-s1{font-size:18px;} 
+.bk-font-s2{font-size:16px;} 
+.bk-font-s3{font-size:14px;} 
+.bk-font-s4{font-size:12px;} 
+
+.bk-font-bold{font-weight: bold;}
+.bk-font-normal{font-weight: normal;}
+.bk-color-blacklight-0{color:gray;}
+.bk-color-blacklight-1{color:darkgray;}
+.bk-color-blacklight-2{color:#ccc;}
+.bk-div-table{
+	display: table;
+	position: relative!important;
+    top: -20px!important;
+}
+.bk-div-table div{
+	display:table-cell;
+}
+.bk-group1 {
+  padding: 3px 10px 0px;
+  border: 1px solid #ccc;
+  border-bottom: 0px !important;
+  background-color: white;
+  &:last-child {
+    border-bottom: 1px solid #ccc !important;
+  }
+}
+label{
+    margin-bottom: 0px!important;
+}
+
+
+.panel-body {
+    padding: 0px 10px 0px 10px!important;
+}
+
+.panel-content.scroll-2 {
+    height: calc(100vh - 185px)!important;
+}
+.bk-edit-1{position: relative!important;
+    top: -5px!important;}
+    	.bk-edit-2{position: relative!important;
+    top: -5px!important;}

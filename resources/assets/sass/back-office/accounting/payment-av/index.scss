@@ -1,0 +1,239 @@
+.no-padding{
+    padding: 0;
+}
+
+
+.no-margin{
+    margin: 0;
+}
+.tb-payment{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    tbody{
+        tr{
+            td{
+                vertical-align: top;
+                padding: 0px 4px;
+            }
+        }
+    }
+    .undo-tab1{
+        text-decoration: line-through;
+        color: grey;
+    }
+    .text-decoration{
+        text-decoration: line-through;
+        color: grey;
+     }
+    
+}
+
+.f-s-h{
+    font-size: 18px;
+}
+.color-bu{
+   color: #7fb2f0
+}
+.color-ba{
+    color: black
+ }
+
+ .icon-ap{
+    position: relative;
+    display: flex;
+    align-items: center;
+     .icon{
+        margin-right: 5px;
+     }
+     .icon1{
+        position: relative;
+        &.wait{
+            &:before {
+                content: '';
+                background: url(../../../../images/backOffice/templates/icon/iconExclamation.png);
+                background-size: 15px 15px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                top: -10px !important;
+            }
+            
+        }
+        
+    }
+    .wait.text{
+        margin-left: 20px;
+        color: #000;
+    }
+     
+     .text{
+        color: #000;
+     }
+ }
+ 
+ .color-wait{
+     color: #f7931c;
+ }
+ .panel-group{
+     margin: 0;
+ }
+ .scroll-2{
+    height: calc(100vh - 185px);
+ }
+
+ .tab-margin{
+     margin-left: 20px;
+ }
+
+ .tab-margin1{
+    margin-right: 25px;
+}
+
+.table {
+    &.overdue > tbody > tr > td{
+        
+        border-top: none;
+    }
+}
+.table {
+    &.overdue > tbody > tr{
+        &:first-child{
+        border-top: 2px solid #ddd;
+        }
+        &:nth-last-child(2){
+            border-bottom: 2px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+        &:last-child{
+        border-top: 2px solid #ddd;
+        
+        }
+    }
+}
+
+.overdue-h{
+    color: red;
+    
+}
+h4{
+    padding: 0;
+}
+
+
+.hd{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.total{
+    font-size: 1.9rem;
+    color: black;
+}
+
+.hd1{
+    color: black;
+    font-size: 1.6rem;
+}
+.hd2{
+    color: black;
+    font-size: 1.4rem;
+}
+ 
+.col-green{
+    color: #60c21e;
+}
+
+.table {
+    &.payment-po > tbody > tr > td{
+        border-top: none;
+    }
+}
+.table {
+    color: black;
+    width: 100%;
+    &.payment-po > thead{
+        display: flex;
+        width: 100%;
+        tr{
+            display: flex;
+            width: 100%;
+            td{
+                width: 20%
+            }
+            &:first-child{
+                border-bottom: 2px solid #ddd;
+            }
+        }
+    }
+    &.payment-po > tbody { 
+        display: block;
+        height: 350px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100%;
+        tr{
+            display: flex;
+            
+            td{
+                width: 20%
+            }
+            
+        }
+    }
+    .st-overdue{
+        color: red;
+    }
+    .st-new{
+        color: #7fb2f0;
+    }
+    .none{
+        color: #ddd;
+    }
+}
+
+.modal-dialog .modal-content .modal-header{
+    .header{
+        margin : 45px 45px 0px 45px
+    }
+    margin: 0px;
+    border-bottom: 2px solid #ddd !important;
+}
+
+.modal-dialog .modal-content .modal-body{
+    padding: 10px 40px;
+}
+.close{
+    font-size: 3.5rem;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    top: 0;
+    &.t1{
+        margin-right: 40px;
+        margin-top: 20px
+    }
+}
+.fa-approve-all{
+
+    &.te:before {
+        content: '';
+        background: url(../../../../images/backOffice/templates/icon/iconApproveAll.png);
+        background-size: cover;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-left: -16px;
+        margin-top: -3px
+    }
+}
+.btn-ngin.btn-default{
+    width: 130px;
+    .btn-label{
+        left: -27px;
+    }
+}
+.date_new{
+    font-size: 16px;
+}

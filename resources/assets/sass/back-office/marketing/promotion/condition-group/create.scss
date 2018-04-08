@@ -1,0 +1,64 @@
+/** 
+ * @author: วราทัศน์ พานทองถาวร
+ * @phone: 087-806-5868
+ * @email: boss119@hotmail.com
+ */
+ 
+ @import "../../../../variables";
+ 
+ .wrapper-inside {
+    margin: 30px 0;
+}
+
+fieldset {
+    .form-group{
+        .form-control {
+            margin-bottom: 10px;
+            position: relative;
+        }   
+        .btn-date {
+            margin-top: 10px;
+        }
+        .fa-calendar:before {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .input-group-addon {
+            width: 37px;
+            height: 36px;
+            border-left: 1px solid #a1a1a1;
+            position: absolute;
+            z-index: 100;
+            right: 0;
+        }
+    }
+}
+
+.text-center {
+    margin-top: 100px;
+    button {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+    .btn-save i {
+        color: #7AC943;
+    }
+    .btn-cancel i {
+        color: #FF0000;
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 15px !important;
+}
+
+span {
+    &#lbHeaderPage {
+        h3 {
+            width: 700px;
+        }
+    }
+}

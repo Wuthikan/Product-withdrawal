@@ -1,0 +1,283 @@
+/** 
+ * @author: กีรติพร ลีลาวันทนพันธุ์
+ * @phone: 089-185-9078
+ * @email: bookhunter99@gmail.com
+ */
+.bk-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.bk-row {
+  display: table-row;
+  > div {
+    display: table-cell;
+  }
+}
+
+.bk-table tbody tr td {
+  padding: 3px 5px 3px 5px;
+}
+
+.bk-padding-right-5 {
+  padding-right: 5px;
+}
+
+.bk-padding-right-10 {
+  padding-right: 10px;
+}
+
+.bk-padding-right-15 {
+  padding-right: 15px;
+}
+
+.bk-padding-right-20 {
+  padding-right: 20px;
+}
+
+.bk-padding-right-25 {
+  padding-right: 25px;
+}
+
+.bk-padding-left-5 {
+  padding-left: 5px;
+}
+
+.bk-padding-left-10 {
+  padding-left: 10px;
+}
+
+.bk-padding-left-15 {
+  padding-left: 15px;
+}
+
+.bk-padding-left-20 {
+  padding-left: 20px;
+}
+
+.bk-padding-left-25 {
+  padding-left: 25px;
+}
+
+.bk-blue-light {
+  color: #3097d1;
+}
+
+.bk-black-light0 {
+  color: #333;
+}
+
+.bk-black-light1 {
+  color: #777;
+}
+
+.bk-font-bold {
+  font-weight: bold;
+}
+
+.bk-font-s0 {
+  font-size: 20px;
+}
+
+.bk-font-s1 {
+  font-size: 19px;
+}
+
+.bk-font-s2 {
+  font-size: 18px;
+}
+
+.bk-font-s3 {
+  font-size: 17px;
+}
+
+.bk-font-s4 {
+  font-size: 16px;
+}
+
+.bk-font-s5 {
+  font-size: 15px;
+}
+
+.bk-font-s6 {
+  font-size: 14px;
+}
+
+.bk-font-s7 {
+  font-size: 13px;
+}
+
+.bk-font-s8 {
+  font-size: 12px;
+}
+
+.bk-span-icon {
+  display: table-row;
+  > span {
+    > i {
+      font-size: 12px;
+      font-weight: normal;
+    }
+    display: table-cell;
+    padding-left: 10px !important;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+  }
+}
+.bk-group-1 {
+  color: black;
+  .btn-ngin.btn-default {
+    margin-right: 5px;
+    margin-top: 12px;
+    position: relative;
+    top: -5px;
+  }
+  .fa-approve-all {
+    padding-left: 13px !important;
+    &:before {
+      width: 22px;
+      height: 22px;
+      margin-left: -17px;
+      margin-top: -1px;
+    }
+  }
+  .fa-times-circle-o {
+    font-size: 18px !important;
+  }
+  .fa-exclamation-triangle {
+    font-size: 14px !important;
+  }
+}
+
+.bk-group-2 {
+  color: black;
+  padding-bottom: 20px;
+  .bk-table-hiso {
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      &:first-child td {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 0px;
+        border-bottom: 1px #ccc solid;
+        color: #000;
+      }
+      td:first-child {
+        text-align: left;
+        width: 320px;
+      }
+      &:nth-child(2) td {
+        padding-top: 25px;
+      }
+      td {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        color: gray;
+      }
+      &:first-child td:nth-child(5) {
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+.bk-table-hiso tr:first-child td:nth-child(6) {
+  padding-right: 0px;
+}
+
+.bk-group-2 .bk-table-hiso tr {
+  &:first-child td:nth-child(5) {
+    text-align: center;
+  }
+  td:nth-child(5) {
+    text-align: right;
+    padding-right: 40px;
+  }
+}
+
+.bk-table-hiso tr td:nth-child(6) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+
+
+.bk-group-3 {
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #000;
+  .bk-table {
+    tr {
+      th:first-child {
+        text-align: center;
+        padding-left: 20px;
+      }
+      td {
+        text-align: left;
+        padding-bottom: 5px;
+        &:first-child {
+          text-align: center;
+        }
+      }
+      th {
+        text-align: left;
+        padding-bottom: 5px;
+        border-bottom: 1px #ccc solid;
+        padding: 10px 0px 10px 0px;
+      }
+      td:nth-child(3) span {
+        color: #3097d1;
+        padding-right: 2px;
+      }
+      th:nth-child(4) {
+        text-align: center;
+        margin-right: 10px;
+      }
+      td {
+        &:nth-child(4) {
+          text-align: right;
+        }
+        &:nth-child(5) {
+          text-align: left;
+        }
+      }
+    }
+    tbody tr td {
+      padding: 5px 5px 5px 5px;
+    }
+    thead tr th {
+      font-size: 14px;
+    }
+    tbody tr td {
+      font-size: 12px;
+    }
+    tfoot tr td {
+      border-top: 1px #ccc solid;
+    }
+  }
+}
+.bk-group-3-2{
+    padding: 25px 25px 0px 25px;
+    border-top: 1px #ccc solid;
+}
+.modal-footer {
+  border-top: 0px solid #e5e5e5 !important;
+  margin-top: 25px;
+}
+.modal-dialog .modal-content .modal-body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.modal-body {
+    padding: 15px 0px 15px 0px !important;
+}
+button.close {
+  font-size: 50px !important;
+}
+.panel {
+    background-color: transparent !important;
+}

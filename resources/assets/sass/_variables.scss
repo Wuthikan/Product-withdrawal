@@ -1,0 +1,109 @@
+@import 'font';
+
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+//-----------------custom--------------------
+//Menu
+$ngin-background: #4D4D4D;
+$ngin-background-body: #999999;
+$ngin-boder: #999999;
+$ngin-mouseover: #CCCCCC;
+$ngin-child-mouseover: #999999;
+$ngin-green : #7AC943;
+$ngin-yellow : #D9E021;
+$ngin-orange : #F7931E;
+$ngin-ren : #FF0000;
+$ngin-black : #000000;
+$ngin-white : #CCCCCC;
+$ngin-font-white : #FFFFFF;
+$ngin-font-black : #353638;
+$ngin-font-gray: #4D4D4D;
+$ngin-ren-2 : #cc0520;
+$ngin-blue : #7fb2f0;
+
+
+
+$ngin-side-menu-background : #4D4D4D;
+
+$margin: 15px;
+$margin-xs: $margin / 2;
+$margin-2x: $margin * 2;
+
+$z-index: 1024;
+$z-index-2x: $z-index * 2;
+
+
+$x_with_tab: 220px;
+$x_partials: 190px;
+
+
+%delay{
+	transition: all 0.2s ease-in-out;
+}
+
+@mixin scrollbar($width, $scroll_bg, $scroll_color, $box_shadow){
+	&::-webkit-scrollbar-track{
+		border-radius: #{$width / 2};
+		background-color: #{$scroll_bg};
+		-webkit-box-shadow: $box_shadow;
+	}
+
+	&::-webkit-scrollbar{
+		width: #{$width};
+		background-color: #{$scroll_bg};
+	}
+
+	&::-webkit-scrollbar-thumb{
+		border-radius: #{$width / 2};
+		background-color: #{$scroll_color};
+	}
+}
+
+%flex_text_middle{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+%scrollbar{
+	@include scrollbar(5px, #F5F5F5 , #CCCCCC, inset 0 0 6px rgba(0,0,0,0.3));
+}

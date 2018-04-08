@@ -1,0 +1,129 @@
+.padding{
+    padding: 30px;
+    display: inline-block;
+}
+.content-center-right .log-margin-buttom {
+  margin-bottom: 100px;
+}
+
+.content-center-right .log-margin-buttom button {
+  padding: 1px 35px !important;
+}
+
+.content-center-right .log-margin-buttom button .btn-label {
+  left: -36px !important;
+}
+
+.content-center-right .email-margin-buttom {
+  margin-bottom: 20px;
+}
+
+.content-center-right .print-margin-buttom {
+  margin-bottom: 60px;
+}
+
+.content-center-right .print-margin-buttom button {
+  padding: 1px 35px !important;
+}
+
+.content-center-right .print-margin-buttom button .btn-label {
+  left: -36px !important;
+}
+
+.content-center-right table {
+  font-size: 14px;
+  color: #000000;
+}
+
+.content-center-right table .text-rigth {
+  text-align: right;
+}
+
+.content-center-right table .text-rigth span {
+  padding-left: 6px;
+}
+
+.content-center-right table .text-left {
+  text-align: left;
+}
+
+.content-center-right table .td-padding-left {
+  padding-left: 10px;
+}
+
+.content-center-right .unapprve {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.content-center-right .unapprve button {
+  width: 100%;
+}
+
+.content-center-right .cencel button {
+  width: 100%;
+}
+
+.content-center-right .mt-05 {
+  margin-top: 10px !important;
+}
+
+.content-center-right .mt-1 {
+  margin-top: 25px !important;
+}
+
+.content-center-right .mt-2 {
+  margin-top: 50px !important;
+}
+
+.content-center-right .letter-to {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content-center-right .letter-address {
+  padding-left: 33px;
+  word-wrap: break-word;
+  width: 250px;
+}
+
+.content-center-right .letter-company {
+  padding-left: 33px;
+}
+
+.content-center-right p.letter-content {
+  text-indent: 33px;
+  word-wrap: break-word;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.content-center-right .text-left {
+  text-align: left !important;
+}
+
+.content-center-right .text-underline {
+  text-decoration: underline;
+}
+
+.content-center-right .font-black {
+  color: black;
+}
+
+.content-center-right .panel .panel-body p.panel-title-remark {
+  position: absolute;
+  top: -10px;
+}
+
+.content-center-right .title_iq {
+  color: #000000;
+  font-weight: bold;
+}
+
+.content-center-right .panel-remark {
+  background-color: rgba(255, 255, 255, 0.43) !important;
+}
+
+.content-center-right .font-weight {
+  font-weight: 100;
+}

@@ -1,0 +1,91 @@
+$main-font-color: #000000;
+$border-color: #cccccc;
+.product-unit-price{
+    padding-top: 60px;
+    h4,
+    label{ color: $main-font-color;}
+    label{ font-size: 16px; font-weight: bold; white-space: nowrap; }
+    &-font{
+        &-weight{
+            font-weight: bold;
+            margin-bottom: 0;
+            color: $main-font-color;
+            text-transform: uppercase;
+        }
+        &-default{
+            color: $main-font-color;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+    figure{ margin-top: 15px;}
+    .product-price{
+        &-relative{
+            position: relative;
+            span{
+                position: absolute;
+                left: -30px;
+                top: 5px;
+                font-weight: bold;
+                font-size: 16px;
+                color: $main-font-color;
+                &.span2{
+                    left: -45px;
+                }
+            }
+        } 
+        &-plus{
+            color: $main-font-color;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: all 700ms;
+            i{
+                margin-right: 10px;
+            }
+            &:hover{
+                opacity: 0.4;
+            }
+        }      
+        &-price_up{
+            display: block;
+            line-height: 36px;
+            padding: 6px 0;
+            margin-left: 15px;
+            color: $main-font-color;
+            font-weight: bold;
+            font-size: 18px;
+        } 
+    }
+}
+
+hr{
+    border-color: $border-color;
+    margin-top: 0;
+}
+.padding30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.padding15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+@media screen and (max-width: 767px){
+    .x_panel.content-center{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+.btn-ngin{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.page-header{
+    border-color: $border-color;
+}
+@media screen and (min-width: 768px){
+    #lbHeaderPage{
+        width: 400px;
+        display: block;
+    }
+}

@@ -1,0 +1,97 @@
+/** 
+ * @author: Piyaporn Saykaew
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+.container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.top_nav .nav_menu .nav.toggle {
+    min-width: 400px !important;
+}
+.x_panel.content-center {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+#formProductWithdrawal {
+    max-width: 900px;
+    padding: 0;
+    margin: 30px auto;
+    & label {
+        color: #000;
+        text-transform: uppercase;
+    }
+    .input-group {
+        &.date {
+            max-width: 300px;
+        }
+    }
+
+    table {
+        thead {
+            tr {
+                .centerText {
+                    text-align: center;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+                    button.btn-ngin {
+                        padding: 0;
+                        border-radius: 5px;
+                        span {
+                            left: 0;
+                            padding: 0 6px;
+                        }
+                    }
+                }
+
+                .twitter-typeahead {
+                    float: right;
+                    width: calc(100% - 40px);
+                }
+            }
+        }
+    }
+
+    table.product-withdrawal-table {
+        .btn-ngin.table-btn-delete {
+            background: none !important;
+        }
+
+        .btn-ngin .btn-label {
+            border: 0 !important;
+        }
+
+        .table-btn-delete {
+            line-height: 1em !important;
+            padding: 0px 2px 0px 2px !important;
+            border-radius: 4px 0px 0px 4px !important;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+
+        .table-btn-delete .btn-label {
+            line-height: 1em !important;
+            left: 0px !important;
+            padding: 0px 0px 0px 0px !important;
+            background: none !important;
+            font-size: 18px !important;
+        }
+
+        .table-btn-delete:active .btn-label {
+            background: none !important;
+        }
+    }
+
+}

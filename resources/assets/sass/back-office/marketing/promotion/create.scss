@@ -1,0 +1,185 @@
+/** 
+ * @author: วราทัศน์ พานทองถาวร
+ * @phone: 087-806-5868
+ * @email: boss119@hotmail.com
+ */
+ 
+ @import "../../../variables";
+ 
+.wrapper-inside {
+    margin: 30px 0;
+    .line {
+        border-bottom: 1px solid #CCCCCC;
+        .header-content {
+            text-align: right;
+        }
+    }
+}
+.txt-to {
+    margin-top: 50px;
+    text-align: center;
+    &-date {
+        margin-top: 28px;
+    }
+}
+.form-group {
+    label {
+        font-size: 16px;
+        color: $ngin-font-black;
+    }
+    h2 {
+        color: $ngin-font-black;
+    }
+}
+.control-label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: $ngin-font-black;
+}
+fieldset {
+    margin-top: 15px;
+    .form-control {
+        display: inline-block;
+        width: calc(100%);
+        
+    }
+    .mgtop {
+        margin-top: 27px;
+        .btn-grey {
+            color: #ffffff;
+            background-color: #999999;
+            border: #4D4D4D;
+        }
+    }
+    .space {
+        width: calc(100% - 140px);
+        &-2 {
+            width: calc(100% - 200px); 
+        }
+    }
+    .space-text {
+        width: calc(100% - 50px);
+    }
+}
+
+.text-center {
+    button {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+    .btn-save i {
+        color: #7AC943;
+    }
+    .btn-cancel i {
+        color: #FF0000;
+ 
+    }
+}
+.pull-center {
+    width: calc(100%);
+    margin: 0 auto;
+}
+
+.list-group {
+    .list-group-item {
+        margin-top: 10px;
+        width: calc(100%);
+        height: auto;
+        background-color: #EEEEEE;
+        color: #999999;
+        border: 1px solid #cccccc;
+        .group-name {
+            width: calc(50%);
+            label {
+                transform: translateY(3px);
+                font-size: 16px;
+                span {
+                    color: $ngin-font-black;
+                }
+            }
+        }
+        .condition {
+            width: calc(20%);
+            margin-top: -28px;
+            text-align: center;
+            label {
+                transform: translateY(3px);
+                font-size: 16px;
+                span {
+                    color: $ngin-font-black;
+                }
+            }
+        }
+        .btn-action {
+            margin-top: -26px;
+            color: #CCCCCC;
+            transform: translateY(2px);
+            .pencil {
+                color: #999999;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+            .trash {
+                color: #FF0000;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.row {
+    position: relative;
+    .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #999999;
+        position: absolute;
+        top: 55px;
+        left: -2%;
+    }
+}
+@media (max-width: 992px) {
+    fieldset {
+        .space {
+            &-2 {
+                width: calc(100% - 40px); 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .list-group {
+        .list-group-item {
+            width: 480px;
+            .group-name {
+                width: calc(50%);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 445px) {
+    .list-group {
+        .list-group-item {
+            width: 100%;
+            .group-name {
+                width: calc(100%);
+            }
+            .condition {
+                width: calc(100%);
+                margin-top: 0px;
+            }
+            .btn-action {
+                width: calc(10%);
+                margin-top: -54px;
+            }
+        }
+    }
+}

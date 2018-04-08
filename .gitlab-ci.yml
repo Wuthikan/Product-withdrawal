@@ -1,0 +1,105 @@
+build:php:
+  stage: build
+  image: adiwitcoth/php
+  cache:
+    untracked: true
+    key: "$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME-vendor"
+    paths:
+      - vendor
+      - composer.lock
+  artifacts:
+    expire_in: 1 hr
+    untracked: true
+    paths:
+      - vendor
+      - composer.lock
+  script:
+    - composer update
+    - composer dump-autoload
+
+test:phpcs:
+  stage: test
+  image: adiwitcoth/php
+  dependencies:
+    - build:php
+  artifacts:
+    when: on_failure
+    untracked: false
+    paths:
+      - storage/logs
+  script:
+    - php vendor/bin/phpcs --standard=PSR2 app tests
+    - php vendor/bin/phpcs database
+
+test:phpunit:
+  stage: test
+  image: adiwitcoth/php
+  dependencies:
+    - build:php
+  artifacts:
+    when: on_failure
+    untracked: false
+    paths:
+      - storage/logs
+  services:
+    - mariadb:latest
+  variables:
+    MYSQL_DATABASE: "adiwitcoth"
+    MYSQL_ROOT_PASSWORD: "88888888"
+  before_script:
+    - cp .env.example .env
+    - mkdir -p storage/app/public
+    - mkdir -p storage/framework/cache
+    - mkdir -p storage/framework/sessions
+    - mkdir -p storage/framework/testing
+    - mkdir -p storage/framework/views
+    - mkdir -p storage/images/$CI_PROJECT_NAME
+    - php artisan key:generate
+    - php artisan clear-compiled
+    - php artisan cache:clear
+    - php artisan view:clear
+    - php artisan config:cache
+    - php artisan migrate
+    - php artisan db:seed
+  script:
+    - php vendor/bin/phpunit
+
+build:sass:
+  image: node
+  stage: build
+  cache:
+    key: "$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME-node_modules"
+    untracked: true
+    paths:
+      - node_modules
+      - yarn.lock
+  artifacts:
+    untracked: false
+    when: on_success
+    paths:
+      - public/css
+      - public/fonts
+      - public/font-awesome
+      - public/images
+      - public/js
+  before_script:
+    - rm -rf public/css public/fonts public/images public/js
+    - yarn
+  script:
+    - yarn run production
+
+deploy:
+  image: adiwitcoth/alpine
+  stage: deploy
+  dependencies:
+    - build:sass
+  before_script:
+    - rm -rf storage node_modules vendor
+  script:
+    - echo "$STAGING_PRIVATE_KEY" > ~/.ssh/id_rsa && chmod -R 600 ~/.ssh/id_rsa
+    - cd $CI_PROJECT_DIR && tar zcf - . | ssh -o LogLevel=error -P22 gitlab@$STAGING_SERVER "cat > $CI_PIPELINE_ID-$CI_JOB_ID.tar.gz"
+    - ssh -o LogLevel=error -p22 gitlab@$STAGING_SERVER "./deploy.sh $CI_PROJECT_NAMESPACE $CI_PROJECT_NAME $CI_COMMIT_REF_NAME $CI_PIPELINE_ID $CI_JOB_ID"
+  after_script:
+    - rm -rf ~/.ssh
+  only:
+    - master

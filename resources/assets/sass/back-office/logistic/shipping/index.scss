@@ -1,0 +1,166 @@
+@import './main';
+
+/* ========================================
+ * 05. Backlog Tab
+ * ======================================== */
+.shipping #backlog-tab,
+.shipping .tab-content {
+  p {
+    margin: 0;
+  }
+  .ordered,.received,.backlog {
+    p {margin-bottom: 4px;}
+  }
+  .value {
+    line-height: 15px;
+    font-size: 16px;
+  }
+
+  .backlog-items,
+  .item-name,
+  .completed {
+    display: flex;
+  }
+
+  .backlog-items {
+    font-size: 11px;
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    cursor: pointer;
+    color: #000;
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .item-name {
+    width: 420px;
+
+    .info {
+      flex-grow: 1;
+      padding-left: 1rem;
+      .code {color: #000;}
+    }
+
+    .code {
+      width: 5em;
+      font-weight: bold;
+      margin-right: 1rem;
+      font-size: 18px;
+    }
+  }
+
+  .check-column {padding: 0.5em 0;}
+
+  .completed {
+    align-items: center;
+  }
+}
+
+.shipping-detail {
+  .wrap {
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 2rem 1rem;
+  }
+  .table-responsive {
+    flex: 1;
+  }
+
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 240px;
+    max-height: 240px;
+
+    span {
+      color: #222;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    canvas {
+      top: auto;
+      left: auto;
+    }
+  }
+
+  .chart-total {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 12px;
+  }
+}
+
+.shipping .nav-tabs li {
+  display: flex;
+  height: auto;  
+}
+
+.approve-status {
+  display:flex;align-items:center;
+  .fa {font-size:16px;margin-right:4px;}
+  .fa-approve-all,.fa-exclamation {
+    padding-left:0;height:24px;
+    &:before {display:inline-block;position:static;margin-left:0;margin-top:2px}    
+  }
+}
+
+/** 
+ * Search panel with flex style
+ * Date: 3/2/2018
+ * Author: Jirawat I. <nodtem66@gmail.com>
+ */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  .shipping.x_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .content {display: flex; flex: 1}
+    .content-tabs {display:flex;flex-direction:column;flex:1}
+    .tab-content.scroll-2 {height: auto;flex:1}
+    .section-margin {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+  &.margin-bottom {
+    margin-bottom: 10px !important;
+  }
+}
+.section-header-index .has-addons {
+  padding-top:8px;
+  .has-top-label {
+    position: relative;
+    width: 15em;
+    label {
+      position:absolute;
+      top:-14px;
+      font-size:10px
+    }
+  }
+}
+.tab-pane,.tab-content,.backlog-items.empty {height:100%}
+.backlog-items.empty {justify-content: center;text-align:center}
+/* Utility classes */
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &.column { flex-direction: column; }
+}
+.flex-item { flex: 1 }
+.mr-1 {margin-right:1em}
+.mr-2 {margin-right:2em}
+.form-table {padding: 0 5px}
+.page-showing-pagination { height: 47px}
+.select-all .icheckbox_minimal-grey {top:-1px;}

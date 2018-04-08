@@ -1,0 +1,265 @@
+$main-font-color: #000000;
+$border-color: #cccccc;
+
+.product-price-index{
+    .ngin-nav{
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        &-selectall{
+            line-height: 32px;
+            white-space: nowrap;
+            .icheckbox_minimal-grey{
+                top: -5px;
+            }
+        }
+        &-search{
+            input{
+                width: 100%;
+            }
+        }
+        li:nth-child(3){ width: 100%; }
+    }
+    .product-edit{ 
+        width: 37px; 
+        display: inline-block;
+    }
+    padding-top: 15px;
+    .form-left{
+        float: left;
+    }
+    .form-fixed-width{
+        width: 85%;
+    }
+    ul.form-ul{
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        li.li1{
+            width: 10%;
+            margin-right: 15px;
+        }
+        li.li2{
+            width: 70%;
+            margin-right: 15px;
+        }
+        li.li3{
+            width: 20%;
+            .export{
+                .btn-ngin{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .export{
+        display: inline-block;
+        i{
+            margin-right: 5px;
+        }
+    }
+    .nav-tabs.product-price-index-tabs{
+        border: none;
+        li{
+            width: calc(100%/6);
+            @media screen and (max-width: 767px){
+                width: 100%;
+            }
+            margin-bottom: -2px;
+            a{
+                text-align: center;
+                border-color: #999999;
+                background-color: #E7E7E7;
+                font-weight: bold;
+                color: #CCCCCC;
+                margin-right: 0;
+                border-radius: 10px 10px 0 0;
+            }
+            &.active{
+                a{
+                    background-color: #FEFEFE;
+                    border-color: #999999;
+                    font-weight: bold;
+                    color: $main-font-color;
+                    margin-right: 0;
+                    border-radius: 10px 10px 0 0;
+                    border-bottom-width: 0;
+                }
+            }
+        }
+    }
+    &-tabs_content{
+        border-left: 1px solid #999999;
+        border-right: 1px solid #999999;
+        border-bottom: 1px solid #999999;
+        .panel-group{
+            margin-bottom: 0;
+            .panel-heading{
+                padding: 0 15px;
+                a{
+                    color: $main-font-color;
+                    &:hover,
+                    &:focus{
+                        text-decoration: none;
+                    }
+                    label{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .index-date{
+        font-size: 18px;
+        @media screen and (min-width: 1200px){
+            font-size: 26px;
+        }
+        @media screen and (min-width: 992px){
+            font-size: 22px;
+        }
+        color: #4D4D4D;
+        line-height: 15px;
+    }
+    &-collapse{
+        &-check{
+            display: inline-block;
+            position: relative;
+            top: -28px;
+            margin-right: 15px;
+        }
+        &-head{
+            display: inline-block;
+        }
+    }
+    &-opt{
+        // margin-top: 20px;
+        width: 175px;
+        .ngin-group{
+            background-image: radial-gradient(circle at right, rgba(77, 77, 77, 0.92), #353638);
+            border-radius: 10px 4px 4px 2px;
+            display: inline-block;
+            margin-bottom: 5px;
+            &-label{
+                background: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), color-stop(#7d7d7d), color-stop(rgba(247, 237, 237, 0.23)), to(rgba(245, 231, 231, 0.21)));
+                background: linear-gradient(#4d4d4d, #7d7d7d, rgba(247, 237, 237, 0.23), rgba(245, 231, 231, 0.21));
+                padding: 4px 10px;
+                color: #d9e021;
+                font-size: 16px;
+                border-radius: 0px !important;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                display: inline-block;
+                text-align: center;
+                min-width: 36px;
+                .success{
+                    color: #60c21e;
+                }
+                .info{
+                    color: #ffffff;
+                }
+                .danger{
+                    color: #CC0520;
+                }
+            }
+            &-text{
+                background-clip: unset;
+                border: 1px solid rgba(77, 77, 77, 0) !important;
+                font-size: 14px !important;
+                color: #FFFFFF !important;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                width: 100px;
+                display: inline-block;
+                text-align: center;
+            }
+            &:hover{
+                background-color: #e6e5e5;
+                border-color: #adadad;
+                background-image: radial-gradient(circle at top, rgba(77, 77, 77, 0.78), #353638);
+            }
+        }
+    }
+    .panel{
+        background: none;
+        margin-top: 0 !important;
+        &-collapse{
+            background-color: rgba(255,255,255,0.3);           
+        }
+        &-body{
+            background: none;
+        }
+    }    
+    .product-align{
+        text-align: center;
+    }
+    &-form{
+        margin-top: 15px;
+    }
+}
+
+hr{
+    border-color: $border-color;
+    margin-top: 0;
+}
+.padding30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 767px){
+    .x_panel.content-center{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+.btn-ngin{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.page-header{
+    border-color: $border-color;
+}
+.product-table{
+    > tbody > tr > td{
+        border-top: none;
+    }
+    tbody{
+        tr{
+            td{
+                width: calc(50%/4);
+            }
+            td:first-child{
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    #lbHeaderPage{
+        width: 400px;
+        display: block;
+    }
+}
+.form-header-index {
+    table {
+        tr {
+            .col-1{
+                min-width: 0; 
+                width: 20%;
+                @media screen and (min-width: 1386px){
+                    width: 15%;
+                }
+            }
+            .col-2{width: 70%;}
+        }
+    }
+}
+
+.table > thead > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > th, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > th, 
+.table > tfoot > tr > td{
+    border-top: none;
+    padding-left: 0;
+}

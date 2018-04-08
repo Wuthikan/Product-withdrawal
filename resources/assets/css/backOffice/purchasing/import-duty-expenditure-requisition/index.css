@@ -1,0 +1,5 @@
+
+.col-md-4.last-col.text-center.vertical-center-col-btn {
+    display: flex;
+    justify-content: space-evenly;
+}

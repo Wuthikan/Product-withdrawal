@@ -1,0 +1,138 @@
+.x_content{
+    padding: 15px;
+    
+}
+
+label{
+    margin: 0;
+}
+.hd{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.total{
+    font-size: 1.9rem;
+    color: black;
+}
+
+.hd1{
+    color: black;
+    font-size: 1.6rem;
+}
+.hd2{
+    color: black;
+    font-size: 1.4rem;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+.table {
+    &.payment > tbody > tr > td{
+        
+        border-top: none;
+    }
+}
+
+.table {
+    &.payment > tbody > tr{
+        &:first-child{
+        border-top: 2px solid #ddd;
+        }
+        &:last-child{
+        border-top: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+        
+        }
+    }
+}
+.table {
+    &.sup > tbody > tr > td{
+        border-top: none;
+    }
+}
+
+.table {
+    &.payment1 > tbody > tr > td{
+        
+        border-top: none;
+    }
+}
+.table {
+    &.payment1 > tbody > tr{
+        &:first-child{
+        border-top: 2px solid #ddd;
+        }
+        &:last-child{
+        border-bottom: 2px solid #ddd;
+        
+        }
+    }
+}
+
+.table {
+    &.photo > tbody > tr > td{
+        
+        border-top: none;
+    }
+}
+
+.py{
+    margin-bottom: 30px;
+}
+
+.mr-left-ma{
+    margin-left: 5px;
+}
+.mr-right-ma{
+    margin-right: 5px;
+}
+.box-box{
+    width: 100px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bbb;
+}
+
+.table {
+    &.overdue > tbody > tr{
+        &:first-child{
+        border-top: 2px solid #ddd;
+        }
+        &:nth-last-child(2){
+            border-bottom: 2px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+        &:last-child{
+        border-top: 2px solid #ddd;
+        
+        }
+    }
+}
+
+.table {
+    &.overdue > tbody > tr > td{
+        
+        border-top: none;
+    }
+}
+.close{
+    font-size: 3.5rem;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    top: 0;
+}
+.overdue-h{
+    color: red;
+    
+}
+h4{
+    padding: 0;
+}
+.modal-dialog .modal-content .modal-header{
+    margin-top: 35px;
+}

@@ -1,0 +1,88 @@
+#expense-create{
+    // font-weight: bold;
+    max-width: 1000px;
+    margin: auto;
+    margin-top : 30px;
+    // color: black;
+    font-size: 15px;
+    .f-w-n{
+      font-weight: normal;
+    }
+    .font-black-bold{
+      color: black;
+      font-weight: bold;
+    }
+    .d-flex{
+      display: flex;
+    }
+    .align-items-center{
+      align-items: center;
+    }
+    .text-right{
+      text-align: right;
+    }
+    .text-left{
+      text-align: left;
+    }
+    
+    .font-weight-bold{
+      font-weight: bold;
+    }
+    .font-size-middle{
+      font-size: 17px;
+    }
+    .font-size-big{
+      font-size: 20px;
+    }
+    .font-size-xs{
+      font-size: 14px;
+    }
+  
+  
+  
+  
+    .table{
+      &.account-ledger{
+        font-size: 14px;
+        line-height: 1;
+        
+        thead tr td{
+          vertical-align: middle;
+          padding: 6px 4px;
+          font-weight: bold
+        }
+        tbody tr td{
+          border: none;
+          padding: 6px 4px;
+          vertical-align: middle;
+          
+          
+          
+        }
+        tbody tr{
+          &:last-child{
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            // padding: 8px
+          }
+        }
+      }
+    }
+    .color-danger{
+      color: #CC0520;
+    }
+    .color-waring{
+      color :#f7931c
+    }
+    
+    .color-gray{
+      color :#636b6f
+    }
+  
+    .total{
+      line-height: 1.6
+    }
+  
+  
+  }
+  

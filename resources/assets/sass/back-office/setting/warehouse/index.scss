@@ -1,0 +1,113 @@
+/**
+ * @author: วราทัศน์ พานทองถาวร
+ * @phone: 087-806-5868
+ * @email: boss119@hotmail.com
+ */
+
+ @import "../../../variables";
+
+ .form-header-index table tr {
+   .col-1 {
+     width: 15%;
+     min-width: 145px;
+   }
+   .col-2 {
+     width: 62%;
+   }
+ }
+
+ .scroll-2 {
+    height: calc(100vh - 208px);
+ }
+
+ .align-center {
+   text-align: center !important;
+ }
+
+ .warehouse-table {
+   table {
+     th, td {
+       &.blank {
+          width: 4%;
+       }
+       &.name {
+         width: 15%;
+         .logo {
+           text-align: center;
+           color: $ngin-font-gray;
+           img {
+               width: 110px;
+               height: 128px;
+               background-color: #fff;
+              //  padding: 10px;
+           }
+         }
+         p {
+           margin-top: 5px;
+           text-align: center;
+         }
+       }
+       &.description {
+          width: 51%;
+          padding-left: 20px;
+          text-align: left;
+       }
+       &.type {
+          width: 15%;
+          p {
+             text-transform: uppercase;
+             &.public {
+                color: #60c21e;
+             }
+             &.private {
+                color: #cc0520;
+             }
+          }
+       }
+       &.actions {
+          width: 15%;
+          text-align: left;
+          padding: 20px;
+          button {
+            position: relative;
+            width: 100%;
+            padding: 3px 0;
+            padding-left: 30px;
+            padding-right: 0;
+            margin-bottom: 5px;
+            span.btn-label {
+               position: absolute;
+               left: 0;
+            }
+          }
+       }
+     }
+     tbody > tr {
+       &:first-child > td {
+         padding-top: 8px;
+       }
+       td {
+         padding: 20px 0;
+         border-left: none;
+         border-bottom: 2px solid #ddd;
+         p {
+           margin-bottom: 0;
+         }
+       }
+     }
+     thead > tr > th {
+       color: #000;
+       text-transform: uppercase;
+       padding: 0 !important;
+
+       &.description {
+         padding-left: 20px !important;
+         border-left: none;
+       }
+       &.actions {
+          padding: 0 20px !important;
+       }
+     }
+   }
+ }
+

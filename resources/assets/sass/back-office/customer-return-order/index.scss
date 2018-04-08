@@ -1,0 +1,155 @@
+/**
+ * @author: Phitchaporn Pipatpunlop
+ * @phone: 0909915818
+ * @email: phitchaporn.pipa@gmail.com
+**/
+
+.form-header-index table tr {
+  .col-1 {
+    min-width: 350px;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    min-width: 260px;
+    width: 100%;
+  }
+}
+
+.iq-status{
+  font-weight: normal!important;
+  font-size: 14px;
+  .fa-exclamation{
+      color: #f7931c;
+      &:before{
+        top: 0px !important;
+      }
+  }
+  .fa-times-circle-o{
+      margin-right: 10px;
+      margin-left: 0;
+  }
+
+  &.waiting{
+    position: relative;
+    display: table;
+    width: 100%;
+    i{
+      display: table-cell;
+      width: 10px;
+      vertical-align: middle;
+    }
+    span{
+      display: table-cell;
+      width: 65px;
+      vertical-align: middle;
+    }
+  }
+}
+
+p {
+  margin: 0 !important;
+  color: #777777;
+
+  &.title {
+    font-size: 11px;
+    margin-bottom: 5px !important;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.row {
+  margin: 0 !important;
+}
+
+[class*=col-] {
+  padding: 0;
+}
+
+.panel-group {
+  margin-bottom: 0;
+}
+
+.panel-heading {
+  padding: 20px 15px;
+}
+
+.panel-title {
+  .form-group{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  table {
+    width: 100%;
+    tbody tr td {
+      &.blank {
+        max-width: 30px;
+        width: 3%;
+      }
+      &.date {
+        width: 12%;
+        padding-left: 5px;
+      }
+      &.company {
+        width: 15%;
+      }
+      &.tax-invoice {
+        width: 15%;
+        .value {
+          color: #7fb2f0;
+
+          span {
+            color: #000;
+          }
+        }
+      }
+      &.approve {
+        width: 18%;
+        margin-top: 5px;
+        text-transform: uppercase;
+
+        span {
+          vertical-align: middle;
+          padding-left: 0;
+        }
+
+        p {
+          display: inline-block;
+          vertical-align: middle;
+
+          i {
+            width: 20px;
+            padding-left: 0;
+            height: 20px;
+
+            &::before {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+      &.amount {
+        width: 12%;
+      }
+      &.actions {
+        width: 25%;
+        text-align: right;
+        margin-top: 3px;
+
+        button:first-child {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.scroll-2 {
+  height: calc(100vh - 185px);
+}

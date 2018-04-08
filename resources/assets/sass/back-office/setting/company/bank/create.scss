@@ -1,0 +1,81 @@
+#company-bank-create {
+  color: #000;
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+  }
+
+  .scroll-2 {
+    height: calc(100vh - 225px);
+    padding: 20px 0;
+    margin: 2px 0;
+
+    form {
+      padding: 0 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+  }
+
+  .no-gutters {
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    max-width: 800px;
+    margin: auto;
+
+    .col-xs-6 {
+      .company-name {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .bank-title {
+    margin-top: 0;
+  }
+
+  .branch-title {
+    color: #000;
+    margin: 0;
+  }
+
+  .bank-info {
+    font-weight: bold;
+  }
+
+  .action {
+    padding: 20px 0;
+    border-top: 1px solid #999;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .bank-name {
+    position: relative;
+
+    input {
+      padding-left: 50px;
+    }
+
+    i {
+      color: #999;
+      position: absolute;
+      padding: 10px 15px;
+      top: 21px;
+      left: 0;
+      border-right: 1px dotted #ddd;
+    }
+  }
+
+  span.text {
+    padding-left: 25px !important;
+  }
+}

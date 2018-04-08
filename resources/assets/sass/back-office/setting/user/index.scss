@@ -1,0 +1,306 @@
+/**
+ * @author: Jirawat I. <@nodtem66>
+ * @phone: 098-318-7208
+ * @email: nodtem66@gmail.com
+ */
+
+.form-header-index table tr {
+  .col-1 {
+    width: 15%;
+    min-width: 250px;
+  }
+  .col-2 {
+    width: 62%;
+  }
+}
+
+.user-table {
+ table {
+   th, td {
+     &.blank {
+        width: 4%;
+     }
+     &.image {
+       width: 15%;
+     }
+     &.detail {
+        width: 61%;
+        padding-left: 20px;
+        text-align: left;
+        label {
+          display: block;
+          font-size: 11px;
+          color: #000;
+          span.switch-status {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+        }
+        p {
+          margin-bottom: 5px;
+          margin-top: -8px;
+        }
+     }
+     &.actions {
+        width: 15%;
+        text-align: left;
+        padding: 20px;
+        button {
+          position: relative;
+          width: 100%;
+          padding: 3px 0;
+          padding-left: 30px;
+          padding-right: 0;
+          margin-bottom: 5px;
+          span.btn-label {
+             position: absolute;
+             left: 0;
+          }
+        }
+     }
+   }
+   tbody > tr {
+     &:first-child > td {
+       padding-top: 8px;
+     }
+     td {
+       padding: 20px 0;
+       border-left: none;
+       border-bottom: 2px solid #ddd;
+       p {
+         margin-bottom: 0;
+       }
+     }
+   }
+   thead > tr > th {
+     color: #000;
+     text-transform: uppercase;
+     padding: 0 !important;
+
+     &.detail {
+       padding-left: 20px !important;
+       border-left: none;
+     }
+   }
+ }
+}
+
+.profile-image img { width: 100px; }
+
+.scroll-2 {
+  height: calc(100vh - 208px);
+}
+
+.align-center {
+ text-align: center !important;
+}
+
+// .x_panel {
+//   display: flex;
+//   flex-direction: column;
+//   #user.x_content {
+    // display: flex;
+    // flex: 1;
+    // flex-direction: column;
+
+  //   .panel {
+  //     display: flex;
+  //     padding: 1.5em 1em 0 0em;
+  //     border: 0 !important;
+  //     box-shadow: none !important;
+  //     background-color: transparent !important;
+  //   }
+  //   .section-margin {
+  //     display: flex;
+  //     flex-direction: column;
+  //     flex: 1;
+  //     .panel {
+  //       display: flex;
+  //       padding: 1.5em 1em 0 0em;
+  //       border: 0 !important;
+  //       box-shadow: none !important;
+  //       background-color: transparent !important;
+  //     }
+  //     .panel-head {
+  //       margin: 0;
+  //       padding: 0 19px 0 32px;
+  //       .panel-user {
+  //         margin: 0;
+  //         font-size: 1.5em;
+  //         padding: 0 45px;
+  //         justify-content: flex-end;
+  //       }
+  //     }
+  //     .panel-user {
+  //       display: flex;
+  //       flex: 1;
+  //       flex-direction: row;
+  //       padding: 0 0 1.2em 1em;
+  //       border-bottom: 2px solid #d0d0d0;
+  //       align-items: flex-start;
+  //     }
+  //     .panel-group {
+  //       flex: 1;
+  //     }
+  //     .panel-heading {
+  //       background-color: #fff;
+  //     }
+  //     .panel-body {
+  //       padding: 2em 3em 2em 4em;
+  //       background-color: rgba(0,0,0,0.1);
+  //       box-shadow: 0px 2px 4px rgba(0,0,0,0.2) inset;
+  //     }
+  //     .profile-text {
+  //       flex: 1;
+  //       padding: 0 0 0 2em;
+  //       table {
+  //         width: 100%;
+  //         tr {
+  //           vertical-align: top;
+  //           &:not(:last-child) {
+  //             height: 3.2em;
+  //           }
+  //           &:first-child {
+  //             height: 2.5em;
+  //           }
+  //         }
+  //         .last-column {width:35%;}
+  //       }
+  //     }
+  //   }
+  // }
+  // &.margin-bottom {
+  //   margin-bottom: 10px !important;
+  // }
+// }
+
+
+//
+// @media only screen and (min-width: 1200px) {
+//   .x_panel #user.x_content .section-margin .profile-text {
+//     padding-left: 3em;
+//   }
+//   .profile-image img { width: 120px; }
+// }
+// @media only screen and (max-width: 1025px) {
+//   .x_panel #user.x_content .section-margin .profile-text table {
+//     table-layout: fixed;
+//     .last-column {width:175px}
+//   }
+// }
+
+// .flex-parent {
+//   display: flex;
+//   flex-direction: row;
+//   &.column {
+//     flex-direction: column;
+//   }
+// }
+//
+// .flex-1, .flex-item {
+//   flex: 1;
+// }
+// .flex-2 {
+//   flex: 2;
+// }
+// .flex-3 {
+//   flex: 3;
+// }
+// .flex-4 {
+//   flex: 4;
+// }
+// .flex-6 {
+//   flex: 6;
+// }
+// .flex-7 {
+//   flex: 7;
+// }
+//
+// .relative {
+//   position: relative;
+// }
+// .text-ellipsis {
+//   overflow: hidden;
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
+//   &:hover {
+//     position: relative;
+//     white-space: normal;
+//   }
+// }
+//
+// .text-black {
+//   color: #000;
+// }
+//
+// .text-dark {
+//   color: #7d7d7d;
+// }
+//
+// .is-bold {
+//   font-weight: 700;
+// }
+// .is-upper {
+//   text-transform: uppercase;
+// }
+//
+// .heading-1 {
+//   font-weight: bold;
+//   font-size: 2em;
+// }
+// .heading-2 {
+//   font-weight: bold;
+//   font-size: 1em;//1.12em;
+// }
+
+// .status-group {
+//   display: flex;
+//   align-items: flex-end;
+//   line-height: 1.2em;
+//   .ios-ui-select {
+//     bottom: 0;
+//   }
+// }
+
+// .text-group {
+//   line-height: 1.2em;
+//   overflow-y: auto;
+//   word-wrap: break-word;
+//   padding-right: 5px;
+//   span {
+//     width: 100%;
+//     float:left;
+//   }
+//   span:last-child {
+//     font-size: 0.8em;
+//   }
+// }
+//
+// // fixed CSS template
+// .x_content section.section-margin {
+//   margin-bottom: 0
+// }
+// .page-showing-pagination {
+//   height: 50px
+// }
+// .icheckbox_minimal-grey {
+//   top: -2px;
+// }
+// .select-all {
+//   padding-top: 5px;
+//   color: #000;
+// }
+
+
+tr.user-deleted {
+  background-color: #DFDFE0 !important;
+  label {
+    text-decoration: line-through;
+    color:#666 !important
+  }
+  p {
+    text-decoration: line-through;
+    color:#666 !important
+  }
+}

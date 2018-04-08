@@ -1,0 +1,68 @@
+body {
+    background-color: #000000;
+}
+
+#logo {
+    display:block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#container {
+    position: relative;
+    padding-top: 1%;
+    margin: 0 auto;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    width: 350px;
+    height: 600px;
+    border-radius: 1px;
+}
+#inputLabel, #checkBoxLabel, #forgetLabel, {
+    font-size: 16px;
+}
+#resetLabel{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+#checkBoxLabel {
+    padding-left: 0px;
+}
+#forgetLabel {
+    float: right;
+    color: #636b6f;
+    text-decoration: none !important;
+}
+.loginContainer, .checkbox, .form-group {
+    width: 85%;
+    margin: 0 auto;
+}
+.form-group, .checkbox {
+    margin-bottom: 10px;
+}
+#center {
+    margin: 0 auto;
+}
+#marginTop {
+    margin-top: 37px;
+}
+input[type="checkbox"] {
+    background-color: #fff
+}
+.btn{
+    width: 100%;
+}
+
+.alert {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+.btn-ngin.ngin-no-icon {
+    font-size: 16px !important;
+}
+.nav-sm footer {
+    margin-left: 0;
+}

@@ -1,0 +1,34 @@
+/* UTILITY CLASSES */
+.text-red {color: #cc041f;}
+.text-black {color:#000;}
+.text-green {color:#60c21e;}
+.text-right {text-align:right}
+.text-left {text-align:left}
+.mt-2 {margin-top: 2em}
+/* PAGE STYLES */
+.product--create {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+
+  .product--create--header {
+    margin-top: 60px;
+  }
+
+  .product--create--detail {
+    margin-top: 15px;
+    padding:0 10px;
+  }
+}
+.iCheck-label {font-weight:normal; &:hover {font-weight:normal;cursor:pointer;}}
+.spacer {margin: 1em 0; border-bottom: 1px solid #ccc;}
+.button-actions {
+  margin-top: 3em;
+  padding: 20px 0 50px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  button:not(:last-child) {margin-right:1em;}
+}
+
+/* FIX DEFAULT STYLE */
+.table.ngin-table {td,th {&.text-left{text-align:left}}}

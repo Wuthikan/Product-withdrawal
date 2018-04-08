@@ -1,0 +1,129 @@
+/**
+ * @author: Parada Susuk
+ * @phone: 0835548554
+ * @email: careparadas@gmail.com
+
+ * @edited: Phitchaporn Pipatpunlop
+ * @phone: 0909915818
+ * @email: phitchaporn.pipa@gmail.com
+**/
+
+.form-header-index table tr .col-1 {
+ min-width: 450px;
+}
+.form-header-index table tr .col-2 {
+ width: 100%;
+}
+.form-header-index table tr .col-3 {
+ width: 100%;
+ min-width: 260px;
+}
+
+p {
+  margin: 0;
+
+  &.header {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+  }
+}
+
+table {
+  tbody > tr > td {
+    vertical-align: middle !important;
+    border-top: none !important;
+    padding: 0 !important;
+  }
+}
+
+.pre-order {
+  .panel {
+    background-color: rgba(255, 2555, 255, 0.1);
+
+    .panel-heading {
+      background-color: #fff;
+      table {
+        tbody tr td {
+          border: none;
+
+          &.blank {
+            width: 5%;
+          }
+          &.image {
+            width: 15%;
+            text-align: left;
+
+            img {
+              height: 128px;
+            }
+          }
+          &.information {
+            width: 80%;
+            text-align: left;
+            vertical-align: top !important;
+
+            .game-detail {
+              font-size: 14px;
+            }
+
+            label {
+              font-size: 11px;
+              text-transform: uppercase;
+              color: #000;
+            }
+
+            .additional {
+              text-align: center;
+              p {
+                color: #777;
+                font-size: 18px;
+                line-height: 15px;
+              }
+            }
+          }
+          &.code {
+            text-align: left;
+            padding-top: 5px !important;
+            font-size: 14px;
+          }
+
+          .title {
+            text-transform: uppercase;
+            color: #000;
+          }
+
+          .value {
+            color: #777;
+          }
+        }
+      }
+    }
+
+    [id*=collapse] .panel-body {
+      padding: 20px;
+      table.collapse-content {
+        width: 100%;
+        th {
+          border-bottom: 2px solid #ddd;
+          text-transform: uppercase;
+          color: #000;
+        }
+        td {
+          font-size: 13px;
+          line-height: 15px;
+          padding: 5px 0;
+          border-left: 1px dotted rgba(165, 160, 160, 0.37);
+          &:first-child {
+            border-left: none;
+          }
+        }
+        th, td {
+          width: 20%;
+          text-align: center;
+          padding: 5px !important;
+        }
+      }
+    }
+  }
+}

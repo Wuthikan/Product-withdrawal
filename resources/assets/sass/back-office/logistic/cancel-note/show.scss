@@ -1,0 +1,193 @@
+.cancel-note.show {
+  padding: 2rem;
+
+  header {
+    display: flex;
+    color: #111;
+
+    .title {
+      flex: 1
+    }
+  }
+
+  .ngin-table {
+    border-top: 2px solid #ddd;
+
+    thead {
+      // Force !important because other components.
+      color: #636b6f !important;
+    }
+
+    tfoot h5 {
+      margin-right: 25px;
+    }
+
+    .text-left {
+      padding-left: 24px !important;
+    }
+  }
+
+  .x_content {
+    .brand-logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .table-heading {
+    font-weight: bold;
+    margin: 48px;
+    font-size: 18px;
+
+    span {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .table-subheading {
+    color: #111;
+    font-weight: bold;
+    margin: 48px 0 12px 48px;
+  }
+
+
+  .serial-desc {
+    .remark {
+      padding: 8px;
+      margin-left: 12px;
+      background: #EFEFEF;
+
+      span {
+        content: 'Remark : ';
+        position: relative;
+        top: -20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+.right_col .content-right .x_panel .x_content {
+  padding: 32px 16px;
+}
+
+/* =========================================
+ * BELOW IS REUSE FROM /inquiry/show.scss
+ * ========================================= */
+.content-center-right{
+      .log-margin-buttom{
+            margin-bottom: 100px;
+            button{
+               padding: 1px 35px !important;
+                 .btn-label{
+                   left: -36px!important;
+               }
+            }
+      }
+      .email-margin-buttom{
+            margin-bottom: 20px;
+      }
+      .print-margin-buttom{
+             margin-bottom: 60px;
+              button{
+               padding: 1px 35px !important;
+               .btn-label{
+                   left: -36px!important;
+               }
+            }
+      }
+
+      .unapprve{
+          margin-top: 20px;
+          margin-bottom: 15px;
+                button{
+                    width:100%;
+                }
+
+         }
+         .cencel{
+                button{
+                    width:100%;
+                }
+
+         }
+
+}
+
+
+.content-center-right{
+    $padding-left: 33px;
+    $paragraph: 33px;
+
+    .mt-05{
+        margin-top: 10px !important;
+    }
+
+    .mt-1{
+        margin-top: 25px !important;
+    }
+
+    .mt-2{
+        margin-top: 50px !important;
+    }
+
+    .letter-to{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .letter-address{
+        padding-left: $padding-left;
+        word-wrap: break-word;
+        width: 250px;
+    }
+
+    .letter-company{
+        padding-left: $padding-left;
+    }
+
+    p.letter-content{
+        text-indent: $paragraph;
+        word-wrap: break-word;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .text-left{
+        text-align: left !important;
+    }
+
+    .text-underline{
+        text-decoration: underline;
+    }
+
+    .font-black{
+        color: black;
+    }
+
+    .panel{
+        .panel-body{
+            p.panel-title-remark {
+                position: absolute;
+                top: -10px;
+            }
+        }
+    }
+
+    .title_iq{
+      color:#000000;
+      font-weight: bold;
+    }
+    .panel-remark{
+          background-color: rgba(255, 255, 255, 0.43) !important;
+    }
+
+   .font-weight{
+       font-weight: 100;
+   }
+}
+.nav-sm #sidebar-menu .menu_section .side-menu span.fa-chevron-down {
+    margin-left: 0px;
+}

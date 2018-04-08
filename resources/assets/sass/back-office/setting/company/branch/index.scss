@@ -1,0 +1,174 @@
+/* ========================================
+ * Company Branch
+ * ======================================== */
+
+.form-header-index table tr {
+ .col-1 {
+   width: 15%;
+   min-width: 250px;
+ }
+ .col-2 {
+   width: 62%;
+ }
+}
+
+// Helper
+.flex-container {
+  display: flex;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.text-red {
+  color: #cc041f;
+}
+
+strong {
+  color: #000;
+}
+
+#company-branch {
+  margin: 0;
+
+  .col-md-5 {
+    width: calc((100% / 12) * 5);
+  }
+  .col-md-2 {
+    width: calc((100% / 12) * 2);
+  }
+
+  .tab-content {
+    border: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  .checkbox {
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .branch > .info {
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+  .branch-item {
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding: 15px 10px;
+    display: -webkit-box;
+    width: 100%;
+  }
+
+  .branch, .contact, .action {
+    padding: 0;
+
+    .last {
+      margin-bottom: 0;
+    }
+  }
+
+  .branch.row {
+    margin: auto;
+    width: 100%;
+  }
+
+  .contact {
+    padding: 0 15px;
+  }
+
+  .branch-detail-info {
+    padding: 0 0 0 32.39px;
+  }
+
+  .branch-detail {
+    padding: 30px 10px 40px;
+    width: 100%;
+    border: 1px solid #ddd;
+    display: flow-root;
+
+    .highlight {
+      padding-bottom: 3px;
+      margin-top: -5px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+
+    p {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      &.last {
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .action {
+    text-align: center;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      &.menu {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 13px;
+        float: right;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        .btn-label {
+          left: 0;
+          top: 0;
+          width: 37px;
+        }
+
+        .btn-text {
+          flex: 1;
+          text-align: center;
+          padding: 0 1em;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 0.7em;
+        }
+      }
+    }
+  }
+
+  .description {
+    padding: 0 0 0 32.39px;
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}

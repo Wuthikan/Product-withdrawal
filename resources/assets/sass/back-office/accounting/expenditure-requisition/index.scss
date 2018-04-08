@@ -1,0 +1,111 @@
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0
+}
+.no-wrap{
+    white-space : nowrap
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+    padding: 4px;
+    border: none;
+}
+.tabel{
+    color: black;
+    &.expense{
+        tbody > tr > td{
+            padding: 0;
+            border: none;
+        }
+    } 
+}
+.panel-heading{
+    padding: 0;
+}
+
+.icon-ap{
+    position: relative;
+    display: flex;
+    align-items: center;
+     .icon{
+        margin-right: 5px;
+        .danger{
+            color: #CC0520;
+            font-size: 16px;
+        }
+     }
+     .icon1{
+        position: relative;
+        
+        &.wait{
+            &:before {
+                content: '';
+                background: url(../../../../images/backOffice/templates/icon/iconExclamation.png);
+                background-size: 15px 15px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                top: -10px !important;
+            }
+            
+        }
+        
+    }
+    .wait.text{
+        margin-left: 20px;
+        color: #000;
+    }
+     
+     .text{
+        color: #000;
+        // margin-left: 7px;
+     }
+ }
+
+.fa-approve-all{
+    padding-left: 14px;
+    &.te:before {
+        content: '';
+        background: url(../../../../images/backOffice/templates/icon/iconApproveAll.png);
+        background-size: cover;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-left: -16px;
+        margin-top: -3px
+    }
+}
+.p-stock{
+    font-size: 14px;
+}
+.expense{
+    font-size: 14px;
+    
+}
+p{
+    margin: 0;
+}
+.btn-ngin.btn-default{
+    padding: 1px 6px;
+    width: 110px;
+    .btn-label{
+        .success{
+            color: #60c21e;
+        }
+        .danger{
+            color: #CC0520;
+        }
+    }
+}
+.nav > li > a {
+    padding: 8px 15px;
+}
+.panel-group .panel .panel-heading{
+    border-top: 1px solid #ddd;
+    &:first-child{
+        border-top: none
+      }
+}

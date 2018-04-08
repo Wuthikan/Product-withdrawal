@@ -1,0 +1,159 @@
+//sidebar
+.sidebar-wrapper {
+    .sidebar-body {
+        overflow-y: auto;
+    }
+}
+
+//content
+.x_content {
+    //padding: 10px;
+    margin-top: 0;
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 110px);
+    // .nav {
+    //     &.nav-tabs {
+    //         margin-top: 30px;
+    //         li {
+    //             margin-bottom: -2px;
+    //             max-width: 230px;
+    //             min-height: 35px;
+    //             height: auto;
+    //             text-transform: uppercase;
+    //             a {
+    //                 width: 100%;
+    //                 line-height: 1;
+    //                 padding: 15px;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+.product-transfer {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: none;
+    padding: 0;
+    margin-top: 50px;
+    min-height: 565px;
+    form {
+        padding: 0 40px;
+        .form-detail {
+            //max-height: calc(100vh - 210px);
+            // overflow-y: auto;
+            // overflow-x: hidden;
+            position: relative;
+            display: block;
+        }
+        .form-footer {
+            padding: 15px 0 0;
+        }
+    }
+}
+
+.panel {
+    &-default {
+        background-color: transparent;
+    }
+}
+
+#lbHeaderPage {
+    h3 {
+        width: 500px;
+    }
+}
+
+.text-color-black {
+    color: black;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.btn-ngin {
+    &.table-btn-delete {
+        background: none !important;
+    }
+    .btn-label {
+        border: 0 !important;
+    }
+}
+
+.table-btn-delete {
+    line-height: 1em !important;
+    padding: 0px 2px 0px 2px !important;
+    border-radius: 4px 0px 0px 4px !important;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.table-btn-delete .btn-label {
+    line-height: 1em !important;
+    left: 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    background: none !important;
+    font-size: 18px !important;
+}
+
+.table-btn-delete:active .btn-label {
+    background: none !important;
+}
+
+.txt-bc {
+    display: inline-block;
+    width: 100%;
+    margin-left: 53px;
+    text-align: left;
+}
+
+.twitter-typeahead {
+    float: right;
+    width: calc(100% - 40px);
+}
+
+table tfoot tr td {
+    border-top: 1px solid #4D4D4D !important;
+    font-size: 18px;
+}
+
+table tfoot tr td span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+table tbody::after {
+    content: '';
+    display: block;
+    height: 20px;
+}
+
+@media (max-width: 1370px) {
+    .table-btn-delete {
+        margin-left: 0px;
+    }
+    .txt-bc {
+        margin-left: 45px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .txt-bc {
+        margin-left: 45px;
+    }
+    input.barcode-txt {
+        width: 93%;
+    }
+}

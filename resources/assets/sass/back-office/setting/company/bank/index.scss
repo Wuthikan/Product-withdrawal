@@ -1,0 +1,224 @@
+/* ========================================
+ * Company Bank
+ * ======================================== */
+
+.form-header-index table tr {
+ .col-1 {
+   width: 15%;
+   min-width: 250px;
+ }
+ .col-2 {
+   width: 62%;
+ }
+}
+
+.company-bank-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.bank-name {
+        width: 15%;
+        text-align: left;
+        color: #000;
+
+        p {
+          font-weight: bold;
+          &.name {
+            line-height: 14px;
+            margin-bottom: 10px;
+
+            img {
+              width: 20px;
+            }
+          }
+          &.title {
+            font-size: 11px;
+            line-height: 10px;
+          }
+          &.value {
+            margin-bottom: 5px;
+            color: #777;
+          }
+        }
+        span {
+          color: #777777;
+          padding-bottom: 10px;
+        }
+      }
+      &.account-number {
+        width: 15%;
+      }
+      &.remark {
+         width: 46%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.remark {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+// #company-bank {
+//   label {
+//     margin-bottom: 0;
+//   }
+//
+//   .tab-content {
+//     border: none;
+//     padding: 1px 14px 1px 0;
+//   }
+//
+//   .col-new {
+//     width: 22%;
+//   }
+//
+//   table {
+//     color: #000;
+//   }
+//
+//   .header {
+//     margin-bottom: 1rem;
+//   }
+//
+//   .bank {
+//     p {
+//       margin-bottom: 0;
+//     }
+//
+//     .bank-row {
+//       padding-bottom: 2rem;
+//
+//       span {
+//         color: #777;
+//         font-size: 18px;
+//       }
+//
+//       .name {
+//         font-weight: bold;
+//       }
+//
+//       .branch,
+//       .currency {
+//         font-weight: bold;
+//         line-height: 0.75;
+//         font-size: 12px;
+//       }
+//     }
+//   }
+//
+//   .btn-ngin.btn-default {
+//     display: flex;
+//
+//     .btn-label {
+//       width: 40px;
+//     }
+//
+//     p {
+//       align-self: center;
+//       margin-bottom: 0;
+//       width: 100%;
+//     }
+//   }
+//
+//   #bank-table {
+//     margin-top: -5px;
+//
+//     .row {
+//       margin: 0;
+//       padding-right: 20px;
+//       display: -webkit-box;
+//       display: -webkit-flex;
+//       display: -ms-flexbox;
+//       display: flex;
+//       flex-wrap: wrap;
+//
+//       > [class*='col-'] {
+//         display: flex;
+//         flex-direction: column;
+//       }
+//
+//       &.table-body {
+//         padding-right: 0;
+//       }
+//     }
+//
+//     .table-header > .row > [class*='col-'] {
+//       padding: 5px 15px 3px;
+//     }
+//
+//     .align-center {
+//       text-align: center;
+//       align-items: center;
+//     }
+//
+//     .col-md-1, .col-md-2, .col-md-3, .col-md-5 {
+//       border-bottom: 2px solid #ddd;
+//       padding: 25px 15px 15px;
+//       color: #000;
+//
+//       &.no-border {
+//         border-bottom: none;
+//         width: 4%;
+//         text-align: left;
+//         padding-left: 0 !important;
+//       }
+//
+//       &.extra {
+//         width: calc(41.66666667% + (8.33333333% - 4%));
+//       }
+//     }
+//   }
+// }
+//
+// .text-align-center {
+//   text-align: center !important;
+// }

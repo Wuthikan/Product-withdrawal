@@ -1,0 +1,302 @@
+@import "../../../variables";
+@mixin background-gradient() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fbfbfc+49,f7f7f7+100 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 */
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    .panel-body {
+        padding: 0px;
+        margin-bottom: 4px;
+        .records {
+            width: 100%;
+            padding: 0;
+            &__item {
+                width: 100%;
+                //  display: table;
+                border-radius: 3px 0 0 3px;
+                border: 1px solid #d0d0d0;
+                border-top: 0;
+                height: 50px;
+                @include background-gradient();
+                &:first-child {
+                    border-top: 1px solid #d0d0d0;
+                }
+                >div {
+                    display: table-cell;
+                    height: 100%;
+                    // vertical-align: middle;
+                }
+            }
+            &__check {
+                text-align: center;
+                padding-left: 10px;
+                padding-top: 6px;
+                float: left;
+                span {
+                    margin-left: 15px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    vertical-align: middle;
+                    color: $ngin-font-black;
+                }
+            }
+            &__detail {
+                text-align: center;
+                width: calc(100% - 30%);
+                float: left;
+                .records__description {
+                    display: inline-block;
+                    margin-top: -5px;
+                    width: 100%;
+                    .order {
+                        display: inline-block;
+                        &:first-child {
+                            width: 20%;
+                        }
+                        &:nth-child(2) {
+                            width: 40%;
+                        }
+                        &:last-child {
+                            width: 30%;
+                        }
+                        &__detail {
+                            text-align: left;
+                        }
+                        &__title {
+                            transform: translateY(7px);
+                            span {
+                                color: $ngin-font-gray;
+                                font-size: 10px;
+                                font-weight: 700;
+                            }
+                        }
+                        &__description {
+                            padding-top: 5px;
+                            >span {
+                                color: $ngin-font-black;
+                                font-size: 18px;
+                            }
+                            /* The switch - the box around the slider */
+                            .switch {
+                                position: relative;
+                                display: inline-block;
+                                width: 46px;
+                                height: 21px;
+                                transform: translateY(4px);
+                                input {
+                                    display: none;
+                                    &:checked+.slider {
+                                        background-color: $ngin-green;
+                                        .status {
+                                            &__close {
+                                                display: none;
+                                            }
+                                            &__open {
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                margin-left: 50px;
+                                                margin-top: 3px;
+                                                width: 50px;
+                                            }
+                                        }
+                                    }
+                                    &:checked+.slider:before {
+                                        -webkit-transform: translateX(26px);
+                                        -ms-transform: translateX(26px);
+                                        transform: translateX(26px);
+                                    }
+                                    &:focus+.slider {
+                                        box-shadow: 0 0 1px $ngin-green;
+                                    }
+                                }
+                            }
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: $ngin-ren;
+                                -webkit-transition: .4s;
+                                transition: .4s;
+                                &:before {
+                                    position: absolute;
+                                    content: "";
+                                    height: 15px;
+                                    width: 15px;
+                                    left: 3px;
+                                    bottom: 3px;
+                                    background-color: white;
+                                    -webkit-transition: .4s;
+                                    transition: .4s;
+                                }
+                                .status {
+                                    &__close {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-left: 57px;
+                                        margin-top: 3px;
+                                    }
+                                    &__open {
+                                        display: none;
+                                    }
+                                }
+                                /* Rounded sliders */
+                                &.round {
+                                    border-radius: 34px;
+                                    &:before {
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__action {
+                width: calc(100% - 75%);
+                text-align: right;
+                float: left;
+                padding-right: 1%;
+                padding-top: 10px;
+            }
+            margin: 0;
+        }
+    }
+}
+
+.customWidth {
+    width: 117px;
+}
+
+.text {
+    line-height: 29px;
+}
+
+.left {
+    float: left;
+}
+
+.btn-refund-index {
+    height: 29px;
+    line-height: 22px;
+    width: calc(100% - 55%);
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.refund-from-wallet--index--modal {
+    .modal-title {
+        padding-bottom: 15px;
+    }
+    .modal-body {
+        height: 400px;
+    }
+    .ngin-table tbody tr td {
+        border-left: none !important;
+    }
+    table {
+        font-size: 16px;
+        td {
+            color: #9d9d9d;
+        }
+    }
+}
+
+.form-header-index {
+    table {
+        margin-right: 0px;
+        tr {
+            .col {
+                &-1 {
+                    min-width: 150px;
+                    width: 10%;
+                    .form-group {
+                        display: inline-block;
+                    }
+                }
+                &-2 {
+                    width: 85%;
+                    .form-fixed-width {
+                        width: 100%;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                &-3 {
+                    min-width: 100px;
+                    width: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1592px) {
+    .container-fluid {
+        .panel-body {
+            .records {
+                &__detail {
+                    width: calc(100% - 30%);
+                }
+                &__action {
+                    width: calc(100% - 75%);
+                    padding-right: 0px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1275px) {
+    .container-fluid {
+        .panel-body {
+            .records {
+                &__detail {
+                    width: calc(100% - 30%);
+                    .records__description {
+                        .order {
+                            width: 26%;
+                            &:nth-child(2) {
+                                width: 36%;
+                            }
+                        }
+                    }
+                }
+                &__action {
+                    width: calc(100% - 75%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1214px) {
+    .container-fluid {
+        .panel-body {
+            .records {
+                &__detail {
+                    width: calc(100% - 30%);
+                }
+                &__action {
+                    width: calc(100% - 75%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+/**
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.x_panel.content-center {
+    padding: 0 !important;
+}
+
+.media,
+.media-body {
+    overflow: visible !important;
+}
+.upload-btn-wrapper {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    & input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .profilePicture {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+.userForm {
+    & label {
+        color: #000;
+        & span {
+            color: #000;
+        }
+    }
+}
+.slideCheckbox {
+    position: relative;
+    outline: 0;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 5px;
+    & input[type="checkbox"] {
+        display: none;
+    }
+    &:after,
+    *,
+    *:after,
+    *:before,
+     :before {
+        box-sizing: border-box;
+    }
+    & span {
+        position: relative;
+        display: block;
+        height: 1.8em;
+        line-height: 1.2em;
+        overflow: hidden;
+        font-weight: normal;
+        text-align: center;
+        border-radius: 2em;
+        padding: .2em 1em;
+        border: 1px solid #fafafa;
+        box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 0 rgba(255, 255, 255, 0.7);
+        transition: color .3s ease, padding .3s ease-in-out, background .3s ease-in-out;
+    }
+    & span:before {
+        position: relative;
+        display: block;
+        line-height: 1.3em;
+        padding: 0 .2em;
+        font-size: 1em;
+    }
+    & span:after {
+        position: absolute;
+        display: block;
+        content: '';
+        border-radius: 2em;
+        width: 1.3em;
+        height: 1.3em;
+        margin-left: -1.45em;
+        top: .2em;
+        background: #FFFFFF;
+        transition: left .3s cubic-bezier(0.175, 0.885, 0.32, 0.97), background .3s ease-in-out;
+    }
+    & input[type="checkbox"]:not(:checked)+span {
+        background: #de474e;
+        color: #FFFFFF;
+        padding-left: 1.6em;
+        padding-right: .4em;
+    }
+    & input[type="checkbox"]:not(:checked)+span:before {
+        content: attr(data-off);
+        color: #FFFFFF;
+    }
+    & input[type="checkbox"]:not(:checked)+span:after {
+        background: #FFFFFF;
+        left: 1.6em;
+    }
+    & input[type="checkbox"]:checked+span {
+        background: #86d993;
+        color: #FFFFFF;
+        padding-left: .4em;
+        padding-right: 1.6em;
+    }
+    & input[type="checkbox"]:checked+span:before {
+        content: attr(data-on);
+    }
+    & input[type="checkbox"]:checked+span:after {
+        background: #FFFFFF;
+        left: 100%;
+    }
+}
+
+.profilePicture {
+    max-width: 200px;
+}
+
+#profileBox {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    & .date {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    & hr {
+        margin: 10px -30px 30px;
+        border-color: #d3d5d6;
+    }
+    & #statusText {
+        padding: 2px 10px 0 0;
+        color: #000;
+        font-weight: bold;
+    }
+    & #accountInfo {
+        padding-top: 50px;
+        & label {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+    & #permission {
+        margin-top: 20px;
+        & ul {
+            list-style: none;
+        }
+    }
+    & #accountInfo.media {
+        &>div {
+            & .date .day {
+                font-size: inherit;
+                line-height: inherit;
+                font-weight: inherit;
+                color: inherit;
+            }
+            @media(min-width: 900px) {
+                padding: 0 50px 50px;
+            }
+        }
+        & .media-left {
+            border-right: 1px dashed #ccc;
+            @media(max-width: 900px) {
+                border-right: 0;
+            }
+        }
+    }
+}
+#staffPermission {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+.table-nonbordered {
+    td {
+        border: 0 !important;
+    }
+}
+
+.table-permission {
+    & th {
+        font-weight: bold;
+        width: 20%;
+        text-transform: uppercase;
+        color: #000;
+    }
+    & tr>td:not(:first-child),
+    tr>th:not(:first-child) {
+        text-align: center;
+    }
+}
+
+.radioBox {
+    color: #999;
+    font-size: 15px;
+    position: relative;
+    & span {
+        position: relative;
+        padding-left: 30px;
+        &:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 2px solid;
+            position: absolute;
+            left: 0;
+            top: -2px;
+            border-radius: 100%;
+            -ms-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+    }
+    & input[type="radio"] {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        &:checked+span {
+            color: #000;
+            &:before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                background: rgb(121, 121, 121);
+                left: 4px;
+                top: 2px;
+                border-radius: 100%;
+                -ms-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -webkit-border-radius: 100%;
+            }
+        }
+    }
+}

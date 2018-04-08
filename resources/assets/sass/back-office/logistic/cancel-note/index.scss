@@ -1,0 +1,257 @@
+/** 
+ * @author: Teepob Kitchawattana
+ * @email: teepob@gmail.com
+ */
+/*.tr-checkbox {
+  width: 30px;
+}
+
+.tr-data-small{
+    line-height: 1em;
+    font-size: 10px;
+    p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+.tr-data-small {
+  line-height: 1em;
+  font-size: 10px;
+}
+
+.tr-data-small p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.chart-label {
+  color: black;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.col-label-time {
+  margin-left: -20px;
+  margin-top: -32px;
+}
+
+.chart .chart-total-display {
+  font-size: 20px;
+  color: #4c5b6b;
+}
+
+.chart .chart-time-display {
+  color: #4c5b6b;
+}
+
+.chart-time {
+  margin-top: 30px;
+}
+
+.chart-total-display {
+  display: inline-block;
+  z-index: 2;
+  line-height: 150px;
+  padding-left: 30px;
+}
+
+.chart-time-display {
+  display: inline-block;
+  z-index: 2;
+  line-height: 110px;
+}
+
+table thead tr .text-left {
+  text-align: left;
+  margin-left: 8px;
+}
+
+table tbody tr .text-left {
+  text-align: left;
+  margin-left: 8px;
+}
+
+table tbody tr td .text-right {
+  text-align: right !important;
+  padding-right: 40px !important;
+}
+
+.pending {
+  color: #F7931E;
+}
+
+.pending div {
+  white-space: normal;
+  width: 20px;
+  height: 30px;
+  font-size: 8px;
+  color: #F7931E;
+}
+
+.button-return {
+  white-space: normal;
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  color: #FFF;
+}
+
+.form-header-index .form-fixed-width {
+  width: 100%;
+}
+
+.form-header-index .form-fixed-width input {
+  width: 100%;
+}
+
+.form-header-index .text-right .export i {
+  margin-right: 8px;
+}
+
+.form-header-index .col-md-4 {
+  padding-left: 10px !important;
+  width: 28% !important;
+  padding-right: 0px !important;
+}
+
+.form-header-index .col-md-5 {
+  width: 50% !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-header-index .col-md-3 {
+  width: 20% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-header-index table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.form-header-index table tr .col-1 {
+  min-width: 160px;
+  width: 10%;
+}
+
+.form-header-index table tr .col-1 .col-1-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.form-header-index table tr .col-1 .col-1-content .button-2 {
+  padding-left: 5px;
+}
+
+.form-header-index table tr .col-1 .col-1-content .select-all {
+  padding-top: 4px;
+  color: #000000;
+}
+
+@media (min-width: 160px) {
+  .form-header-index table tr .col-1 .col-1-content .select-all {
+    padding-top: 2px;
+  }
+}
+
+.form-header-index table tr .col-2 {
+  width: 75%;
+}
+
+.form-header-index table tr .col-3 {
+  min-width: 160px;
+  width: 10%;
+}
+
+.form-header-index table tr .col-3 .col-3-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}*/
+
+.tr-checkbox{
+    width:30px;
+}
+
+.tr-data-small{
+    line-height: 1em;
+    font-size: 10px;
+    p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@mixin chart-lable-template($marginLeft : 40){
+    color: black;
+    margin-top: 40px;
+    margin-left: $marginLeft + px;
+    font-size: 16px;
+}
+
+.chart-label{
+    @include chart-lable-template;
+}
+
+.col-label-time{
+    margin-left: -20px;
+    margin-top: -32px;
+}
+
+.chart{
+    
+    .chart-total-display{
+        font-size: 20px;
+        color: #4c5b6b; 
+    }
+
+    .chart-time-display{
+        color: #4c5b6b;
+    }
+}
+
+.chart-time{
+    margin-top: 30px;
+}
+
+.chart-total-display{
+    display: inline-block;
+    z-index: 2;
+    line-height:150px;
+    padding-left: 30px;
+}
+
+.chart-time-display{
+    display: inline-block;
+    z-index: 2;
+    line-height:110px;
+}
+
+.pending {
+  color: #F7931E;
+}
+
+.pending div {
+  white-space: normal;
+  width: 20px;
+  height: 30px;
+  font-size: 8px;
+  color: #F7931E;
+}
+
+.button-return {
+  white-space: normal;
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  color: #FFF;
+}
+
+.pending {
+  color: #F7931E;
+}

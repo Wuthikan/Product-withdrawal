@@ -1,0 +1,72 @@
+/** 
+ * @author: กีรติพร ลีลาวันทนพันธุ์
+ * @phone: 089-185-9078
+ * @email: bookhunter99@gmail.com
+ */
+.bk-table {
+  width: 100%;
+  table-layout: fixed;
+  td {
+    padding: 10px;
+    font-weight: bold;
+  }
+  tbody tr:last-child td {
+    font-size: 18px !important;
+    color: black !important;
+  }
+}
+
+
+
+.bk-text-center {
+  text-align: center;
+}
+
+.bk-text-right {
+  text-align: right;
+}
+
+.bk-span-middle {
+  padding-top: 8px;
+}
+
+.bk-text-normal {
+  font-weight: normal !important;
+}
+
+.bk-text-bold {
+  font-weight: bold !important;
+}
+
+.bk-black-light {
+  color: #777;
+}
+
+.bk-padding-bottom-border {
+  padding-bottom: 5px !important;
+  border-bottom: 1px #ccc solid;
+}
+
+.bk-padding-top {
+  padding-top: 5px !important;
+  padding-bottom: 0px !important;
+  /*color: #777;*/
+}
+
+.bk-group {
+  padding-bottom: 35px;
+  border-bottom: 1px #ccc solid;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+tr.edit-pad-1 td{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    /*color: #777;*/
+}
+
+body{
+    color: #000!important;
+}
+    

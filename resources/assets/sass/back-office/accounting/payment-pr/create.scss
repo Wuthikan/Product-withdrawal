@@ -1,0 +1,207 @@
+.text-red {color: #cc041f;}
+.text-black {color:#000;}
+.text-green {color:#60c21e;}
+.text-right {text-align:right}
+.text-left {text-align:left}
+.v-center {padding-top: 8px;}
+
+.payment--create {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+
+  table {
+    thead tr th {
+      padding: 3px 10px;
+      &.supplier {padding-left: 40px !important;}
+    }
+    .text-row td {
+      border:none;padding:3px;
+      &:first-child {padding:6px 30px 6px 0;}
+    }
+    tbody {
+      &::after, &::before {
+        content: "";
+        display: block;
+        height: 15px;
+      }
+
+      tr td {
+        padding: 10px;
+        vertical-align: middle;
+        &.spacer-top {padding-top: 2em;}
+        &.valign-top {vertical-align:top}
+        &.text-right {text-align:right}
+        &.supplier {
+          width: 62.33333333%;
+          padding-left: 40px !important;
+        }
+      }
+    }
+  }
+
+  .payment--create--header {
+    margin-top: 60px;
+  }
+
+  .payment--create--detail {
+    margin-top: 15px;
+
+    .ngin-table tbody tr td {
+      border-left: none;
+    }
+
+    .uploadPhotoHeaderSection .form-group {margin-bottom: 0 !important;}
+    .uploadPhotoSection .form-group {margin-bottom: 10px !important;}
+
+    .totalRefundSection {
+      background: white;
+      font-size: 16px;
+      position: absolute;
+      bottom: 21px;
+      right: 0;
+
+      .col-md-6 {
+        font-weight: bold;
+      }
+    }
+
+    .remarkSection {
+      textarea {
+        height: 200px !important;
+        resize: none;
+      }
+    }
+
+    .input-group-addon {
+      background: transparent;
+      border: none;
+    }
+
+    .uploadAddMore {
+      font-size: 24px;
+      width: 95px;
+      height: 95px;
+      border-radius: 5px;
+      border: 3px solid #dedede;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background: #eee no-repeat center;
+      cursor: pointer;
+
+      i {
+        position: relative;
+        top: calc(50% - 16px);
+        left: calc(50% - 8px);
+      }
+
+      span {
+        display: block;
+        padding: 0;
+        line-height: 95px;
+        text-align: center;
+      }
+
+      input {
+        position: absolute;
+        font-size: 2000px;
+        z-index: 200;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        -ms-filter: "alpha(opacity=0)";
+        cursor: pointer;
+      }
+
+      .up_again {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 95px;
+        height: 95px;
+        opacity: 0;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        line-height: 1.6;
+      }
+
+      &:hover {
+        .up_again {
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      color: black;
+    }
+  }
+
+  .align-left {
+    text-align: left !important;
+  }
+
+  .button-actions {
+    padding: 20px 0 50px;
+    border-top: 1px solid #999;
+    text-align: center;
+
+    .inline {
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    .save button span {
+      left: -23px
+    }
+
+    button {
+      min-width: 115px;
+
+      .btn-label {
+        padding: 2px 8px 2px 10px;
+
+        i {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  .unit-column {width:2em;padding-left:4px}
+  .summary-row {
+    display:flex;
+    .summary-column {
+      padding-right:27px;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      justify-items: center;
+    }
+  }
+  .heading.row {color:#000;font-weight:bold;font-size:16px;}
+  .total-row {
+    color:#000;
+    font-weight:bold;
+    font-size:14px;
+    td {padding:10px 0;border-bottom:1px solid #ccc;}
+  }
+}
+
+.payment--pa-group {
+  background: rgba(100,100,100,0.3);
+  padding: 10px 15px;
+  margin-bottom: 2em;
+  table.ngin-table {th,td {border-color: #999;border-left:none}}
+}
+.spacer {height:2em;width:100%;}

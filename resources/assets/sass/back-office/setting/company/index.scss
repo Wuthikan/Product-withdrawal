@@ -1,0 +1,174 @@
+/**
+ * @author: Jirawat I. <@nodtem66>
+ * @phone: 098-318-7208
+ * @email: nodtem66@gmail.com
+ */
+
+.form-header-index table tr {
+  .col-1 {
+   width: 15%;
+   min-width: 250px;
+  }
+  .col-2 {
+   width: 62%;
+  }
+}
+
+.x_panel {
+  display: flex;
+  flex-direction: column;
+  #company.x_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .section-margin {
+      display: flex;
+      flex: 1;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      .panel-group {
+        flex: 1;
+      }
+      .panel-body {
+        padding: 2em 3em 2em 4em;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2) inset;
+      }
+    }
+  }
+  &.margin-bottom {
+    margin-bottom: 10px !important;
+  }
+}
+
+.panel {
+  border-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.1);
+  .panel-heading {
+    background-color: #fff;
+  }
+  .panel-body {
+    padding: 25px;
+    padding-left: 15px;
+  }
+}
+
+.logo-img img {
+  width: 11.5em;
+}
+
+.onoff-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  &.column {
+    flex-direction: column;
+  }
+
+  &.company-name {
+    width: 30%;
+  }
+  &.group-name {
+    width: 30%;
+  }
+  &.credit {
+    width: 40%;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  &.menu {
+    width: 132px;
+  }
+  button.btn.btn-ngin.btn-default {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0;
+    .btn-label {
+      left: 0;
+      top: 0;
+      width: 37px;
+    }
+    .btn-text {
+      flex: 1;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0.7em;
+    }
+  }
+}
+
+.flex-item {
+  flex: 1
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-dark {
+  color: #7d7d7d;
+}
+
+.is-bold {
+  font-weight: 700;
+}
+
+.is-justify {
+  word-break: break-word;
+  text-align: justify;
+}
+
+.heading-1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+.heading-2 {
+  font-weight: bold;
+  font-size: 1.12em;
+  &.link {
+    color: #3097d1;
+  }
+}
+
+a.level-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  &:hover,&:active {
+    color: red;
+  }
+}
+
+.select-all {
+  padding-top: 5px;
+  color: #000;
+}
+
+// fixed issue #528
+.x_content section.section-margin {
+  margin-bottom: 0
+}
+.page-showing-pagination {
+  height: 50px
+}
+.text-description {
+  margin-top: 1em;
+  line-height: 1em;
+  font-weight: bold;
+}
+.text-address {
+  line-height: 1.3em;
+  margin-top: 1em;
+}

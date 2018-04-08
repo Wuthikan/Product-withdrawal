@@ -1,0 +1,66 @@
+.product-borrow-create {
+    margin-top: 4em;
+    .black {
+        color: #000;
+        font-weight: bold;
+    }
+    .input-table {
+        thead {
+            text-transform: uppercase;
+        }
+        .del-btn-wrapper {
+            float: left;
+            margin-right: 1em;
+            display: table;
+            height: 34px;
+            .del-btn {
+                height: 34px;
+                vertical-align: middle;
+                display: table-cell;
+            }
+        }
+        .table-btn-delete {
+            line-height: 1em !important;
+            padding: 0px 2px 0px 2px !important;
+            border-radius: 4px 0px 0px 4px !important;
+            .btn-label {
+                line-height: 1em !important;
+                left: 0px !important;
+                padding: 0px 0px 0px 0px !important;
+                background: none !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+    .create-bottom {
+        border-top: rgba(165, 160, 160, 0.37) 1px solid;
+        font-size: 20px;
+        margin-top: 12px;
+        color: #000;
+        text-align: right;
+        span {
+            font-size: 22px;
+        }
+    }
+    .create-btn-group {
+        margin-top: 0.8em;
+        text-align: center;
+        .btn-item {
+            display: inline-block;
+        }
+    }
+}
+
+.product-borrow-content {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    border-top: none;
+    padding: 0;
+    margin-top: 50px;
+    min-height: 565px;
+}

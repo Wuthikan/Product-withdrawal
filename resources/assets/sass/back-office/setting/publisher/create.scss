@@ -1,0 +1,34 @@
+$colorGray: #ccd0d2;
+
+.wraper{
+    width: 95%;
+    padding: 40px;
+    .line{
+        width: 100%;
+        height: 1px;
+        background-color: $colorGray;
+        margin-top: 40px;
+    }
+    .wrapForm {
+        width: 70%;
+        margin: 30px auto 100px auto;
+    }
+    .wrapFooter{
+        margin: 20px auto 0 auto;
+        .btnMargin {
+            margin-right: 20px;
+        }
+    }
+}
+label {
+  color: #000;
+}
+.transparent {
+    background-color: transparent !important;
+}
+.fa {
+    padding-left: 6px;
+}
+#textField {
+    height: 200px !important;
+}

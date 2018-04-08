@@ -1,0 +1,142 @@
+.content-center-right{
+    .log-margin-buttom{
+            margin-bottom: 100px;
+            button{
+               padding: 1px 35px !important;
+                 .btn-label{
+                   left: -36px!important;
+               }
+            }
+    }
+    .email-margin-buttom{
+            margin-bottom: 20px;
+    }
+    .print-margin-buttom{
+             margin-bottom: 60px;
+              button{
+               padding: 1px 35px !important;
+               .btn-label{
+                   left: -36px!important;
+               }
+            }
+    }
+
+    table{
+               font-size: 14px;
+                color: #000000;
+               .text-rigth{
+              text-align: right;
+              span{
+                    padding-left: 6px;
+              }
+             }
+             .text-left{
+                text-align: left;
+             }
+             .td-padding-left{
+                    padding-left: 10px;
+             }
+         
+    }
+    .unapprve{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        button{
+                   width:100%;
+               }
+                
+     }
+     .cencel{
+        button{
+                   width:100%;
+               }
+                
+     }
+
+}
+
+#lbHeaderPage{
+    h3{
+        width: 500px;
+    }
+}
+
+
+.content-center-right{
+$padding-left: 33px;
+$paragraph: 33px;
+
+.mt-05{
+    margin-top: 10px !important;    
+}
+
+.mt-1{
+    margin-top: 25px !important;    
+}
+
+.mt-2{
+    margin-top: 50px !important;
+}
+
+.letter-to{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.letter-address{
+    padding-left: $padding-left;
+    word-wrap: break-word;
+    width: 250px;
+}
+
+.letter-company{
+    padding-left: $padding-left;
+}
+
+p.letter-content{
+    text-indent: $paragraph;
+    word-wrap: break-word;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.font-black{
+    color: black;
+}
+
+.panel{
+    .panel-body{
+        p.panel-title-remark {
+            position: absolute;
+            top: -10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.title_tf{
+  color:#000000;
+  font-weight: bold;
+}
+.panel-remark{
+      background-color: rgba(255, 255, 255, 0.43) !important;
+}
+
+    .font-weight{
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 1em;
+    }
+}
+
+table.table-text-bold{
+    font-weight: bold;
+}

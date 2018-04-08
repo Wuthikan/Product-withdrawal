@@ -1,0 +1,236 @@
+.uploadPhotoHeaderSection .form-group {
+  margin-bottom: 0 !important;
+}
+
+.uploadPhotoSection .form-group {
+  margin-bottom: 10px !important;
+}
+
+.uploadAddMore {
+  font-size: 24px;
+  width: 95px;
+  height: 95px;
+  border-radius: 5px;
+  border: 3px solid #dedede;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background: #ccc no-repeat center;
+  cursor: pointer;
+  i {
+    position: relative;
+    top: calc(50% - 16px);
+    left: calc(50% - 45px);
+  }
+  span {
+    display: block;
+    padding: 0;
+    line-height: 95px;
+    text-align: center;
+  }
+  input {
+    position: absolute;
+    font-size: 2000px;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+  }
+  .up_again {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 95px;
+    height: 95px;
+    opacity: 0;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    line-height: 1.6;
+  }
+  &:hover .up_again {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.bk-div-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    > div {
+      padding: 3px 3px 3px 3px;
+      text-align: center;
+    }
+  }
+}
+
+.bk-group-upload {
+  display: block;
+  .uploadPhotoSection {
+    float: left;
+    padding: 3px 0px 3px 20px;
+  }
+}
+
+.bk-group1 {
+  padding: 0px 20% 0 20%;
+}
+
+.bk-group2 {
+  padding-bottom: 35px;
+  padding: 0px 17% 0 17%;
+}
+
+.bk-ele-left > div {
+  text-align: left !important;
+  color: #000;
+}
+
+.bk-ele-right > div {
+  text-align: right !important;
+  color: #000;
+}
+
+.bk-title {
+  text-align: left !important;
+  color: #000;
+  font-weight: bold!important;
+}
+
+.bk-title-padding {
+  padding-left: 10px;
+  color: #000;
+}
+
+.bk-fs-0 {
+  font-size: 14px;
+}
+
+.bk-fs-1 {
+  font-size: 16px;
+}
+
+.bk-fs-2 {
+  font-size: 18px;
+}
+
+.bk-fs-3 {
+  font-size: 20px;
+}
+
+.bk-table {
+  table-layout: fixed;
+  width: 100%;
+  thead tr {
+    &:first-child th {
+      padding: 5px 5px 0px 5px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    th:first-child {
+      width: 40px;
+    }
+  }
+  tbody tr td:first-child {
+    width: 40px;
+  }
+  thead tr th {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    color: #000;
+  }
+  tbody tr td {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    color: #000;
+    color: #777;
+    border-right: 1px dotted #eee;
+  }
+  thead tr th:last-child {
+    text-align: left;
+    width: 30%;
+    border-right: 0px !important;
+  }
+  tbody tr td {
+    &:last-child {
+      text-align: left;
+      width: 30%;
+      border-right: 0px !important;
+    }
+    &:nth-child(4) {
+      text-align: right;
+      font-weight: bold;
+      padding-right: 30px;
+      color: #000;
+      min-width: 124px!important;
+    }
+  }
+  thead tr th:nth-child(4) {
+    font-weight: bold;
+  }
+  tbody tr td:nth-child(2) {
+    color: #3097d1;
+  }
+}
+
+.bk-total {
+  display: flex;
+  justify-content: flex-end;
+  tr {
+    td {
+      text-align: right;
+      color: #000;
+      padding: 4px 5px 4px 5px;
+      input {
+        text-align: right;
+      }
+      &:last-child {
+        font-weight: bold;
+        padding-left: 30px;
+        font-size: 14px;
+      }
+      &:first-child {
+        padding-right: 30px;
+        font-weight: bold;
+      }
+    }
+    &:last-child td:nth-child(2) {
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+    }
+    td:nth-child(2) {
+      color: #777;
+    }
+    &:last-child td {
+      &:first-child {
+        padding-right: 30px;
+        font-weight: bold !important;
+        font-size: 16px !important;
+      }
+      &:last-child {
+        font-weight: bold !important;
+        font-size: 16px !important;
+      }
+    }
+    td input {
+      color: #000 !important;
+    }
+  }
+}
+
+
+
+.bk-group-total {
+  border-top: 1px #ddd solid;
+  padding: 20px 0px 60px 0px;
+  border-bottom: 1px #ddd solid;
+}

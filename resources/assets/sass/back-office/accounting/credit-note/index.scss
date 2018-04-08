@@ -1,0 +1,90 @@
+.form-header-index table tr .col-1 {
+	min-width: 230px;
+  }
+  .form-header-index table tr .col-2 {
+	width: 44%;
+  }
+
+.credit-note{
+	.col-checkbox{
+		span{
+			font-size: 18px;
+		}
+		.spn-first{
+			margin-left:12px;
+		}
+	}
+
+	.credit-note-bold{
+		font-weight:bold;
+	}
+	.credit-note-detail{
+		font-size:14px;
+	}
+
+	.font-gray{
+		color:#949292;
+	}
+	.table-credit-note{
+		th, td{
+			font-size:14px;
+		}
+		td{
+			border-left: none !important;
+		}
+	}
+}
+
+.fa-exclamation-triangle{
+	color:#f7931c;
+}
+
+.panel{
+	&.panel-default {
+	  background-color: transparent;
+	  border-top: 0;
+	  border-left: 1px solid #d3e0e9;
+	  border-right: 1px solid #d3e0e9;
+	  border-bottom: 1px solid #d3e0e9;
+	}	
+}
+
+p{
+	margin: 0 0 0px;
+}
+
+.btn-default-background{
+	background-color: transparent !important;
+}
+
+.first-col{
+	width:14.666667%
+}
+
+.last-col{
+	width:40.5%;
+}
+
+.vertical-center-col {
+	margin-top:-18px;
+}
+
+.vertical-center-col-btn {
+	margin-top:-12px;
+}
+
+.fa-exclamation{
+	&:before{
+		top: 2px !important;
+	}
+}
+
+.iq-status {
+	margin-left: 20px;
+}
+
+.span-waiting{
+	font-size: 11px;
+	margin-left: 3px;
+	font-family: "MoonLight","sans-serif";
+}

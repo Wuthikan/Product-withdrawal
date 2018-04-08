@@ -1,0 +1,143 @@
+#form-product-update{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bootstrap-tagsinput{
+    max-width: 100%;
+    width: 100%;
+    line-height: 22px;
+    height: 65px;
+    cursor: text;
+
+    .label-info{
+        background-color: #f6fd14;
+    }
+}
+
+label{
+    font-weight: bold;
+    color: #000;
+    small{
+        color: #777;
+        font-weight: normal;
+    }
+}
+strong{
+    color: #000;
+}
+.content-left{
+    border-right: 1px solid #CCC;
+}
+.serial-box{
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    .serial{
+        margin-bottom: 10px;
+    }
+}
+
+.serial-box::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.serial-box::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #CCC;
+}
+
+.serial-box::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #CCC;
+}
+
+.image-box{
+    width: 100%;
+    padding-top: 80%;
+    border: 1px solid #CCC;
+    position: relative;
+    background: #EEE;
+    cursor: pointer;
+    .fa{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    input[type=file]{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+table.table-tier{
+    thead > tr > th{
+        color: #000;
+        font-weight: bold;
+        padding: 8px 8px 3px 8px;
+    }
+    tbody > tr > td{
+        border-top: 0;
+        vertical-align: middle;
+    }
+}
+
+.action{
+    margin-top: 50px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+hr{
+    border-top: 1px solid #CCC !important;
+}
+
+.checkblox-2line{
+    line-height: 10px;
+    span{
+        text-transform: uppercase;
+    }
+    small{
+        padding-left: 24px;
+        display: block;
+    }
+}
+
+.power-button{
+    position: relative;
+    top: 10px;
+}
+.inline{
+    display: inline;
+}
+.font-normal{
+    font-weight: normal !important;
+}
+.scale-x2{
+    transform: scale(2);
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.text-red{
+    color: red;
+}

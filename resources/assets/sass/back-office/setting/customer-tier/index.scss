@@ -1,0 +1,288 @@
+/**
+ * @author: ปัณณทัต เจียรวงศ์สกุล
+ * @phone: 089-9330-8884
+ * @email: stepbirt@gmail.com
+ */
+
+@import "../../../variables";
+$column-bg-color: #999;
+$border-color: #B3B3B3;
+
+.form-header-index table tr {
+  .col-1 {
+    width: 15%;
+    min-width: 250px;
+  }
+  .col-2 {
+    width: 62%;
+  }
+}
+
+.customer-tier-table {
+  table {
+    th, td {
+      &.blank {
+         width: 4%;
+      }
+      &.name {
+        width: 15%;
+        .logo {
+           text-align: center;
+           color: $ngin-font-gray;
+           img {
+               width: 110px;
+               height: 128px;
+               background-color: #fff;
+              //  padding: 10px;
+           }
+         }
+      }
+      &.description {
+         width: 61%;
+         padding-left: 20px;
+         text-align: left;
+      }
+      &.actions {
+         width: 15%;
+         text-align: left;
+         padding: 20px;
+         button {
+           position: relative;
+           width: 100%;
+           padding: 3px 0;
+           padding-left: 30px;
+           padding-right: 0;
+           margin-bottom: 5px;
+           span.btn-label {
+              position: absolute;
+              left: 0;
+           }
+         }
+      }
+    }
+    tbody > tr {
+      &:first-child > td {
+        padding-top: 8px;
+      }
+      td {
+        padding: 20px 0;
+        border-left: none;
+        border-bottom: 2px solid #ddd;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    thead > tr > th {
+      color: #000;
+      text-transform: uppercase;
+      padding: 0 !important;
+
+      &.description {
+        padding-left: 20px !important;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.scroll-2 {
+   height: calc(100vh - 208px);
+}
+
+.align-center {
+  text-align: center !important;
+}
+// .text-left{
+// 	text-align: left !important;
+// }
+// .text-right{
+// 	text-align: right !important;
+// }
+//
+// p {
+// 	margin-bottom: 0;
+// 	margin-top: 5px;
+// }
+//
+// $btn-label-width: 38px;
+// .btn-ngin{
+// 	&.btn-default{
+// 		.btn-label{
+// 			width: $btn-label-width;
+// 		    left: 0;
+// 		    top: 0;
+// 		}
+// 		.btn-text{
+// 			text-transform: capitalize;
+// 			display: inline-block;
+// 			width: calc(100% - #{$btn-label-width});
+// 			text-align: center;
+// 		}
+// 	}
+// }
+//
+// $form-gutter: 10px;
+// $form-gutter-top: 5px;
+//
+// .form-header-index{
+// 	margin-bottom: 10px;
+// 	table{
+// 		width: 100%;
+// 		tr{
+// 			.col-1{
+// 				min-width: 154px;
+//     			width: 12%;
+//     			padding-right: $form-gutter;
+// 			}
+// 			.col-2{
+// 				width: 78%;
+// 			}
+// 			.col-3{
+// 				min-width: 120px;
+//     			width: 10%;
+// 			}
+// 		}
+// 	}
+// }
+// .wrap-data-table{
+// 	font-size: 16px;
+// 	.title_blank{
+// 		width: 2em;
+// 		padding-left: 0px;
+// 		padding-top: 15px;
+// 		margin: 0px;
+// 		border: none;
+// 		border-bottom: 1px solid #ddd;
+// 	}
+// 	.title-table {
+// 	    font-weight: 600;
+// 	    color: #000;
+// 	    text-transform: capitalize;
+// 	}
+// 	.column {
+// 		flex: 1;
+// 		text-align: center;
+// 		line-height: 1.1em;
+// 		padding: 15px;
+// 		position: relative;
+// 		border-bottom: 1px solid #ddd;
+// 		&:first-child {
+// 			padding-top: 0;
+// 		}
+// 		&.column-1 {
+// 			flex: none;
+// 			width: 90px;
+// 		}
+// 		&.content {text-align:left;}
+// 		&.column-4 {
+// 			flex: none;
+// 			width: 150px;
+// 			margin-right: 1em;
+// 		}
+// 	}
+// 	.column-3{
+// 		flex: 4;
+// 	}
+// 	.text-left{
+// 		text-align: left;
+// 	}
+// 	.icheckbox_minimal-grey{
+// 		vertical-align: top;
+// 	}
+// 	.title-table{
+// 		font-weight: 600;
+// 		color: #000;
+// 		text-transform: uppercase;
+// 		padding: 0 15px 3px;
+//
+// 		.column{
+// 			border: none;
+// 			padding: 5px 15px;
+// 			margin-bottom: 0;
+// 		}
+// 	}
+// }
+//
+// .wrap-flex{
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+// }
+// .row-table{
+//   @extend .wrap-flex;
+//   >div{
+//     &:nth-child(5){
+//     }
+//   }
+// }
+//
+// .row-table.title-table {
+// 	padding-left: 0 !important;
+// }
+//
+// .button-column{
+// 	max-width: 150px;
+// 	padding: 1.5em 1em 1.5em 0;
+// 	display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//     -webkit-box-align: stretch;
+//     -ms-flex-align: stretch;
+//     align-items: stretch;
+//     .btn{
+//     	display: -webkit-box;
+// 	    display: -ms-flexbox;
+// 	    display: flex;
+// 	    -webkit-box-align: center;
+// 	    -ms-flex-align: center;
+// 	    align-items: center;
+// 	    padding: 0;
+//     }
+// }
+//
+// #customer-tier.x_content{
+// 	// display: -webkit-box;
+//  //    display: -ms-flexbox;
+//  //    display: flex;
+//  //    -webkit-box-flex: 1;
+//  //    -ms-flex: 1;
+//  //    flex: 1;
+//  //    -webkit-box-orient: vertical;
+//  //    -webkit-box-direction: normal;
+//  //    -ms-flex-direction: column;
+//  //    flex-direction: column;
+//  //    .section-margin{
+//  //    	display: flex;
+//  //      	flex-direction: column;
+//  //      	.panel-head{
+// 	//         display: flex;
+// 	//         height: 7em;
+// 	//         border-bottom: 1px solid #ccc;
+// 	//         color: #000;
+// 	//         font-size: 1.2em;
+// 	//         font-weight: bold;
+// 	//         padding-left: 215px;
+// 	//         margin-right: 1em;
+// 	//     }
+//  //    }
+// }
+//
+//
+// .column-T, .row-table{
+// 	flex-direction: row;
+// }
+//
+// .x_content section.section-margin {
+//   margin-bottom: 0
+// }
+//
+// .select-all {
+//   padding-top: 5px;
+//   color: #000;
+// }

@@ -1,0 +1,57 @@
+.bk-div-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    > div {
+      padding: 3px 3px 3px 3px;
+      text-align: center;
+      font-size: 11px;
+      &:nth-child(2) {
+        font-size: 16px;
+      }
+    }
+    &:first-child {
+      vertical-align: top !important;
+      width: 40px;
+    }
+  }
+}
+
+.bk-border-out {
+  border: 1px #d3e0e9 solid;
+  border-bottom: 0px #d3e0e9 solid;
+  padding: 13px 0px 13px 0px;
+  background-color: white;
+  &:last-child {
+    border-bottom: 1px #d3e0e9 solid;
+  }
+}
+
+.bk-div-table {
+  color: #333;
+}
+.bk-btn-edit {
+  width: 150px !important;
+  > span {
+    left: (-40px) !important;
+  }
+}
+
+.bk-btn-delete {
+  width: 150px !important;
+  > span {
+    left: (-34px) !important;
+  }
+}
+
+.bk-pd-left {
+  text-align: left !important;
+}
+
+.bk-pd-right {
+  text-align: right !important;
+  padding-right: 20% !important;
+}

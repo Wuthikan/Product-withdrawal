@@ -1,0 +1,124 @@
+.btn
+  background-clip: unset
+  border: 1px solid rgba(77, 77, 77, 0) !important
+  padding: 1px 15px !important
+  font-size: 14px !important
+  color: #FFFFFF !important
+  border-radius: 2px 4px 4px 2px !important
+  background-image: radial-gradient(circle at right, rgba(77, 77, 77, 0.92), #353638)
+  &:active
+    background-clip: unset
+    border: 1px solid rgba(77, 77, 77, 0) !important
+    padding: 1px 15px !important
+    font-size: 14px !important
+    color: gray !important
+    border-radius: 2px 4px 4px 2px !important
+    background-image: radial-gradient(circle at right, rgba(77, 77, 77, 0.92), #353638)
+
+.icon
+  position: relative
+  left: -16px
+  top: 1px
+  border-right: 1px solid rgba(77, 77, 77, 0.11)
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), color-stop(#7d7d7d), color-stop(rgba(247, 237, 237, 0.23)), to(rgba(245, 231, 231, 0.21)))
+  background: linear-gradient(#4d4d4d, #7d7d7d, rgba(247, 237, 237, 0.23), rgba(245, 231, 231, 0.21))
+  padding: 2px 10px
+  color: #fff
+  font-size: 16px
+  border-radius: 0px !important
+  &.icon-red
+    color: #bd0a0a
+  &.icon-green
+    color: #0fb34a
+
+.table-hiso
+  width: 100%
+  table-layout: fixed
+  text-align: center
+  tr th:first-child
+    text-align: left
+    width: 65%
+
+tr td:first-child
+  text-align: left
+  width: 65%
+
+.table-hiso tr th, tr td
+  text-align: center
+  padding: 10px
+
+.table-hiso
+  &.table-header
+    tr th:first-child
+      text-align: left
+    margin-bottom: 15px
+    thead
+      border-bottom: 1pt solid black
+  &.table-body
+    margin-left: 5px
+    margin-right: 5px
+    tr td
+      &:nth-child(1)
+        border-right: 1pt dashed  #e0e0e0
+      &:nth-last-child(1)
+        border-left: 1pt dashed  #e0e0e0
+      text-align: center
+      &:first-child
+        text-align: left
+      input
+        text-align: center
+        max-width: 60px
+        width: 100%
+  &.table-footer
+    margin-top: 15px
+    tfoot
+      border-top: 1pt solid black
+      margin-top: 15px
+
+.head-group
+  text-align: center
+  margin-bottom: 10px
+  .right
+    text-align: right
+    float: right
+    select
+      width: 120px
+      height: 26px
+  .left
+    text-align: left
+    float: left
+
+.group-box
+  width: 80%
+  margin: 10px
+  padding-left: 30px
+  padding-right: 10%
+  margin-right: 5%
+
+.box
+  max-height: 250px
+  margin-right: -35%
+  overflow-y: scroll
+
+.box-in
+  margin-right: 26%
+
+.box
+  &::-webkit-scrollbar
+    width: 0.3em
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+  &::-webkit-scrollbar-thumb
+    background-color: darkgrey
+    outline: 0.3px solid slategrey
+
+.container
+  width: 95%
+  background-color: #fff
+  border-radius: 10px
+  padding-left: 15%
+  opacity: 0.9
+
+input[type="date"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  display: none

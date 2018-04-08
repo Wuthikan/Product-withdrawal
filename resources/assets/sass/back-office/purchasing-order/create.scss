@@ -1,0 +1,360 @@
+/**
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+ .x_content {
+    padding: 40px 0 40px 0;
+ }
+
+ .body_container {
+   overflow-y: scroll !important;
+ }
+
+.order-limit {
+  padding-right: 40px;
+
+  p {
+    margin-bottom: 0;
+    color: black;
+  }
+
+  span {
+    padding-left: 5px;
+  }
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.w1120 > .btn.btn-ngin.btn-default {
+  margin: 0 5px !important;
+}
+
+section {
+  .w800 {
+    max-width: 850px;
+    width: 100%;
+    margin: 40px auto 20px;
+  }
+
+  .shipment-counts {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto 40px;
+
+    .text-black {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .stop {
+      width: 5% !important;
+    }
+
+    .col-md-2 {
+      padding-left: 30px !important;
+      width: 18% !important;
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 3px;
+        top: 0;
+        font-size: 1.8em;
+      }
+
+      &.shipment {
+        width: 16% !important;
+        padding-right: 0 !important;
+        padding-left: 10px !important;
+      }
+    }
+  }
+
+  .summary {
+    margin-right: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #999 !important;
+
+    table tr td {
+      border-top: none;
+    }
+  }
+
+  label {
+    color: black;
+  }
+
+  h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    color: black;
+  }
+
+  #datepicker {
+    max-width: 200px;
+  }
+
+  .barcode {
+    width: 25% !important;
+  }
+
+  .extra {
+    width: 10% !important;
+  }
+
+  .quantity {
+    width: 6% !important;
+  }
+
+  .estimated {
+    width: 12% !important;
+
+    span {
+      padding: 0 5px;
+    }
+  }
+
+  .normal {
+    width: 9% !important;
+  }
+
+  .sub-total {
+    width: 12% !important;
+  }
+
+  #itemList {
+    margin-top: 30px;
+  }
+}
+
+
+textarea {
+  height: 180px !important;
+}
+
+hr {
+  margin: 15px -5px 15px 0 !important;
+  border-color: #999 !important;
+}
+
+.content {
+  padding-right: 20px;
+
+  & label {
+      color: #000;
+      text-transform: uppercase;
+      line-height: 1;
+      margin: 0;
+  }
+}
+
+.text-black {
+  color: #000;
+}
+
+.button-actions {
+  border-top: 1px solid #999;
+  padding-top: 20px;
+  margin-right: 20px;
+
+  button {
+    margin: 0 5px;
+  }
+}
+
+#summary {
+    width: 400px;
+
+    tbody::after {
+      height: 0 !important;
+      content: none !important;
+    }
+
+    tr {
+      & td:nth-child(2) {
+          padding-left: 20px;
+          width: 180px;
+      }
+      & .onlyText {
+          padding-right: 10px;
+      }
+      & td:last-child {
+          width: 50px;
+          text-align: right;
+      }
+
+      td {
+        input {
+          text-align: right !important;
+          max-width: 130px;
+        }
+
+        .vat {
+          padding-right: 10px;
+        }
+      }
+    }
+    & #total {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    strong#total {
+      letter-spacing: -5;
+    }
+}
+
+
+table.table-headfix{
+  width: auto;
+  margin: 0 auto;
+  thead {
+    width: 97%;
+    
+    tr {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      th{
+        word-wrap: break-word;
+        color: #000;
+        border-bottom: 1px solid #AAA;
+        font-size: 10px;
+        // position: absolute;
+        // bottom: 0;
+      }
+    }
+  }
+  tbody {
+    // height: 300px;
+    // overflow-y: auto;
+    width: 100%;
+
+    > tr{
+      display: table;
+      td{
+        border-right: 0;
+        border-top: 0;
+
+        &.td-productname{
+          > div[class*="col-"]{
+            padding: 0;
+          }
+        }
+
+        &:last-child{
+          border-right: 0;
+        }
+      }
+    }
+  }
+  thead, tbody, tr, td, th {
+    display: block;
+  }
+  tbody td, thead > tr > th {
+    display: table-cell;
+  }
+
+
+  .w-50{
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+  }
+  .w-70{
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+  }
+  .w-80{
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+  .w-90{
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+  }
+  .w-100{
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .w-130{
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .w-200{
+    width: 265px;
+    min-width: 265px;
+    max-width: 265px;
+  }
+  .w-300{
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
+
+
+tbody::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+tbody::-webkit-scrollbar{
+  width: 5px;
+  background-color: #CCCCCC;
+}
+
+tbody::-webkit-scrollbar-thumb{
+  background-color: #000000;
+  border: 2px solid #CCCCCC;
+}
+
+
+.label{
+  color: #000;
+  font-weight: bold;
+  max-width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+.sup-content{
+  margin-bottom: 30px;
+  .sup-image, .sup-detail{
+    display: inline-block;
+  }
+
+  .sup-image{
+    width: 50px;
+  }
+  .sup-detail{
+    width: 90%;
+
+    strong{
+      font-size: 15px;
+      color: #000;
+    }
+  }
+}
+
+.shipping_date{
+  max-width: 350px!important;
+}
+.limit_amount{
+  font-size: 16px;
+  margin-top: 5px
+}
+.text-light{
+  font-weight: normal;
+}

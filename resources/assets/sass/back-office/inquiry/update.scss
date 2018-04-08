@@ -1,0 +1,305 @@
+.table-btn-delete{
+	    line-height: 1em!important;
+        padding: 0px 2px 0px 2px!important;
+        border-radius: 4px 0px 0px 4px !important;
+        
+        .btn-label{
+            line-height: 1em!important;
+		    left: 0px!important;
+		    padding: 0px 0px 0px 0px!important;
+		    background: none!important;
+		    font-size: 18px!important;
+        }
+}
+.table-btn-delete:active{
+	.btn-label{
+	     background: none!important;
+	 }
+}
+table{
+   margin-top: -15px;
+    thead{
+            @media (min-width: 3000px){
+    	 .col-xs-6 {
+				   width: 52.3%;
+				}
+		.col-xs-2 {
+		    width: 17.5%;
+		}
+		.col-xs-1 {
+			    width: 8.33333333%;
+			}
+		 .btn{
+               padding: 0px 12px;
+          }
+		.supplier  {
+		   .bootstrap-select{
+		          width: 90% !important;
+		    }
+		}
+		.supplier.no-icon-delete {
+		      .bootstrap-select{
+                    margin-left: 30px;
+               }
+         }
+    }
+     @media (min-width:2500px) and (max-width: 3000px) { 
+		 .col-xs-6 {
+				     width: 51.2%;
+			}
+			.col-xs-2 {
+			    width: 16.86666667%;
+			}
+        .btn{
+               padding: 0px 12px;
+          }
+		.supplier  {
+		   .bootstrap-select{
+		          width: 90% !important;
+		    }
+		}
+		.supplier.no-icon-delete {
+		      .bootstrap-select{
+                    margin-left: 30px;
+               }
+         }
+      }
+      @media (min-width:2000px) and (max-width: 2500px) { 
+           .col-xs-6 {
+			     width: 51.4%;
+			}
+				.col-xs-2 {
+		          width: 16.96666667;
+		}
+
+      }
+     @media (min-width:1900px) and (max-width: 2000px) { 
+		 .col-xs-6 {
+				 width: 50%;
+				}
+
+      }
+     @media (min-width:1800px) and (max-width: 1900px) { 
+		 .col-xs-6 {
+				     width: 50%;
+				}
+
+      }
+      @media (min-width:1700px) and (max-width: 1800px) { 
+		 .col-xs-6 {
+				     width: 50%;
+				}
+
+      }
+      @media (min-width:1600px) and (max-width: 1700px) { 
+		 .col-xs-6 {
+				      width: 50%;
+				}
+
+      }
+    @media (min-width:1400px) and (max-width: 1500px) { 
+		 .col-xs-6 {
+				      width: 50%;
+				}
+
+      }
+      @media (min-width:1300px) and (max-width: 1400px) { 
+		  .col-xs-6 {
+				      width: 50%;
+				}
+
+      }
+
+       .qty{
+	          //  max-width: 120px;
+
+	       }
+	    .blance{
+	          //      max-width: 100px;
+	     }
+	     .total{
+	       // max-width: 100px;
+	     }
+	      .text-left{
+	                 text-align: left!important;
+	       }
+	       .blance{
+
+	                span{
+	                    font-weight: 100;
+	                }
+	       }
+    }
+	tbody{
+
+
+	   tr{
+	       .vertical-align{
+	                vertical-align: middle;
+	       }
+	       .text-left{
+	                 text-align: left;
+	                 p{
+	                       margin-left: 40px;
+	                 }
+	       }
+	       .text-right{
+	           text-align: right;
+	       }
+	       .border-left-none{
+	           border-left:0px;
+
+	       }
+	       .barcode{
+	     		  @media (min-width:2500px) { 
+					    input{
+			                width:94%!important;
+			           }
+			 }
+	           @media (min-width: 1400px){
+			           input{
+			                width:94%!important;
+			           }
+	           }  	  
+	           @media (min-width:1300px) and (max-width: 1400px) { 
+                       input{
+			                width:92%!important;
+			           }
+
+               }
+	       	  @media (min-width:1200px) and (max-width: 1300px) { 
+                       input{
+			                width:92%!important;
+			           }
+
+               }
+		     @media (min-width:1000px) and (max-width: 1200px) { 
+                       input{
+			                width:93%!important;
+			           }
+
+               }
+                @media (min-width:800px) and (max-width: 1000px) { 
+                       input{
+			                width:93%!important;
+			           }
+
+               }
+	           @media (max-width: 800px){
+                     input{
+	                     width:91%!important;
+	                }
+	           }
+
+	       }
+	       .barcode.no-icon-delete{
+	               input{
+                               margin-left: 28px;
+	              }
+	           }
+	       .barcode{
+	              text-align: left;
+	           input{
+	              // width:92%!important;
+	               	 display: inline;
+	           }
+	       }
+	       .p{ 
+                p:first-child {
+                      line-height: 15px;
+                }
+	           p{
+	                   line-height: 0px;
+	            }
+	       }
+	       .text-center{
+	                  text-align: center;
+
+	       }
+	       .qty{
+	          //  max-width: 120px;
+	           input{
+	                 text-align: center;
+	           }
+	       }
+	       .blance{
+	               // max-width: 100px;
+	                font-size: 23px;
+	                span{
+	                    font-size: 16px;
+	                }
+	       }
+	       .total{
+	             font-size: 16px;
+	            //  max-width: 100px;
+	       }
+	   }
+	}
+	tfoot{
+	    margin-bottom: 15px;
+	    display: table;
+        width: 100%;
+       margin-top: 15px;
+	    tr{
+	       td{
+	              border-top: 1px solid #4D4D4D!important;
+	              font-size: 22px;
+	              span{
+	                     font-size: 20px;
+					     font-weight: bold;
+					    color: #000000;
+	              }
+	       }
+	    }
+	}
+}
+
+table.scroll {
+
+}
+
+table.scroll tbody, table.scroll thead tr {
+  display: block;
+}
+
+
+table.scroll thead th:last-child {
+  width: 156px;
+  /* 140px + 16px scrollbar width */
+}
+
+.text-right {
+  text-align: right;
+}
+
+h4.title {
+  font-weight: bold;
+  color: #000000;
+}
+.title{ 
+   .bootstrap-select{
+		margin-top:10px!important;
+	}
+}
+
+.date input {
+  font-size: 20px;
+}
+.nav-sm #sidebar-menu .menu_section .side-menu span.fa-chevron-down {
+    margin-left: 0px;
+}
+
+@media (min-width: 3000px){
+	.table {
+		    margin-top: 0px !important;
+		}
+
+	table tbody tr .barcode.no-icon-delete input {
+		    margin-left: 40px;
+	}
+}
+@media (max-width: 3000px) and (min-width: 2500px){
+		.table {
+		    margin-top: 0px !important;
+		}
+ }

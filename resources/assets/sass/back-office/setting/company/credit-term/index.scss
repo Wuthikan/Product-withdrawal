@@ -1,0 +1,82 @@
+/**
+ * @author:ปิยะพร ทรายแก้ว
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.form-header-index table tr {
+ .col-1 {
+   width: 15%;
+   min-width: 250px;
+ }
+ .col-2 {
+   width: 62%;
+ }
+}
+
+.top_nav .nav_menu .nav.toggle {
+    min-width: 450px !important;
+}
+
+.panel-group {
+  margin-bottom: 0;
+  .panel-default {
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .panel-heading {
+    padding: 15px;
+  }
+}
+
+table.table {
+  tbody > tr > td {
+    padding: 0;
+    border-top: none;
+  }
+}
+
+.content {
+    border: 1px solid #ccc;
+    & .tr-itemName {
+        width: 25%;
+    }
+    & .panel-title {
+        & .table {
+            td {
+                line-height: 1.2 !important;
+            }
+
+            & .controlButton {
+                & button {
+                    width: 120px;
+                    text-align: left;
+                    &:not(:first-child) {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        & .itemLabel {
+            font-size: 10px;
+            color: #636b6f;
+        }
+        & .itemHighlight {
+            font-size: 18px;
+            color: #636b6f;
+        }
+    }
+    & .approveStatusBtn {
+        margin-top: 5px;
+        font-size: 15px !important;
+    }
+    & .success-no-icon {
+        border-radius: 4px 4px 4px 4px;
+        padding: 4px 15px;
+        color: white !important;
+        background-color: #6ddc5f !important;
+        border-color: #6ddc5f !important;
+        background-image: none !important;
+    }
+}

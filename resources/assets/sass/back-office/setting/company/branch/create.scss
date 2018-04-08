@@ -1,0 +1,75 @@
+#company-branch-create {
+  color: #000;
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .no-gutters {
+    padding-top: 20px;
+    max-width: 800px;
+    margin: 0 auto 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  textarea.form-control {
+    padding: 0 8px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+  }
+
+  .vertical-center {
+    align-self: center;
+
+    label {
+      text-transform: uppercase;
+
+      span {
+        text-transform: none;
+        padding-left: 10px;
+        color: #777;
+      }
+    }
+
+    .control-label {
+      margin-top: 25px;
+    }
+  }
+
+  .scroll-2 {
+    height: calc(100vh - 213px);
+    padding: 20px 0;
+    margin: 2px 0;
+
+    form {
+      padding: 0 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+  }
+
+  .line {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .branch-title {
+    margin: 0;
+  }
+
+  .action {
+    max-width: 800px;
+    margin: auto !important;
+    padding: 20px 0;
+    border-top: 1px solid #999;
+  }
+}

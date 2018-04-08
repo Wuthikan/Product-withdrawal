@@ -1,0 +1,131 @@
+/** 
+ * @author: Piyaporn Saykaew
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.content {
+    padding: 40px;
+    .paymentInfo {
+        line-height: 1;
+    }
+    .upload-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        max-width: 380px;
+        & input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .documentPreview {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    .table {
+        margin-bottom: 22px !important;
+    }
+    .table-nobordered {
+        & th,
+        td {
+            border: 0 !important;
+        }
+    }
+    & .no-margin {
+        margin: 0;
+    }
+    & .text-black {
+        color: #000;
+    }
+    & .itemList {
+        & th {
+            border-top: 2px solid #ddd !important;
+        }
+        & tbody {
+            & td {
+                border-top: 0;
+                border-right: 1px dashed #ddd;
+            }
+            & tr:last-child>td {
+                border-bottom: 2px solid #ddd;
+            }
+        }
+    }
+    & .supplier {
+        padding-left: 76px;
+        &:before {
+            margin-left: -68px;
+            font-weight: bold;
+            content: 'SUPPLIER:'
+        }
+    }
+    & fieldset {
+        border-radius: 5px;
+        background: #f2f2f2;
+        padding: 5px 20px;
+        color: #000;
+        legend {
+            color: #000;
+            text-transform: uppercase;
+            margin: 0;
+            border: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    & .itemCode {
+        width: 150px;
+        text-align: center;
+    }
+    & .itemQty {
+        width: 80px;
+        text-align: center;
+    }
+    & .signature {
+        color: #000;
+        width: 300px;
+        & div {
+            border-bottom: 1px solid #4d4d4d;
+            height: 15px;
+        }
+    }
+}
+
+.showCtrl {
+    padding: 20px;
+    & button {
+        text-align: left;
+        width: 150px;
+    }
+    .actionBtn {
+        width: 100%;
+        padding: 6px 12px;
+        text-align: center;
+    }
+    font-size: 12px;
+}
+
+.modalBox {
+    display: none;
+    & .logList {
+        & td,
+        th {
+            text-align: center;
+        }
+        & td {
+            border-top: 0 !important;
+        }
+        & tr>td:first-child {
+            border-right: 1px dashed #ddd;
+        }
+        & tr:last-child>td {
+            border-bottom: 2px solid #ddd;
+        }
+    }
+}

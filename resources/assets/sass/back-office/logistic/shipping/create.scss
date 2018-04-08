@@ -1,0 +1,214 @@
+// Variables
+$font-color: #111;
+
+// Increase width of serial box
+@media (min-width: 1200px) {
+  .modal-lg {
+    width: 1100px;
+  }
+}
+
+#main-content .main-content-full.scroll-2 {
+  margin: 2em 2em 2em 4em;
+}
+
+.bb {
+  border-bottom: 1px solid #B3B4B4;
+}
+
+.pl-25 {
+  padding-left: 50px !important;
+}
+
+.mr-25 {
+  margin-right: 25px !important;
+}
+
+.text-black {
+  color: $font-color;
+}
+
+.divider {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 1em;
+  display: inline-block;
+  @extend .bb;
+}
+
+.shipping.new {
+  padding: 2em 4em 2em 2em;
+}
+
+.form-new-shipping {
+
+  input {
+    height: 36px;
+    padding: 8px;
+    border: 1px solid #c4c5c8;
+  }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .form-group.col-md-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .heading {
+    border-bottom: 1px solid #B3B4B4;
+    font-size: 16px;
+    padding-top: 24px;
+    color: $font-color;
+
+    span {
+      font-weight: normal;
+      font-size: 14px;
+      color: #777;
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    button {
+      margin: 0 8px;
+    }
+  }
+
+  .shipping-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:4px 0;
+
+    .col-md-8 {
+      margin-bottom: 4rem;
+    }
+
+    &.title {
+      @extend .bb;
+      display: flex;
+      align-items: flex-end;
+      color: $font-color;
+      margin: 12px 0 2rem 0;
+    }
+
+    .divide {
+      font-size: 20px;
+      color: $font-color;
+    }
+
+    b {color:#000;}
+
+    .qty-input {
+      width: 4.2em;
+      height: 30px;
+      margin-left: 8px;
+    }
+  }
+}
+
+/* FLEX BOX HELPER */
+.flex-center {display: flex; align-items: center; justify-content: center;}
+.has-text-center {text-align: center}
+
+/* BROWSE SERIAL MODAL */
+#serialModal {
+  .serial-cell {
+    text-align: left;
+    .btn-default-background {background: transparent;}
+    .btn-label {padding: 4px; top: 0; left: 0}
+  }
+  td {border-left: 0;}
+}
+
+.heading .text-small {font-size: 10px;}
+
+/* FROM SALE-ORDER/SHOW.scss FOR BROWSE BUTTON */
+/*@import '../../sales-order/show';
+
+.upload-u {
+  border-radius: 6px;
+  padding: 3px;
+  .upload-label {
+    padding-left: 1em; font-size:9px;
+    .overflow {text-overflow: ellipsis;overflow: hidden;width: 68px;height: 10px; white-space: nowrap;display: inline-block;}
+  }
+  hr {margin:1px 0 3px;border-color:#999} 
+  .btn1 {font-size: 7px; padding: 3px 15px;}
+  .btn1:hover {cursor: pointer;}
+}
+.upload-btn-wrapper {
+  display: flex; position: static; justify-content: center;
+  input[type=file] {
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+  }
+  .btn1{
+    cursor: pointer;
+  }
+}*/
+/* FROM PRODUCT-RECEIVE/create.scss FOR BROWSE BUTTON */
+.upload-btn-wrapper input[type=file] {
+  // font-size: 100px;
+  display: none;
+}
+.upload-u{
+  width: 85px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #999999;
+  border-radius: 15px;
+  .btn1 {
+    cursor: pointer;
+    border: 1px solid #4E7AC7;
+    color: white;
+    background-color:#4E7AC7;
+    padding: 3px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    &:hover{
+        font-weight: bold;
+    }
+  }
+}
+.upload-u {
+  position: relative;
+  border-radius: 6px;
+  padding: 3px;
+  .btn-cancel-upload{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover{
+      font-size: 14px;
+    }
+  }
+  .upload-label {
+    // padding-left: 1em;
+    // cursor: pointer;
+     font-size:9px;
+    .overflow {text-overflow: ellipsis;overflow: hidden;height: 10px; white-space: nowrap;display: inline-block;padding: 0;text-align: center;display: block}
+  }
+  hr {margin:1px 0 3px;border-color:#999} 
+  .btn1 {font-size: 7px; padding: 3px 15px;cursor: pointer;}
+  .btn1:hover {cursor: pointer;}
+}

@@ -1,0 +1,31 @@
+.product-barcode-create{
+    padding-top: 60px;
+    .row{
+        margin-bottom: 40px;
+    }
+    &-hr{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+    }
+    &-no-line{
+        tbody tr td {
+            border-left-color: rgba(165, 160, 160, 0.0);
+        }
+    }
+    h3{
+        color: #000000;
+    }
+}
+@media screen and (max-width: 767px){
+    .x_panel.content-center{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+@media screen and (min-width: 768px){
+    #lbHeaderPage{
+        width: 400px;
+        display: block;
+    }
+}

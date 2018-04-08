@@ -1,0 +1,191 @@
+/**
+ * @author: Natthanon Ochaphong
+ * @phone: 0809135244
+ * @email: baraear@gmail.com
+ */
+
+.form-header-index {
+  table {
+    width: 100%;
+
+    tr {
+      td.col-1 {
+        min-width: inherit;
+        width: 146px;
+      }
+      td.col-2 {
+        width: inherit;
+      }
+      td.col-3 {
+        min-width: inherit;
+        width: 257px;
+      }
+    }
+  }
+}
+
+.tr-checkbox {
+  width: 30px;
+}
+.panel-group {
+  margin-bottom: 0;
+  .panel {
+    &.panel-default {
+      background-color: transparent;
+      border-top: 0;
+      border-left: 1px solid #d3e0e9;
+      border-right: 1px solid #d3e0e9;
+      border-bottom: 1px solid #d3e0e9;
+      // border-color: #999999;
+    }
+  }
+}
+
+.table {
+  tbody > tr > td {
+    border-top: 0 !important;
+    padding: 0 !important;
+    line-height: 15px !important;
+
+    &.td-pr {
+      color: #3097d1;
+    }
+  }
+}
+
+.er-table {
+  tr td {
+    div {
+      padding-right: 5px;
+    }
+
+    label {
+      font-size: 11px;
+      font-weight: bold;
+    }
+  }
+
+  td:nth-child(2) {
+    width: 120px;
+  }
+
+  td:nth-child(3) {
+    width: calc(100% - 88%);
+  }
+
+  td:nth-child(4) {
+    width: calc(100% - 85%);
+  }
+
+  td:nth-child(5) {
+    width: calc(100% - 80%);
+  }
+
+  td:nth-child(6) {
+    width: calc(100% - 85%);
+    vertical-align: middle !important;
+  }
+
+  td:nth-child(7), td:last-child {
+    width: 110px;
+    padding-right: 5px !important;
+    vertical-align: middle !important;
+
+    button {
+      width: 100%;
+
+      span {
+        float: left;
+      }
+
+      p {
+        margin: 0;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+.er-number {
+  span {
+    color: #3097d1;
+    margin-right: 10px;
+  }
+  strong.number {
+    display: inline-block;
+    font-size: 18px;
+  }
+  .doc-date {
+    display: inline-block;
+    font-size: 11px;
+    width: 100px;
+    line-height: 11px;
+    padding: 5px 0;
+  }
+}
+
+.er-status {
+  font-weight: normal !important;
+  font-size: 14px;
+  .er-status-icon {
+    position: relative;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .er-status-icon.text-danger.fa.fa-times-circle-o {
+    font-size: 18px;
+    margin-right: 2px;
+    margin-left: -3px;
+    top: 2px;
+  }
+  .er-status-icon.fa-exclamation {
+    padding-left: 7px;
+  }
+  .er-status-icon:before {
+    top: 0;
+    margin-top: 0 !important;
+  }
+  .fa-exclamation {
+    color: #f7931c;
+    &:before {
+      top: 0px !important;
+    }
+  }
+  .fa-times-circle-o {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  &.waiting {
+    display: table;
+    width: 100%;
+    i {
+      display: table-cell;
+      width: 10px;
+      vertical-align: middle;
+    }
+    span {
+      display: table-cell;
+      width: 65px;
+      vertical-align: middle;
+    }
+  }
+}
+
+table.er-detail-table {
+  tbody {
+    > tr {
+      > td {
+        padding: 5px 0 !important;
+
+      }
+      &.border-bottom > td {
+        border-bottom: 1px solid #CCC;
+      }
+    }
+  }
+}
+
+.icheckbox_minimal-grey {
+  margin-top: 10px;
+}

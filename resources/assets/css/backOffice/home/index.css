@@ -1,0 +1,18 @@
+.form-header .form-fixed-width {
+    width: 40%; }
+    .form-header .form-fixed-width input {
+      width: 100%; }
+  
+  .tr-checkbox {
+    width: 30px; }
+  
+  .tr-data-small {
+    line-height: 1em;
+    font-size: 10px; }
+    .tr-data-small p {
+      font-size: 18px;
+      margin-top: 10px; }
+  
+  .nav-sm #sidebar-menu .menu_section .side-menu span.fa-chevron-down {
+    margin-left: 0px; }
+    

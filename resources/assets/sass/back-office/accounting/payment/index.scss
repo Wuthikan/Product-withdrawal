@@ -1,0 +1,63 @@
+.no-padding{
+    padding: 0;
+}
+
+.no-margin{
+    margin: 0;
+}
+.tb-payment{
+    width: 100%;
+    font-size: 1.4rem;
+    tbody{
+        tr{
+            td{
+                vertical-align: top;
+                padding: 7px 10px;
+            }
+        }
+    }
+    .undo-tab1{
+        text-decoration: line-through;
+        color: grey;
+    }
+    .text-decoration{
+        text-decoration: line-through;
+        color: grey;
+     }
+    
+}
+
+.f-s-h{
+    font-size: 2rem;
+}
+.color-bu{
+   color: #7fb2f0
+}
+.color-ba{
+    color: black
+ }
+
+ .icon-ap{
+    position: relative;
+    display: flex;
+    align-items: center;
+     .icon{
+        margin-right: 5px;
+     }
+     
+     .text{
+
+     }
+ }
+ 
+ .color-wait{
+     color: #f7931c;
+ }
+ .panel-group{
+     margin: 0;
+ }
+ .scroll-2{
+    height: calc(100vh - 170px);
+ }
+ 
+ 

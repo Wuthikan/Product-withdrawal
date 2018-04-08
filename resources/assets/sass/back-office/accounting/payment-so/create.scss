@@ -1,0 +1,45 @@
+$upload-width: 120px;
+
+// reference from refund-from-wallet/create
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.table.new-form {
+    td {padding: 8px 0; border:none; vertical-align: middle;}
+    .heading td,th {color:#000;font-weight:bold; padding: 2px 0;}
+    .heading td {border-bottom: 2px solid #ddd; padding: 10px 0 2px;}
+    .currency-column {
+        max-width:7em;
+        > div {display:flex; align-items: center; padding: 4px 10px;}
+        input {text-align:right;margin-right:0.5em}
+    }
+    .unit-column {width:30px;max-width:30px;color:#000;font-weight:bold;text-align: right;}
+    .total-row {
+        border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 1em 0;
+        .number {padding-right:2em;font-size:14px;color:#555;}
+    }
+    .spacer th, .spacer td {border-top: none;padding-top:2em;}
+}
+.spacer {padding: 1em 0;}
+.divider {border-bottom:1px solid #ccc;margin: 1.5em 0 3em;}
+.customer-table {display:flex;flex-direction:column}
+.company-name {padding: 8px 0;}
+.upload-lists {
+    display:flex;flex-direction:row;flex-wrap:wrap;
+    .upload-item {display: flex;width: $upload-width; height: $upload-width}
+    .thumbnail {
+        flex: 1;display: flex;align-items: center;justify-content: center;
+        margin: 4px 4px; font-size: 8px; color: #fff; background: #ccc;
+        &:hover {cursor:pointer;}
+    }
+}
+.action {display:flex;justify-content:center;}
+.text-red {color: #cc041f;}
+.text-black {color:#000;}
+.text-green {color:#60c21e;}
+.text-right {text-align:right}

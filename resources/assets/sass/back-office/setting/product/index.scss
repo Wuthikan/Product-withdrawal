@@ -1,0 +1,99 @@
+/* TOP MENU FLEX STYLE */
+.flex-parent {display:flex; &.column {flex-direction:column} &.center {align-items: center;}}
+.flex-item {flex:1}
+/* TO MATCH PURCHASING ORDER STYLE */
+.form-table {padding: 0 5px}
+.page-showing-pagination { height: 47px }
+.select-all .icheckbox_minimal-grey {top:-1px;}
+.form-control.search {width:100%}
+
+/** 
+ * Search panel with flex style
+ * Chnage static height .tab-content.scroll-2 {height: calc(100vh - 220px);} with app.scss to flex
+ * Date: 3/2/2018
+ * Author: Jirawat I. <nodtem66@gmail.com>
+ */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  .x_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .content {display: flex; flex: 1}
+    .content-tabs {display:flex;flex-direction:column;flex:1}
+    .tab-content.scroll-2 {height: auto;flex:1}
+    .section-margin {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+  &.margin-bottom {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* PAGE SPECIFIC STYLES */
+.panel-group {margin-bottom: 0; &:not(:last-child) .panel.panel-default {border-bottom:none}}
+.panel.panel-default {background-color: rgba(195,195,195,0.5);}
+.panel-body.row {margin:0;border:1px solid #ccc;}
+.status-column {flex:1;font-size:13px;color:#000;}
+.name-column {width:50%;display:flex;font-weight:bold;padding-right:1em}
+.checkbox-column {margin-right: 1em;}
+.on-off-group {width:100px;display:flex;align-items:center;flex-direction: column;font-size:13px; .spacer {margin-bottom:6px}}
+.product-image-column {padding: 1em 2em 1em 4em;word-break:break-all; .spacer-1 {margin-bottom:1em} .spacer-2 {margin-bottom:2em}}
+.category-row {font-size:10px;}
+.icon {
+    display:flex;align-items:center;justify-content:center;width:13px;padding:2px 0;margin-right:6px;
+    border-radius:3px;background-color:#7fb2f0;
+    .fa {color:#fff;}
+}
+.row.no-padding [class*="col-"] {padding-left:0;padding-right:0;}
+.vertical-buttons {
+    display:flex;flex-direction:column;align-items:stretch;
+    .btn {
+        display:flex;padding:0;align-items:center;
+        &:not(:last-child) {margin-bottom: 0.7em;}
+        .btn-label {left: 0;top: 0;width: 37px;}
+        .btn-text {flex: 1;text-align: center;padding: 0 1em;}
+    }
+}
+.product-table {
+    padding-right: 2em;
+    .table.ngin-table {
+        tbody::before {height: 8px;}
+        tbody + tbody {border-top: none;}
+        thead > tr > th {border-bottom:1px solid #999;}
+        td {border-left:0;}
+        tbody > tr:last-child, td.border-bottom {border-bottom: 1px solid #999; &:after{display:block;content: '';height:8px}}
+        th,td {&.text-left {text-align: left;}}
+        th,td {&.pl-0 {padding-left:0 !important}}
+    }
+}
+.region-row {display:flex;align-items:stretch;font-size: 10px}
+.region {
+    display:inline-block;flex:1;background:#c4c4c4;
+    border-radius:5px;margin:0 1px;padding:2px;color:#fff;
+    &:hover {color:#fff;cursor:default}
+    &.link:hover {cursor: pointer;color:#fff;background-image: linear-gradient(rgba(255,255,255,0.3),transparent) !important;}
+    &.r1 {background:#3240ad}
+    &.r2jp {background:#168bf2}
+    &.r2eu {background:#02a0f2}
+    &.r3 {background:#00b3cf}
+    &.r4 {background:#008676}
+    &.na {background:#797979}
+}
+
+/* MARGIN AND PADDING */
+.mr-1 {margin-right:0.5em}
+.mb-1 {margin-bottom:1em}
+.pt-1 {padding-top:1em}
+.w-8 {width:8em}
+.w-60 {width:60%}
+
+/* FONT SIZE AND COLOR */
+.text-red {color: #cc041f;}
+.text-black {color:#000;}
+.text-center {text-align: center;}

@@ -1,0 +1,97 @@
+// Helper
+.flex-container {
+  display: flex;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.text-red {
+  color: #cc041f;
+}
+
+/* ========================================
+ * SHIPPING SECTION
+ * ======================================== */
+.shipping {
+
+  header {
+    .form-fixed-width,
+    .form-control {
+      width: 100%;
+    }
+
+    .form-group.export i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  > .content {
+
+    .nav li a {
+      padding: 0.625rem;
+      color: #999;
+    }
+
+    .nav-tabs {
+      li,
+      li a {
+        min-width: 120px !important;
+      }
+
+      li, li.active {
+        border: 1px solid #999;
+        border-radius: 1rem 1rem 0 0;
+      }
+
+      li.active,
+      li.active a {
+        background: #fff;
+        border-bottom: 0;
+        color: #111;
+      }
+
+      a,
+      a:hover {
+        border-radius: 1rem 1rem 0 0;
+        border: none !important;
+        background-color: transparent;
+      }
+
+      li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          margin-right: 1rem;
+        }
+
+        span {
+          text-align: left;
+          line-height: 1.2;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .tab-pane .content {
+      padding: 2rem 1rem;
+      background: #fff;
+      border: 1px solid #999;
+      border-top: 0;
+    }
+  }
+}

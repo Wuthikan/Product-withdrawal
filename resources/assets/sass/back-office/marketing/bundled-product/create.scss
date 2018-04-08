@@ -1,0 +1,165 @@
+/**
+ * @author: Piyaporn Saykaew
+ * @phone: 0884350313
+ * @email: piyaporn.saykaew@gmail.com
+ */
+
+.form-container{
+    width: 970px;
+    margin: 0 auto;
+}
+.top_nav .nav_menu .nav.toggle {
+    min-width: 400px !important;
+}
+
+.x_panel.content-center {
+    padding: 20px 0 !important;
+}
+
+.text-black {
+    color: #000;
+}
+
+section {
+    margin: 40px 50px 0 50px;
+}
+
+.content>div {
+    margin: 0 auto;
+    & hr {
+        border-color: #d3d5d6;
+    }
+    max-width: 600px;
+    & .form-group label {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #toText {
+        padding-top: 33px;
+    }
+    & label {
+        color: #000;
+        line-height: 0;
+    }
+    .table-nonbordered {
+        td {
+            border: 0 !important;
+        }
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.box {
+    margin-top: 30px;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.leftBox {
+    width: 43%;
+    float: left;
+    margin-left: 10px;
+}
+
+.rightBox {
+    width: 43%;
+    float: right;
+    margin-right: 10px;
+}
+
+.centerBox {
+    text-align: center;
+    margin-top: 30px;
+    width: 10%;
+    float: left;
+}
+
+.card {
+    padding: 0px 20px 5px 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto 15px auto;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.0784313725490196);
+}
+
+.removeContent {
+    a{
+        font-size: 11px;
+        color: red;
+        position: relative;
+        top: 90px;
+        left: 25px;
+    }
+}
+
+.cover {
+    width: 13%;
+    padding-top: 15px;
+    h1{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 0 7px 0;
+        color: orange;
+    }
+}
+
+.contentDetail{
+
+    .code{
+        margin-top: 20px;
+        color: #0340f4;
+    }
+    .productName{
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 14px 0;
+    }
+    .detail{
+        padding: 0;
+        .form-group{
+            margin-bottom: 5px;
+            overflow: hidden;
+
+            div[class ^= col-sm]{
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+.trigger {
+    background: #d8df1f;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.close-tag {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.titelItem{
+    font-size: 18px;
+    color: #000;
+    overflow: hidden;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.text-blue{
+    color: #0340f4;
+}
