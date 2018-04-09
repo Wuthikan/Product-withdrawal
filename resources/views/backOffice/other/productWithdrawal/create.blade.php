@@ -10,8 +10,12 @@
 @section('body')
     <div class="container-fluid x-content scroll-2">
         <section id="formProductWithdrawal">
-        <form action="{{route("backOffice.other.product-withdrawal.store")}}" method="POST" enctype="multipart/form-data">
+        <form action="{{ $action }}" method="POST" enctype="multipart/form-data">
             {!! csrf_field() !!}
+
+            @if(isset($edit))
+            <input type="hidden" name="_method" value="PUT">
+            @endif
             <div class="row">
                 <div class="col-xs-12 col-md-4">
                     <label for="">Date</label>

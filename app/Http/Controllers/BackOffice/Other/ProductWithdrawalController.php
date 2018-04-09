@@ -2,8 +2,14 @@
 
 namespace DurianSoftware\Http\Controllers\BackOffice\Other;
 
-use Illuminate\Http\Request;
+use Auth;
+use DB;
+use DateTime;
 use DurianSoftware\Http\Controllers\Controller;
+use DurianSoftware\Http\Requests\BackOffice\Other\ProductWithdrawalRequest;
+use DurianSoftware\Models\DimProductWithdrawal;
+use Illuminate\Http\Request;
+use Excel;
 
 class ProductWithdrawalController extends Controller
 {
@@ -26,7 +32,8 @@ class ProductWithdrawalController extends Controller
      */
     public function create()
     {
-        return view('backOffice.other.productWithdrawal.create');
+        $action = route('backOffice.other.product-withdrawal.store');
+        return view('backOffice.other.productWithdrawal.create', compact('action'));
     }
 
     /**
@@ -35,7 +42,7 @@ class ProductWithdrawalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductWithdrawalRequest $request)
     {
         return redirect()->action('backOffice.other.productWithdrawal.index');
     }
@@ -70,7 +77,14 @@ class ProductWithdrawalController extends Controller
      */
     public function edit($id)
     {
-        return view('backOffice.other.productWithdrawal.update');
+        $productwithdrawal = DimProductWithdrawal::find($id);
+        $this->checkDeleteWithMsg($productwithdrawal, "Data not found");
+        if (empty($productwithdrawal)) {
+            return redirect()->route('backOffice.other.productWithdrawal.index')->with('warning', " Data not found ");
+        }
+        $edit = true;
+        $action = route('backOffice.other.product-withdrawal.update', $productwithdrawal->id) ;
+        return view('backOffice.other.productWithdrawal.update', compact('action', 'edit'))->with('productwithdrawal', $productwithdrawal);
     }
 
     /**
@@ -114,5 +128,13 @@ class ProductWithdrawalController extends Controller
     public function restore($id)
     {
         return redirect()->action('backOffice.other.productWithdrawal.index');
+    }
+
+    private function checkDeleteWithMsg($data, $msg)
+    {
+        if (empty($data)) {
+             \Session::flash('warning', $msg);
+            \App::abort(302, '', ['Location' => route('backOffice.news-and-event.index')]);
+        }
     }
 }
