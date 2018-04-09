@@ -9,7 +9,6 @@ storage/database/
 /vendor/
 .idea
 .vagrant
-docker-compose.yml
 Homestead.json
 Homestead.yaml
 npm-debug.log
