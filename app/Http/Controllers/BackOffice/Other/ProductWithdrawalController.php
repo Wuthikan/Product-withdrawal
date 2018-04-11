@@ -8,7 +8,10 @@ use DateTime;
 use DurianSoftware\Http\Controllers\Controller;
 use DurianSoftware\Http\Requests\BackOffice\Other\ProductWithdrawalRequest;
 use DurianSoftware\Models\DimProductWithdrawal;
+use DurianSoftware\Models\Product;
+use DurianSoftware\Date;
 use Illuminate\Http\Request;
+use Validator;
 use Excel;
 
 class ProductWithdrawalController extends Controller
@@ -44,6 +47,14 @@ class ProductWithdrawalController extends Controller
      */
     public function store(ProductWithdrawalRequest $request)
     {
+        $data = $request->except('_token');
+        try {
+            $date = Date::InsertStrDate(trim($data['date']));
+        } catch (\Exception $e) {
+            return back()
+                ->with('warning', 'Can\'t Create');
+        }
+        
         return redirect()->action('backOffice.other.productWithdrawal.index');
     }
 
